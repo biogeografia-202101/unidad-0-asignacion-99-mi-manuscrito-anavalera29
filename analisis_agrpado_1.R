@@ -18,7 +18,7 @@ source('biodata/funciones.R')
 #' ### Cargar datos
 #' 
 load("~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata")
-mi_fam <- mc_apcyn_melic_saptc
+mi_fam <- mc_malvc
 #'
 #' ## Características de las técnicas de agrupamiento
 #' 

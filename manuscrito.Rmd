@@ -56,15 +56,16 @@ En tal sentido, este estudio por medio de la ecología numérica busca conocer c
 La BCI se encuentra ubicada en el canal de Pánama en las proximidades del lago Gatún, de acuerdo con [@perez2005metodologia] esta se formó cuando se construyó dicho canal embalsando las aguas del río Chagres, se localiza entre las coordenadas geográficas (latitud 9$^\circ$&nbsp;9'N, longitud 79$^\circ$&nbsp; 50') y cubre una extensión de tierra de 1,500 hectáreas (ver figura \ref{mapa}). El clima es de bosque tropical, la temperatura promedio es de 27 grados centígrados, con temporadas lluviosas durante los meses mayo-diciembre y secas desde mediados de diciembre hasta abril, las tormentas convectivas son prevenidas por los vientos alisios dictando así las estaciones del año, [@sugastimedicion]. Esta isla por sus caracteristicas fisicas sirve de hábitat para muchos animales e insectos y por consiguiente para una variedad de especie vegetal, convirtiendola en un espacio de investigación de mucha importancia.
 
 
-Es por ello, la escogencia como lugar de estudio la parcela permanente de 50 hectárea de BCI donde se identificó como estan asociadas y distribuidas la familia malvaceae a través del censo realizado por [@webBCI] durante varios años (1981-1983 y 2010-2015, entre otros) donde se identificaron, marcaron y cartografiaron todos los tallos leñosos independientes de al menos 10 mm de diámetro a la altura.
+Es por ello, la escogencia como lugar de estudio la parcela permanente de 50 hectárea de BCI donde se identificó como estan asociadas y distribuidas la familia malvaceae a través del censo realizado por [@webcenso] durante varios años (1981-1983 y 2010-2015, entre otros) donde se identificaron, marcaron y cartografiaron todos los tallos leñosos independientes de al menos 10 mm de diámetro a la altura.
 
 
 
 
 ### Materiales y Técnicas de investigación
 
+Para la realización de este estudio donde se determinó la abundacia y agrupamiento de especie por medio de los datos del censo antes mencionado, se utilizó el software de [@R] donde se cargaron varios paquetes de ecología numérica [@jose_ramon_martinez_batlle_2020_4402362] que ayudaron a formar matriz de comunidad
 
-Para la realización de este estudio se utilizarón datos suministrados por el Instituto Smithsonian de Investigaciones Tropicales para conocer la abundancia de la familia en la zona. De igual manera para percibir la relación entre una especie y el áera y las asociaciones de hábitat de arboles y arbustos se empleó documentaciones de [@harms2001habitat] y [@condit1996species] que permitió mejor interpretación. También se usó herramientas escritas en python para visualizar cómo estan distribuidas y asociadas cada especie de la familia y en qué volúmenes suministradas por [@]. 
+
 
 
 ![Ubicación de la isla Barro Colorado\label{mapa}](mapa_barro_colorado.jpeg)

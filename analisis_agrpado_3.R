@@ -88,7 +88,7 @@ mapa_upgma_k2 <- mapView(
     zoom = 15)
 mapa_upgma_k2
 mapa_upgma_k2 %>% mapshot(
-  file = 'mapa_upgma_k2.png', 
+  file = 'mapa_upgma_k4.png', 
   remove_controls = c("zoomControl", "layersControl", "homeButton")
 )
 #' 
