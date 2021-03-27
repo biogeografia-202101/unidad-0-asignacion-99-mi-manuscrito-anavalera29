@@ -35,7 +35,7 @@ load("~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata
 #' 
 #' Primero, sustituyo el caracter de espacio por un <enter> en los nombres de las especies (caracter \\n), para facilitar la lectura de los nombres en la diagonal del mapa de calor. Luego transpongo la matriz.
 #' 
-mi_fam_t <- mc_apcyn_melic_saptc %>% 
+mi_fam_t <- mc_malvc %>% 
   rename_all(gsub, pattern = ' ', replacement = '\n') %>% 
   t()
 mi_fam_t %>% tibble
@@ -75,8 +75,8 @@ env_num <- bci_env_grid %>%
   dplyr::select(-id, -matches('^U.*')) %>% 
   st_drop_geometry %>% 
   mutate(
-    riqueza_mifam = specnumber(mc_apcyn_melic_saptc),
-    abundancia_mifam = rowSums(mc_apcyn_melic_saptc)) %>% 
+    riqueza_mifam = specnumber(mc_malvc),
+    abundancia_mifam = rowSums(mc_malvc)) %>% 
   rename_all(gsub, pattern = '_pct$', replacement = '') %>% 
   rename_all(gsub, pattern = '_| ', replacement = '\n')
 env_num %>% tibble

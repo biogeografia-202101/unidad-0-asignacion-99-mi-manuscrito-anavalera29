@@ -30,8 +30,8 @@ env_num <- bci_env_grid %>%
   dplyr::select(-id, -matches('^U.*')) %>% 
   st_drop_geometry %>% 
   mutate(
-    riqueza_mifam = specnumber(mc_apcyn_melic_saptc),
-    abundancia_mifam = rowSums(mc_apcyn_melic_saptc)) %>% 
+    riqueza_mifam = specnumber(mc_malvc),
+    abundancia_mifam = rowSums(mc_malvc)) %>% 
   rename_all(gsub, pattern = '_pct$', replacement = '') %>% 
   rename_all(gsub, pattern = '_| ', replacement = '\n')
 env_num %>% tibble
@@ -62,7 +62,7 @@ p_cor_geomorf_ar <- env_num %>%
 p_cor_geomorf_ar
 
 #' #### Matriz de comunidad
-p_cor_mc <- mc_apcyn_melic_saptc %>%
+p_cor_mc <- mc_malvc%>%
   rename_all(gsub, pattern = '_| ', replacement = '\n') %>% 
   ezCor(r_size_lims = c(4,8), label_size = 3)
 p_cor_mc

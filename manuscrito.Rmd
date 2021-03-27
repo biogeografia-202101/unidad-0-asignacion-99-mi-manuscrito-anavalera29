@@ -63,7 +63,7 @@ Es por ello, la escogencia como lugar de estudio la parcela permanente de 50 hec
 
 ### Materiales y Técnicas de investigación
 
-Para la realización de este estudio donde se determinó la abundacia y agrupamiento de especie por medio de los datos del censo antes mencionado, se utilizó el software de [@R] donde se cargaron varios paquetes de ecología numérica [@jose_ramon_martinez_batlle_2020_4402362] que ayudaron a formar matriz de comunidad
+Para la realización de este estudio se utilizó el software de [@R] donde se cargaron varios paquetes de ecología numérica suministrado por [@jose_ramon_martinez_batlle_2020_4402362] como el *tidyverse* (dplyr) que ayudó a formar matriz de comunidad que permitió identificar las diferentes especies que abundan, en qué cantidad y orden de acuerdo a su pH. También, el *Simple Features* (sf) para crear área de hábitat por cuadros y obtener la densidad de cada especie por metro cuadrado y así conocer la abundancia y riqueza global. De igual manera, el *vegan*  para caracterizar y analizar el orden y disimilaridades entre cada especie y *ez* para examinar las unidades o variables repetitivas. Asimismo, el *graphics*, *psych* y *mapvie* para la representación grafica de cada datos.
 
 
 
@@ -77,6 +77,11 @@ Para la realización de este estudio donde se determinó la abundacia y agrupami
 \ldots
 
 # Resultados
+
+
+
+
+
 
 \ldots
 

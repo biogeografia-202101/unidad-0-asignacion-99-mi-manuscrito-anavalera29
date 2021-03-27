@@ -231,14 +231,15 @@ table(grupos_upgma_k2)
 #' 
 #' Ward:
 #' 
-(grupos_ward_k3 <- as.factor(cutree(lista_cl$cl_ward, k = 3)))
-table(grupos_ward_k3)
+(grupos_ward_k2 <- as.factor(cutree(lista_cl$cl_ward, k = 2)))
+table(grupos_ward_k2)
 #'
 #' Guardaré estos vectores en archivos para reutilizarlos en *scripts* posteriores:
 #' 
 saveRDS(grupos_upgma_k2, 'grupos_upgma_k2.RDS')
-saveRDS(grupos_ward_k3, 'grupos_ward_k3.RDS')
+saveRDS(grupos_ward_k2, 'grupos_ward_k2.RDS')
 #' 
 #' Evita usar este, y cualquier otro procedimiento, de manera mecánica. En tu caso, quizá tengas que cortar tus dendrogramas en más o menos grupos de sitios. También podría resultar que alguno de dichos métodos, o ambos, sean irrelevante para tu caso, por lo que probablemente tendrás que elegir otro que haga sentido ecológico a tus datos (por ejemplo, *complete*).
 #' 
 #' En el próximo *script*, aprenderás a comparar este resultado con las variables ambientales. También podrás evaluar cómo se distribuyen los grupos de sitios en un mapa, usando las herramientas del paquete `mapview`.
+#' 

@@ -108,10 +108,10 @@ bci_env_grid %>%
 #' ### Verbo `arrange`
 #' 
 #' Pruebo también con la matriz de comunidad. Por ejemplo, introduzco en la tubería la función `colSums`, que devuelve un vector cuyos elementos están nombrados (tienen un atributo, en este caso, el nombre de especie), donde cada elemento representa la abundancia por especie.
-mc_apcyn_melic_saptc %>%
+mc_malvc %>%
   colSums
 #' Y también obtengo la abundancia por quadrat.
-mc_apcyn_melic_saptc %>%
+mc_malvc %>%
   rowSums
 #' Uso a continuación el verbo `arrange` para mostrar los registros de la matriz ambiental ordenados ascendentemente por pH.
 bci_env_grid %>%
@@ -206,7 +206,7 @@ agrupado_por_habitat %>%
 #' Finalmente, te muestro `join`. Más que una función, `join` es una función genérica con varios métodos para unir tablas que comparten al menos un atributo en común, siendo `inner_join` el más usado. Imagina un caso de uso: calculas abundancia de tu familia de plantas por cada quadrat de 1 ha. Ahora necesitas unir dicha información a la matriz ambiental. Aunque hay múltiples soluciones, `inner_join` es la que con mayor consistencia resuelve este problema.
 #' 
 #' Obtendré una tabla con dos columnas: código identificador de quadrat de 1 ha (le llamaré `id`), y abundancia de todas las plantas de mi familia por quadrat (le llamaré `abundancia_mi_familia`)
-id_abundancia_fam <- mc_apcyn_melic_saptc %>%
+id_abundancia_fam <- mc_malvc %>%
   mutate(abundancia_mi_familia = rowSums(.)) %>% 
   rownames_to_column(var = 'id') %>%
   mutate(id = as.numeric(id)) %>% #Numérico, garantiza compatibilidad con id de bci_env_grid
@@ -414,14 +414,14 @@ mapa_cuadros_riq_global %>% mapshot(file = 'mapa_cuadros_riq_global.png')
 
 #' ### Mapa de cuadros, simbología por abundancia de mi familia
 mapa_cuadros_abun_mi_familia <- mapView(
-  bci_env_grid %>% mutate(abun = rowSums(mc_apcyn_melic_saptc)),
+  bci_env_grid %>% mutate(abun = rowSums(mc_malvc)),
   layer.name = 'abundancia',
   alpha.regions = 0.6,
   map.types = 'OpenTopoMap',
   legend = T, zoom = 14,
   col.regions = azul,
   zcol = 'abun') %>%
-  addStaticLabels(label = rowSums(mc_apcyn_melic_saptc)) %>%
+  addStaticLabels(label = rowSums(mc_malvc)) %>%
   leaflet::setView(
     lng = -79.85136,
     lat = 9.15097,
@@ -431,14 +431,14 @@ mapa_cuadros_abun_mi_familia %>% mapshot(file = 'mapa_cuadros_abun_mi_familia.pn
 
 #' ### Mapa de cuadros, simbología por riqueza de mi familia
 mapa_cuadros_riq_mi_familia <- mapView(
-  bci_env_grid %>% mutate(riq = specnumber(mc_apcyn_melic_saptc)),
+  bci_env_grid %>% mutate(riq = specnumber(mc_malvc)),
   layer.name = 'riqueza',
   alpha.regions = 0.6,
   map.types = 'OpenTopoMap',
   legend = T, zoom = 14,
   col.regions = rojo,
   zcol = 'riq') %>%
-  addStaticLabels(label = specnumber(mc_apcyn_melic_saptc)) %>%
+  addStaticLabels(label = specnumber(mc_malvc)) %>%
   leaflet::setView(
     lng = -79.85136,
     lat = 9.15097,

@@ -30,7 +30,7 @@ load("~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata
 #' 
 #' Aplicado a mi familia asignada de BCI, en la forma de matriz de distancia euclídea, utilizando la transformación *Hellinger*:
 #' 
-mi_fam_d_hel <- dist.ldc(mc_apcyn_melic_saptc, "hellinger", silent = T)
+mi_fam_d_hel <- dist.ldc(mc_malvc, "hellinger", silent = T)
 mi_fam_d_hel %>% tidy # Para evitar desbordar la consola
 #' 
 #' Para interpretar esta matriz, es necesario representarla gráficamente. En la representación elegida a continuación, color fucsia (magenta, rosa) significa "corta distancia=muy similares", y cian (celeste) significa "gran distancia=poco similares":
@@ -74,7 +74,7 @@ dev.off()
 #' 
 #' A continuación, muestro cómo calcular la **distancia de Jaccard** (**D<sub>J</sub>**) en un único paso usando la función `vegdist`.
 #' 
-mi_fam_jac <- vegdist(mc_apcyn_melic_saptc, method = 'jac', binary = T)
+mi_fam_jac <- vegdist(mc_malvc, method = 'jac', binary = T)
 mi_fam_jac %>% tidy # Mostrando sólo las primeras 10 combinaciones en modo data.frame
 #' 
 #' El argumento `binary=T` en `vegdist` "ordena" que se realice primero `decostand(mc_apcyn_melic_saptc, method = 'pa')`, lo cual convierte la matriz de comunidad en una de presencia/ausencia, con la que posteriormente se calculará la matriz de distancia.
@@ -95,7 +95,7 @@ coldiss(mi_fam_jac, diag = T)
 #' 
 #' Para obtener las variables **a**, **b** y **c**, usaré La función `betadiver` del paquete `vegan`:
 #' 
-mi_fam_abc <- betadiver(mc_apcyn_melic_saptc) 
+mi_fam_abc <- betadiver(mc_malvc) 
 mi_fam_abc %>%
   map(tidy) %>%
   map(slice, 1) %>%
@@ -108,13 +108,13 @@ round(11/12*100,2) #Porcentaje de especies compartidas = similaridad
 #' 
 #' Con `betadiver` también puedes calcular índices de similaridad. Por ejemplo, el Jaccard se calcula así:
 #' 
-betadiver(mc_apcyn_melic_saptc, method = 'j') %>% tidy
+betadiver(mc_malvc, method = 'j') %>% tidy
 #' 
 #' No obstante, usaremos esta función en los análisis de diversidad beta más adelante.
 #' 
 #' Además de la distancia de Jaccard, otra distancia muy utilizada es la de Sorensen o Bray-Curtis. Se calcula fácilmente con la función `vegdist`:
 #' 
-mi_fam_sor <- vegdist(mc_apcyn_melic_saptc, method = 'bray', binary = T)
+mi_fam_sor <- vegdist(mc_malvc, method = 'bray', binary = T)
 mi_fam_sor %>% tidy
 coldiss(mi_fam_sor, diag = T)
 #' 
