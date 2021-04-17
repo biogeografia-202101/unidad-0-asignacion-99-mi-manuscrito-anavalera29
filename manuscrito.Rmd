@@ -8,9 +8,7 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-        | Título
-        | Subtítulo
-        | Subtítulo
+      Distribución espacial de los géneros y especies de la familia *Malvaceae* en una parcela de 50 \,ha. Caso: Isla Barro Colorado, Panamá.
 author:
 - name: Ana Hilda Valera Arias
   affiliation: "Estudiante, Universidad Autónoma de Santo Domingo (UASD)"
@@ -32,18 +30,16 @@ header-includes:
 
 # Introducción
 
-La vegetación terrestre está constituida por un conjunto de plantas pertenecientes a una familia en específico y esta a su vez se subdividen en géneros y especies para identificarse dentro de su clase. Por consiguiente no sería la excepción de la malvaceae, poseen 243 genéros y más de 4,300 especies, sus flores son hermafroditas, pocas veces unisexuales, solitarias o fasciculadas en las axilas de las hojas o agrupadas en inflorescencia tal como la describen los siguientes autores [@marinanalisis] y [@bayer2003malvaceae].
+La vegetación terrestre está constituida por un conjunto de plantas pertenecientes a una familia en específico y esta a su vez se subdividen en géneros y especies para identificarse dentro de su clase. Por consiguiente no sería la excepción de la *malvaceae*, poseen 243 genéros y más de 4,300 especies, sus flores son hermafroditas, pocas veces unisexuales, solitarias o fasciculadas en las axilas de las hojas o agrupadas en inflorescencia tal como la describen los siguientes autores [@marinanalisis] y [@bayer2003malvaceae].
 
 
-Dentro de los géneros a encontrar en la familia malvaceae están el abutilon constituido por arbustos, subarbustos y hierbas bienales con pelo estrellados y tallos velloso, son carente del epicáliz conjunto de apéndices que por lo regular tienen otros grupos de dicha familia, así como de tener alrededor de 150 especie nativa en los trópicos y subtrópicos de América, África, Asia y Australia, [@de2007especies]. También, está el Hibiscus donde los segmentos del epicáliz estan libres o unidos en la base, con estigmas alargados, semillas reniformes y numerosas, [@ortizclaves]. Del mismo modo, se encuentra la althaea, lavatera y la malva cada una contienen sus respectivas especies las cuales pueden encontrarse en mayor o menor proporción en un espacio determinado la cual dependerá de factores abioticos incidentes entre ellos, lo que implicaría la necesidad de utilizar tecnicas y análisis numerológicos para conocer su asocianción y distribción. 
+Dentro de los géneros a encontrar en la familia *malvaceae* están el *abutilon* constituido por arbustos, subarbustos y hierbas bienales con pelo estrellados y tallos velloso, son carente del epicáliz conjunto de apéndices que por lo regular tienen otros grupos de dicha familia, así como de tener alrededor de 150 especie nativa en los trópicos y subtrópicos de América, África, Asia y Australia, [@de2007especies]. También, está el *Hibiscus* donde los segmentos del epicáliz estan libres o unidos en la base, con estigmas alargados, semillas reniformes y numerosas, [@ortizclaves]. Del mismo modo, se encuentra la *althaea*, *lavatera* y la *malva* cada una contienen sus respectivas especies las cuales pueden encontrarse en mayor o menor proporción en un espacio determinado la cual dependerá de factores abioticos incidentes entre ellos, lo que implicaría la necesidad de utilizar tecnicas y análisis numerológicos para conocer su asocianción y distribción. 
 
 
 La implementación de análisis numéricos en las investigaciones ecológicas permiten dar a conocer en terminos cuantificables la forma en que se encuentran asociadas y el tipo de patrón que presenta algunas especies, es por ello la importancia de la estratificación y zonificación del objeto de estudio en cuestión. De acuerdo con [@gonzalez2006ecologia] esto permite conjugar en un mismo grupo información de aquellos organismos que pueden ser cuantificable junto con otros que son reproductivos y de manera general con toda la vegetación. 
 
 
-En tal sentido, este estudio por medio de la ecología numérica busca conocer cómo estan asociados los diferentes géneros y especies de la familia malvaceae y si las variables ambientales existente en la zona influyen en dicha asociación. También, analizar como estan organizados los grupos y qué patrón presentan en caso de que existiese y asimismo establecer los indicadores ambientales que interfieren. De igual manera, examinar en qué volumen se encuentran representadas cada una y distiguir las especies alpha y beta, además, de construir modelos de distribución espacial para idenficarla. Por consiguiente, esta investigación constribuirá al conocimiento de la dinámica ecológica espacial que envuelven las plantas pertenecientes a la familia malvaceae en la isla de Barro Colorado que en lo adelante será llamado BCI y con la misma gestionar estrategias para el cuidado y conservación de ésta. 
-
-
+En tal sentido, este estudio por medio de la ecología numérica busca conocer cómo estan asociados los diferentes géneros y especies de la familia *malvaceae* y si las variables ambientales existente en la zona influyen en dicha asociación. También, analizar como estan organizados los grupos y qué patrón presentan en caso de que existiese y asimismo establecer los indicadores ambientales que interfieren. De igual manera, examinar en qué volumen se encuentran representadas cada una y distiguir los sitios con especies alpha y beta, además, de construir modelos de distribución espacial para idenficarla. Por consiguiente, esta investigación constribuirá al conocimiento de la dinámica ecológica espacial que envuelven las plantas pertenecientes a la familia *malvaceae* en la isla de Barro Colorado que en lo adelante será llamado BCI y con la misma gestionar estrategias para el cuidado y conservación de ésta. 
 
 \ldots
 
@@ -56,36 +52,39 @@ En tal sentido, este estudio por medio de la ecología numérica busca conocer c
 La BCI se encuentra ubicada en el canal de Pánama en las proximidades del lago Gatún, de acuerdo con [@perez2005metodologia] esta se formó cuando se construyó dicho canal embalsando las aguas del río Chagres, se localiza entre las coordenadas geográficas (latitud 9$^\circ$&nbsp;9'N, longitud 79$^\circ$&nbsp; 50') y cubre una extensión de tierra de 1,500 hectáreas (ver figura \ref{mapa}). El clima es de bosque tropical, la temperatura promedio es de 27 grados centígrados, con temporadas lluviosas durante los meses mayo-diciembre y secas desde mediados de diciembre hasta abril, las tormentas convectivas son prevenidas por los vientos alisios dictando así las estaciones del año, [@sugastimedicion]. Esta isla por sus caracteristicas fisicas sirve de hábitat para muchos animales e insectos y por consiguiente para una variedad de especie vegetal, convirtiendola en un espacio de investigación de mucha importancia.
 
 
-Es por ello, la escogencia como lugar de estudio la parcela permanente de 50 hectárea de BCI donde se identificó como estan asociadas y distribuidas la familia malvaceae a través del censo realizado por [@webcenso] durante varios años (1981-1983 y 2010-2015, entre otros) donde se identificaron, marcaron y cartografiaron todos los tallos leñosos independientes de al menos 10 mm de diámetro a la altura.
-
-
-
-
-### Materiales y Técnicas de investigación
-
-Para la realización de este estudio se utilizó el software de [@R] donde se cargaron varios paquetes de ecología numérica suministrado por [@jose_ramon_martinez_batlle_2020_4402362] como el *tidyverse* (dplyr) que ayudó a formar matriz de comunidad que permitió identificar las diferentes especies que abundan, en qué cantidad y orden de acuerdo a su pH. También, el *Simple Features* (sf) para crear área de hábitat por cuadros y obtener la densidad de cada especie por metro cuadrado y así conocer la abundancia y riqueza global. De igual manera, el *vegan*  para caracterizar y analizar el orden y disimilaridades entre cada especie y *ez* para examinar las unidades o variables repetitivas. Asimismo, el *graphics*, *psych* y *mapvie* para la representación grafica de cada datos.
-
-
-
+Es por ello, la escogencia como lugar de estudio la parcela permanente de 50 hectárea de BCI donde se identificó como estan asociadas y distribuidas la familia *malvaceae* a través del censo realizado por [@webcenso] durante varios años (1981-1983 y 2010-2015, entre otros) donde se identificaron, marcaron y cartografiaron todos los tallos leñosos independientes de al menos 10 mm de diámetro a la altura.
 
 ![Ubicación de la isla Barro Colorado\label{mapa}](mapa_barro_colorado.jpeg)
 
 
+### Materiales y Técnicas de investigación
 
+Para la realización de este estudio se utilizó el software de [@R] donde se cargaron varios paquetes de ecología numérica como el *tidyverse* que ayudó a formar matriz de comunidad que permitió identificar las diferentes especies que abundan, en qué cantidad y orden de acuerdo a su pH. También, el *Simple Features* (sf) para crear área de hábitat por cuadros y obtener la densidad de cada especie por metro cuadrado y así conocer la abundancia y riqueza global. De igual manera, el *Vegan* para caracterizar y analizar el orden y disimilaridades entre cada especie y *ez* para examinar las unidades o variables repetitivas. Asimismo, el *graphics*, *psych* y *mapvie* para la representación gráfica de cada datos y [@biodiversidad] para señalar las especies alpha y beta, cada *script* utilizados fueron suministrado a partir del repositorio de [@jose_ramon_martinez_batlle_2020_4402362] como fuente y el programa de información geográfica Qgis [@QGIS_software] para actualizar el mapa de localización de la BCI.
 
 
 \ldots
 
 # Resultados
 
+Por medio de los datos obtenidos por el análisis de agrupamiento se determinó que los géneros y especies de la familia *malvaceae* tienen una distancia muy corta y  nivel de representación y composición por cada 1\,ha elevado en algunos puntos, como se observó con la matriz de *Hellinger* a través de los clusters los cuadros 33 hasta el 49 fueron los de corta distancia y un grado de similaridad elevada y el 8, 23, 30 y 35 los de grandes distancia y poco similares  (ver figura \ref{representacion}). En cuanto, a la diversidad de especie existó un alto rango de correlación entre las riqueza o abundancia teniendo como resultado una equidad en su distribución, como es el caso del índice de *Hill* aunque las riquezas aumentan o disminyen la ratio no son afectadas, además, de existir insidencia de varios factores ambientales en su ordenación ejemplo el elemento Zinc que en su presencia fue mayor. También, se identificó que el sitio 30 es el más rico en especie alpha con 110 y el más pobre el 6 con 6, asimismo, el 13 y 46 como los lugares que más varían (especie beta) (ver figura \ref{diversidad} & \ref{ambiente}). Por último, al aplicarse la prueba *Moran's* se validó que las especies estan correlacionada de manera positiva en la unidad geomorfológica del espolón, la vaguada y la vertiente y de manera negativa en el piedemonte, el valle y la sima, igualmente, con los componentes químicos como el *calsio* (Ca), *cobre* (Cu), *hierro* (Fe), *zinc* (Zn), además, del *pH* siendo éste el más representativo desde el espacio 1 hasta el 7.
 
 
+![Composición de especies *malvaceae* en cada sitio de la BCI por distancia de cuerdas método Hellinger\label{representacion}](disimilaridad_Hellinger.png){width=100%}
+
+![Correlación de las diferentes especies\label{diversidad}](Matriz_correlacion_Pearson.png){width=120%}
+
+![Correlación de las diferentes especies\label{ambiente}](matriz_correlacion_suelo_abun_riq_spearman.png){width=110%}
+
+![Número de individuo por especie\label{riquezas}](mapa_cuadros_abun_global.png){width=110%}
 
 
 
 \ldots
 
 # Discusión
+
+La forma en que se encuentran distribuidos los géneros y especies de la familia *malvaceae* en la parcela de 50\,h de la BCI se debe a factores ambientales que influyen positivamente en su ordenación, auque el exceso de ciertos elementos químicos pueden afectar la distribución y crecimiento de ciertas plantas [@clark2002factores], como fue el caso de el *manganeso* (Mn), *cobre* (Cu) y el *aluminio* (Al) que en su presencia la correlación con el espacio fue menor a diferencia del *zinc* (Zn), el *boro* (B) y el *potasio* (K) donde fue mayor, a lo que se puede asumir que la abundancia o no de dichas especies estuvieron influenciadas por el tipo de sustancia que más existió en cada sitio. De igual manera, su organización espacial se vió intervenida por la forma del relieve en algunas zonas, siendo la Vaguada, el espolón y la vertiente los puntos que obtuvieron la mayor riqueza en comparación con el piedemonte, el valle y la sima con menor, posiblemente esto se deba al tipo de material presente en el terreno, ya que, según [@flores2015distribucion] los suelos formados de diferente roca madre o regolita, tienden a tener diferentes propiedades tanto físicas como químicas, las cuales pueden ser beneficiosas para el tipo de colocación actual. En cambio, la ausencia o baja proporción en la que aparecen estas plantas en otras partes, sea por causa de su formación, por ejemplo los espacios antes mencionados de menor concentración por lo general son de origen detrítico-sedimentario, transportados por corrientes fluviales efímeras con alta carga sedimentaria y algunos aportes de arena eólica, [@flores2015distribucion], lo que dificultaría la propagación de estas con el patrón observado.
+
 
 # Agradecimientos
 

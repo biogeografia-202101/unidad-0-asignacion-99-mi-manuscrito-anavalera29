@@ -23,7 +23,7 @@ source('biodata/funciones.R')
 #' 
 #' ### Cargar datos
 #' 
-load("~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Meliaceae.Rdata")
+load("~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata")
 load('biodata/matriz_ambiental.Rdata')
 mi_fam <- mc_malvc
 bci_env_grid %>% tibble
