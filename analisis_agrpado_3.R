@@ -115,8 +115,8 @@ mapa_zn %>% mapshot(
 #' 
 #' Objeto común:
 #' 
-(m_amb_ward_k3 <- bci_env_grid %>%
+(m_amb_ward_k2 <- bci_env_grid %>%
     select_if(is.numeric) %>% select(-id) %>% 
-    mutate(grupos_ward_k3) %>%
+    mutate(grupos_ward_k2) %>%
     st_drop_geometry() %>% 
-    pivot_longer(-grupos_ward_k3, names_to = "variable", values_to = "valor"))
+    pivot_longer(-grupos_ward_k2 names_to = "variable", values_to = "valor"))
