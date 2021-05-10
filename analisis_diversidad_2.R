@@ -61,6 +61,18 @@ mapa_cuadros <- mapView(
     lng = -79.85136,
     lat = 9.15097,
     zoom = 15)
+
+contrib_local_especie_guardado <- determinar_contrib_local_y_especie(
+  mc = mi_fam,
+  alpha = 0.05,
+  nperm = 9999,
+  metodo = 'hellinger')
+contrib_local_especie_guardado$especies_contribuyen_betadiv %>% 
+  bind_rows %>% gather(especie, valor) %>% 
+  mutate(valor = round(valor, 2)) %>% 
+  knitr::kable()
+
+
 #' 
 #' Utilizar el mapa de cuadros para identificar aquellos que contribuyen más a la diversidad beta. Explorar mapas de variables ambientales (aec_6).
 #' 

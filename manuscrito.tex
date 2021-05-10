@@ -38,6 +38,47 @@
 
 \setcounter{secnumdepth}{3}
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{longtable,booktabs}
 
 \usepackage{graphicx,grffile}
 \makeatletter
@@ -163,28 +204,27 @@ Panamá.},
 
 \noindent Este estudio fue realizado en una parcela de 50 hectárea dentro de la
 isla de Barro Colorado perteneciente al país de Pánama en Centroamérica
-y tenía como finalidad conocer como estan asociadas, agrupadas y
+y tenía como finalidad conocer cómo estan asociadas, agrupadas y
 distribuidas las especies de la familia \emph{Malvaceae}, asimismo, la
 identificación de patrones, especies alpha y beta, además, de las
 riquezas y abundancias de cada una de ellas. Los datos fueron obtenidos
 a través de censos realizados en varios años y sometidos a diversos
 software de información para el análisis, por medio de los cuáles se
-determinó que en dicha familia existen especies que estan asociadas
-dentro de ellas y en el espacio por variables ambientales y elementos
-químicos. Siendo las zonas inclinadas, con acceso rápido al agua y
-disponibilidad elevada de materia orgánica las más favorecidas. Formando
-un patrón discontinuo en la agrupación de sus grupos, teniendo gran
-concentración en sitios húmedos con presencia del \emph{zinc} (zn), el
-\emph{Boro} (B) y pH, existiendo especies indicadoras como
-\emph{Quararibea asterolepis} con índice de 0.978 \emph{Sterculia
-apetala} con 0.914. Por otro lado, se estima una representación
-significativa por cada área establecida de acuerdo al coeficiente de
-correlación de Pearson con un índice de 0.6807189, en la cual por medio
-del idicador de \emph{Hill} se encontró una distribución equitativa
-entre las especies con un rango de riqueza de 5 a 13 y de abundancia de
-31 a 127 por sitios, fungiendo la \emph{Quararibea asterolepis} como
-principal contribuidora a la diversidad beta según el orden de
-\emph{Hellinger} con 0.18005449.
+determinó que en dicha familia existen especies asociadas dentro de
+ellas y en el espacio por variables ambientales y elementos químicos.
+Siendo las zonas inclinadas, con acceso rápido al agua y disponibilidad
+elevada de materia orgánica las más favorecidas. Formando un patrón
+discontinuo en la agrupación de sus grupos, teniendo gran concentración
+en sitios húmedos en presencia del \emph{zinc} (zn), el \emph{Boro} (B)
+y pH, la especie indicadora fue la \emph{Quararibea asterolepis} con
+índice de 0.978 y la \emph{Sterculia apetala} con 0.914. Por otro lado,
+se estimó una representación significativa por cada área establecida de
+acuerdo al coeficiente de correlación de Pearson con un índice de
+0.6807189, en la cual por medio del idicador de \emph{Hill} se encontró
+una distribución equitativa entre las especies con un rango de riqueza
+de 5 a 13 y de abundancia de 31 a 127 especie por sitios, fungiendo la
+\emph{Quararibea asterolepis} como principal contribuidora a la
+diversidad beta según el orden de \emph{Hellinger} con 0.18005449.
 
 
 \vskip 8.5pt \noindent \emph{Keywords}: Género, Planta \par
@@ -204,8 +244,8 @@ principal contribuidora a la diversidad beta según el orden de
 La vegetación terrestre está constituida por un conjunto de plantas
 pertenecientes a una familia en específico y esta a su vez se subdividen
 en géneros y especies para identificarse dentro de su clase. Por
-consiguiente no sería la excepción de la \emph{Malvaceae}, poseen 243
-genéros y más de 4,300 especies, sus flores son hermafroditas, pocas
+consiguiente, no sería la excepción de la \emph{Malvaceae} la cual posee
+243 genéros y más de 4,300 especies, sus flores son hermafroditas, pocas
 veces unisexuales, solitarias o fasciculadas en las axilas de las hojas
 o agrupadas en inflorescencia tal como la describen los siguientes
 autores (Marín, Hilario, \& Andino, n.d.) y (Bayer, 2003).
@@ -221,10 +261,10 @@ segmentos del epicáliz estan libres o unidos en la base, con estigmas
 alargados, semillas reniformes y numerosas, (ORTIZ, 2010). Del mismo
 modo, se encuentra la \emph{Althaea}, \emph{Lavatera} y la \emph{Malva}
 cada una contienen sus respectivas especies las cuales pueden
-encontrarse en mayor o menor proporción en un espacio determinado la
+encontrarse en mayor o menor proporción en un espacio determinado el
 cual dependerá de factores abioticos incidentes entre ellos, lo que
 implicaría la necesidad de utilizar tecnicas y análisis numerológicos
-para conocer su asocianción y distribción.
+para conocer su asocianción y distribución.
 
 La implementación de análisis numéricos en las investigaciones
 ecológicas permiten dar a conocer en terminos cuantificables la forma en
@@ -232,24 +272,21 @@ que se encuentran asociadas y el tipo de patrón que presenta algunas
 especies, es por ello la importancia de la estratificación y
 zonificación del objeto de estudio en cuestión. De acuerdo con
 (González, 2006) esto permite conjugar en un mismo grupo información de
-aquellos organismos que pueden ser cuantificable junto con otros que son
+aquellos organismos que pueden ser cálculable junto con otros que son
 reproductivos y de manera general con toda la vegetación.
 
 En tal sentido, este estudio por medio de la ecología numérica busca
 conocer cómo estan asociados los diferentes géneros y especies de la
 familia \emph{Malvaceae} y si las variables ambientales existente en la
 zona influyen en dicha asociación. También, analizar como estan
-organizados los grupos y qué patrón presenta en su distribución
-espacial, asimismo, establecer los indicadores ambientales que
-interfieren. De igual manera, examinar en qué volumen se encuentran
-representadas cada una y distiguir los sitios con especies alpha y beta.
-Por consiguiente, este estudio contribuirá al conocimiento de la
-dinámica ecológica espacial que envuelven las plantas pertenecientes a
-esta familia en la isla de Barro Colorado que en lo adelante será
-llamado BCI y con la misma gestionar estrategias para el cuidado y
-conservación de ésta.
-
-\ldots
+organizados los grupos y qué patrón presenta en su distribución,
+asimismo, establecer los indicadores ambientales que interfieren. De
+igual manera, examinar en qué volumen se encuentran representadas cada
+una y distiguir los sitios con especies alpha y beta. Por consiguiente,
+este estudio contribuirá al conocimiento de la dinámica ecológica
+espacial que envuelven las plantas pertenecientes a esta familia en la
+isla de Barro Colorado que en lo adelante será llamado BCI y con la
+misma gestionar estrategias para el cuidado y conservación de ésta.
 
 \section{Metodología}\label{metodologuxeda}
 
@@ -262,11 +299,11 @@ localiza entre las coordenadas geográficas (latitud 9\(^\circ\)~9'N,
 longitud 79\(^\circ\)~ 50') y cubre una extensión de tierra de 1,500
 hectáreas (ver figura \ref{mapa}). El clima se caracteriza por ser de
 bosque tropical, la temperatura promedio es de 27 grados centígrados,
-con temporadas lluviosas durante los meses mayo-diciembre y secas desde
-mediados de diciembre hasta abril, las tormentas convectivas son
+con temporadas lluviosas durante los meses mayo a diciembre y secas
+desde mediados de diciembre hasta abril, las tormentas convectivas son
 prevenidas por los vientos alisios dictando así las estaciones del año,
 (Sugasti, Eng, \& Pinzón, 2018). Esta isla por sus caracteristicas
-fisicas sirve de hábitat para muchos animales e insectos y por
+físicas sirve de hábitat para muchos animales e insectos y por
 consiguiente para una variedad de especie vegetal, convirtiendola en un
 espacio de investigación de mucha importancia. Es por ello, la
 escogencia como lugar de estudio la parcela permanente de 50 hectárea de
@@ -278,7 +315,7 @@ independientes de al menos 10 mm de diámetro de altura.
 
 \begin{figure}
 \centering
-\includegraphics{mapa_barro_colorado.jpeg}
+\includegraphics[width=0.80000\textwidth]{mapa_barro_colorado.jpeg}
 \caption{Ubicación de la isla Barro Colorado\label{mapa}}
 \end{figure}
 
@@ -296,13 +333,11 @@ manera, el \emph{Vegan} para caracterizar y analizar el orden y
 disimilaridades entre cada especie y \emph{ez} para examinar las
 unidades o variables repetitivas. Asimismo, el \emph{graphics},
 \emph{psych} y \emph{mapvie} para la representación gráfica de cada
-datos y (Kindt \& Coe, 2005) para señalar las especies alpha y beta,
-cada \emph{script} utilizados fueron suministrado a partir del
+datos y (Kindt \& Coe, 2005) para señalar las especies alpha y beta. Por
+último, cada \emph{script} utilizados fueron suministrado a partir del
 repositorio de (Batlle, 2020) como fuente y el programa de información
 geográfica Qgis (QGIS Development Team, 2009) para actualizar el mapa de
 localización de la BCI.
-
-\ldots
 
 \section{Resultados}\label{resultados}
 
@@ -313,25 +348,25 @@ distancia muy corta dentro de la parcela de 50,ha. Siendo la
 \emph{Quararibea asterolepis} la que más se asocia en el primero con
 2,171 y la \emph{Sterculia apetala} en el segundo con 53 para un índice
 de 0.978 y 0.914 respectivamente. En cuanto, al nivel de representación
-y composición por cada 1,ha con la aplicación del método
-\emph{Hellinger} los cuadros 33 hasta el 49 la dispariedad fue corta y
-la similaridad numerosa, en tanto que, en el 8, 23, 30 y 35 fueron poco
-similares y con intervalo largo. De igual manera, en la correlación de
-diversidad, las riquezas y abundancia de especie fueron alto existiendo
-una equidad en su distribución, como el del índice de \emph{Hill} aunque
-las riquezas aumentan o disminuyen la ratio no son afectadas. También,
-al aplicarse la prueba \emph{Moran's} se encontró que en la zona del
-espolon,vaguada y vertiente la adecuación es de forma positiva,
-asimismo, en los componentes químicos del \emph{calsio} (Ca),
-\emph{cobre} (Cu), \emph{hierro} (Fe) y \emph{zinc} (Zn) y en el
-piedemonte, el valle y la sima, al igual que en el \emph{manganeso} (Mn)
-y \emph{aluminio} (Al) fue negativa. Por otro lado, el espacio 30 obtuvo
-mayor riqueza en especie alpha con 13 y el más pobre el 45 con 5 con una
-abundancia de 110 y 123 cosecutivamente, los que más varían el 13 y 46,
-estando las especies \emph{Apeiba membranacea}, \emph{Apeiba tibourbou},
-\emph{Hampea appendiculata}, \emph{Herrania purpurea} entre otras como
-beta con un valor de 0.07936325, 0.06962371, 0.13708297, 0.10517566
-sucesivamente (ver figura \ref{diversidad} \& \ref{ambiente}).
+y composición por cada 1,ha con el método \emph{Hellinger} se formaron
+cluster donde la similaridad fue numerosa y la dispariedad corta entre
+la cantidad de individuo desde los cuadros 33 hasta el 49, en tanto que,
+en el 8, 23, 30 y 35 fueron poco similares y con intervalo largo. De
+igual manera, en la correlación de la diversidad de especie existió una
+equidad en su distribución, al aplicar el índice de \emph{Hill} la ratio
+no fueron afectadas a pesar de aumentar o disminuir las riquezas, (ver
+figura \ref{ambiente} \& \ref{riquezas}). También, se encontró una
+adecuación positiva en la zona del espolon,vaguada y vertiente, al
+igual, que entre los componentes químicos del \emph{calsio} (Ca),
+\emph{cobre} (Cu), \emph{hierro} (Fe) y \emph{zinc} (Zn), asimismo, una
+negativa en el piedemonte, el valle y la sima y en los elementos de
+\emph{manganeso} (Mn) y \emph{aluminio} (Al), esto al emplear la prueba
+\emph{Moran's}, ver figura \ref{diversidad}. Por otro lado, la mayor
+riqueza en especie alpha fue el espacio 30 con 13 y el de menor el 45
+con 5 y abundancia de 110 y 123 cosecutivamente, los que más varían el
+13 y 46. Por último, las especies que más contribuyen a la pluralidad
+beta son \emph{Quararibea asterolepis} y la \emph{Hampea appendiculata}
+con valor de 0.18 y 0.14 sucesivamente, (ver tabla \ref{tabla}).
 
 \begin{figure}
 \centering
@@ -342,7 +377,7 @@ sucesivamente (ver figura \ref{diversidad} \& \ref{ambiente}).
 \begin{figure}
 \centering
 \includegraphics[width=1.10000\textwidth]{matriz_correlacion_suelo_abun_riq_spearman.png}
-\caption{Correlación de las diferentes especies\label{ambiente}}
+\caption{Distribución de especies por ambiente\label{ambiente}}
 \end{figure}
 
 \begin{figure}
@@ -351,7 +386,21 @@ sucesivamente (ver figura \ref{diversidad} \& \ref{ambiente}).
 \caption{Número de individuo por especie\label{riquezas}}
 \end{figure}
 
-\ldots
+Especie contribuidora a la diversidad beta\label{tabla}
+
+\begin{longtable}[]{@{}lr@{}}
+\toprule
+Especie & Valor\tabularnewline
+\midrule
+\endhead
+Apeiba membranacea & 0.08\tabularnewline
+Apeiba tibourbou & 0.07\tabularnewline
+Hampea appendiculata & 0.14\tabularnewline
+Herrania purpurea & 0.11\tabularnewline
+Luehea seemannii & 0.09\tabularnewline
+Quararibea asterolepis & 0.18\tabularnewline
+\bottomrule
+\end{longtable}
 
 \section{Discusión}\label{discusiuxf3n}
 
@@ -369,7 +418,7 @@ factores ayudaron a formar patrones de agromeración en la zona media de
 la isla, especialmente en la Vaguada, el espolón y la vertiente donde
 los elementos como el \emph{zinc} (Zn), el \emph{boro} (B) y el
 \emph{potasio} (K) fueron determinante, a diferencia de los espacios del
-piedemonte, el valle, la sima y el conjunto de compuesto como el
+piedemonte, el valle, la sima y el conjunto de compuesto químici como el
 \emph{manganeso} (Mn), \emph{cobre} (Cu) y el \emph{aluminio} (Al) donde
 la correlación fue menor. De igual modo, se identificó las plantas
 \emph{Quararibea asterolepis} y \emph{Sterculia apetala} como las que
@@ -378,22 +427,1766 @@ desigual en el espacio, esto posiblemente se deba a que fungen como
 alimento o refugio para otros grupos (Alvarado-Hernández, 2011) las
 cuales se encuentran dispersas por todo el terreno. Esta familia tiene
 alto nivel de representación por cada 1,h, específicamente en los
-bordes, entendiendo que sea el resultado por las condisiones climáticas
-y a la disponibilidad del agua (Stevenson \& Rodríguez, 2008) existente
-en esa área. Al mismo tiempo, de tener aportaciones de otras clases como
-la \emph{Apeiba membranacea}, \emph{Hampea appendiculata} entre otras,
-que contribuyen a la diversidad beta.
+bordes, como resultado de las condisiones climáticas y a la
+disponibilidad del agua (Stevenson \& Rodríguez, 2008) existente en esa
+área. Al mismo tiempo, por tener aportaciones de otras clases como la
+\emph{Apeiba membranacea}, \emph{Hampea appendiculata} entre otras, que
+contribuyen a la variación espacial de la diversidad entre sitios.
 
 \section{Agradecimientos}\label{agradecimientos}
 
+Este estudio fue realizado gracias al Dr.~José Ramón Martínez Batlle
+maestro de la asignatura de Biogeografía en la Universidad Autónoma de
+Santo Domingo (UASD) quién por medio de la escuela de geografía
+incentiva al conocimiento a través de la investigación de caracter
+científico. También, al Instituto Smithsonian de Instigaciones
+Tropicales por suministrar los datos, reslutado de años de observaciones
+y puesto a la disposición mediante censos.
+
 \section{Información de soporte}\label{informaciuxf3n-de-soporte}
 
-\ldots
+\begin{figure}
+\centering
+\includegraphics[width=1.10000\textwidth]{mapa_zinc.png}
+\caption{Mapa de asociación de especie con el elemento Zinc}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.10000\textwidth]{mapas_variables_ambientales_numericas.png}
+\caption{Variables ambientales numéricas}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.10000\textwidth]{mapas_variables_ambientales_nominales_tmap.png}
+\caption{Variables ambientales nominales}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1.10000\textwidth]{Plot_abnd_riqz.png}
+\caption{Diagrama de caja de abundancia y riqueza de especie}
+\end{figure}
 
 \section{\texorpdfstring{\emph{Script}
 reproducible}{Script reproducible}}\label{script-reproducible}
 
-\ldots
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(gclus)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+
+\NormalTok{mi_fam_t <-}\StringTok{ }\NormalTok{mc_malvc }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{' '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{t}\NormalTok{()}
+\NormalTok{mi_fam_t }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+ 
+\NormalTok{mi_fam_t_chi <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam_t, }\StringTok{"chi.square"}\NormalTok{)}
+\NormalTok{mi_fam_t_chi }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+ 
+\NormalTok{mi_fam_t_chi_d <-}\StringTok{ }\KeywordTok{dist}\NormalTok{(mi_fam_t_chi)}
+\NormalTok{mi_fam_t_chi_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+ 
+\KeywordTok{coldiss}\NormalTok{(mi_fam_t_chi_d, }\DataTypeTok{diag =} \OtherTok{TRUE}\NormalTok{)}
+
+\NormalTok{mi_fam_t_jac <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mi_fam_t, }\StringTok{"jaccard"}\NormalTok{, }\DataTypeTok{binary =} \OtherTok{TRUE}\NormalTok{)}
+\NormalTok{mi_fam_t_jac }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\KeywordTok{coldiss}\NormalTok{(mi_fam_t_jac, }\DataTypeTok{diag =} \OtherTok{TRUE}\NormalTok{)}
+
+\NormalTok{env_num <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id, }\OperatorTok{-}\KeywordTok{matches}\NormalTok{(}\StringTok{'^U.*'}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{riqueza_mifam =} \KeywordTok{specnumber}\NormalTok{(mc_malvc),}
+    \DataTypeTok{abundancia_mifam =} \KeywordTok{rowSums}\NormalTok{(mc_malvc)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_pct$'}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{''}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_| '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{)}
+\NormalTok{env_num }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Medición de asociación con el modo Q: matriz de disimilaridad. }
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(cluster)}
+\KeywordTok{library}\NormalTok{(gclus)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+
+\CommentTok{#' matriz de distancia euclídea, utilizando la transformación *Hellinger*:}
+\CommentTok{#' }
+\NormalTok{mi_fam_d_hel <-}\StringTok{ }\KeywordTok{dist.ldc}\NormalTok{(mc_malvc, }\StringTok{"hellinger"}\NormalTok{, }\DataTypeTok{silent =}\NormalTok{ T)}
+\NormalTok{mi_fam_d_hel }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy }\CommentTok{# Para evitar desbordar la consola}
+ 
+\KeywordTok{coldiss}\NormalTok{(mi_fam_d_hel, }\DataTypeTok{diag =}\NormalTok{ T)}
+
+\KeywordTok{coldissgg}\NormalTok{(mi_fam_d_hel, }\DataTypeTok{ordered =}\NormalTok{ T, }\DataTypeTok{nc =} \DecValTok{4}\NormalTok{, }\DataTypeTok{fsz =} \DecValTok{0}\NormalTok{)}
+
+\KeywordTok{coldissgg}\NormalTok{(mi_fam_d_hel, }\DataTypeTok{ordered =}\NormalTok{ T, }\DataTypeTok{nc =} \DecValTok{4}\NormalTok{, }\DataTypeTok{fsz =} \FloatTok{1.5}\NormalTok{)}
+ 
+\KeywordTok{png}\NormalTok{(}
+  \DataTypeTok{filename =} \StringTok{'matriz_disimilaridad_hellinger.png'}\NormalTok{,}
+  \DataTypeTok{width =} \DecValTok{2400}\NormalTok{, }\DataTypeTok{height =} \DecValTok{1200}\NormalTok{, }\DataTypeTok{pointsize =} \DecValTok{32}
+\NormalTok{)}
+\KeywordTok{coldiss}\NormalTok{(mi_fam_d_hel, }\DataTypeTok{diag =}\NormalTok{ T)}
+\KeywordTok{dev.off}\NormalTok{()}
+
+\OperatorTok{**}\NormalTok{distancia de Jaccard}\OperatorTok{**}\StringTok{ }\NormalTok{(}\OperatorTok{**}\NormalTok{D}\OperatorTok{<}\NormalTok{sub}\OperatorTok{>}\NormalTok{J}\OperatorTok{<}\ErrorTok{/}\NormalTok{sub}\OperatorTok{>}\ErrorTok{**}\NormalTok{) en un único paso usando la función }\StringTok{`}\DataTypeTok{vegdist}\StringTok{`}\NormalTok{.}
+\CommentTok{#' }
+\NormalTok{mi_fam_jac <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mc_malvc, }\DataTypeTok{method =} \StringTok{'jac'}\NormalTok{, }\DataTypeTok{binary =}\NormalTok{ T)}
+\NormalTok{mi_fam_jac }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy }\CommentTok{# Mostrando sólo las primeras 10 combinaciones en modo data.frame}
+
+\KeywordTok{coldiss}\NormalTok{(mi_fam_jac, }\DataTypeTok{diag =}\NormalTok{ T)}
+
+\CommentTok{#' }
+\NormalTok{(}\DecValTok{1} \OperatorTok{-}\StringTok{ }\NormalTok{mi_fam_jac) }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy }\OperatorTok{%>%}\StringTok{ }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{similaridad=}\NormalTok{distance) }\CommentTok{#Similaridad}
+
+\CommentTok{#' La fórmula de la similaridad de Jaccard es **S<sub>J</sub>=a/(a+b+c)**, donde **a** es el número de especies compartidas (presentes en ambos sitios comparados), **b** el número de especies exclusivas del sitio 2, y **c** el número de especies exclusivas del sitio 1.}
+\CommentTok{#' }
+\NormalTok{mi_fam_abc <-}\StringTok{ }\KeywordTok{betadiver}\NormalTok{(mc_malvc) }
+\NormalTok{mi_fam_abc }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{map}\NormalTok{(tidy) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{map}\NormalTok{(slice, }\DecValTok{1}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{map_df}\NormalTok{(I, }\DataTypeTok{.id =} \StringTok{'tipo'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(tipo, }\DataTypeTok{n_especies=}\NormalTok{distance)}
+
+\KeywordTok{round}\NormalTok{(}\DecValTok{11}\OperatorTok{/}\DecValTok{12}\OperatorTok{*}\DecValTok{100}\NormalTok{,}\DecValTok{2}\NormalTok{) }\CommentTok{#Porcentaje de especies compartidas = similaridad}
+
+\CommentTok{#' índices de similaridad. Por ejemplo, el Jaccard se calcula así:}
+\CommentTok{#' }
+\KeywordTok{betadiver}\NormalTok{(mc_malvc, }\DataTypeTok{method =} \StringTok{'j'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+
+\CommentTok{#' Además de la distancia de Jaccard, otra distancia muy utilizada es la de Sorensen o Bray-Curtis. Se calcula fácilmente con la función `vegdist`:}
+\CommentTok{#' }
+\NormalTok{mi_fam_sor <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mc_malvc, }\DataTypeTok{method =} \StringTok{'bray'}\NormalTok{, }\DataTypeTok{binary =}\NormalTok{ T)}
+\NormalTok{mi_fam_sor }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\KeywordTok{coldiss}\NormalTok{(mi_fam_sor, }\DataTypeTok{diag =}\NormalTok{ T)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Modo Q para datos cuantitativos, NO de abundancia de especies (variables ambientales)}
+ 
+\NormalTok{env_suelo_punt_z <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{st_drop_geometry}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\KeywordTok{matches}\NormalTok{(}\StringTok{'^[A-T,Z]|^pH$'}\NormalTok{, }\DataTypeTok{ignore.case =}\NormalTok{ F)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{scale}\NormalTok{()}
+\NormalTok{env_suelo_punt_z_d <-}\StringTok{ }\KeywordTok{dist}\NormalTok{(env_suelo_punt_z)}
+\NormalTok{env_suelo_punt_z_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\KeywordTok{coldiss}\NormalTok{(env_suelo_punt_z_d, }\DataTypeTok{diag =}\NormalTok{ T)}
+\CommentTok{#'}
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Modo Q para datos cualitativos y cuantitativos (mixtos), NO de abundancia de especies (variables ambientales)}
+\CommentTok{#' }
+
+\NormalTok{env_mix <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{st_drop_geometry}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(heterogeneidad_ambiental, habitat, quebrada)}
+\NormalTok{env_mix_d <-}\StringTok{ }\KeywordTok{daisy}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ env_mix, }\DataTypeTok{metric =} \StringTok{'gower'}\NormalTok{)}
+\NormalTok{env_mix_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{as.dist }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\NormalTok{env_mix_d }\OperatorTok{%>%}\StringTok{ }\KeywordTok{coldiss}\NormalTok{(}\DataTypeTok{diag =}\NormalTok{ T)}
+\CommentTok{#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Medición de asociación de especie modo R}
+
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(gclus)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\CommentTok{#'}
+\CommentTok{#' ## Modo R: matrices de dependencia entre variables (índice de correlación)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Modo R para datos cuantitativos de especies (abundancia)}
+
+\NormalTok{mi_fam_t <-}\StringTok{ }\NormalTok{mc_malvc }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{' '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{t}\NormalTok{()}
+\NormalTok{mi_fam_t }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\CommentTok{#' }
+\CommentTok{#' Segundo, transformo la matriz transpuesta usando estandarización *Chi*.}
+\CommentTok{#' }
+\NormalTok{mi_fam_t_chi <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam_t, }\StringTok{"chi.square"}\NormalTok{)}
+\NormalTok{mi_fam_t_chi }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\CommentTok{#' }
+\CommentTok{#' Tercero,  calculo la distancia euclídea.}
+\CommentTok{#' }
+\NormalTok{mi_fam_t_chi_d <-}\StringTok{ }\KeywordTok{dist}\NormalTok{(mi_fam_t_chi)}
+\NormalTok{mi_fam_t_chi_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\CommentTok{#' }
+\CommentTok{#' Finalmente, creo el "mapa de calor".}
+\CommentTok{#' }
+\KeywordTok{coldiss}\NormalTok{(mi_fam_t_chi_d, }\DataTypeTok{diag =} \OtherTok{TRUE}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Modo R para datos binarios (presencia/ausencia)}
+ 
+\NormalTok{mi_fam_t_jac <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mi_fam_t, }\StringTok{"jaccard"}\NormalTok{, }\DataTypeTok{binary =} \OtherTok{TRUE}\NormalTok{)}
+\NormalTok{mi_fam_t_jac }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\KeywordTok{coldiss}\NormalTok{(mi_fam_t_jac, }\DataTypeTok{diag =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{#'}
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Modo R para datos cuantitativos, NO de abundancia de especies (variables ambientales)}
+
+\NormalTok{env_num <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id, }\OperatorTok{-}\KeywordTok{matches}\NormalTok{(}\StringTok{'^U.*'}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{riqueza_mifam =} \KeywordTok{specnumber}\NormalTok{(mc_malvc),}
+    \DataTypeTok{abundancia_mifam =} \KeywordTok{rowSums}\NormalTok{(mc_malvc)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_pct$'}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{''}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_| '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{)}
+\NormalTok{env_num }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Técnica de ordenación}
+
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(mapview)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam) <-}\StringTok{ }\KeywordTok{make.cepnames}\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam)))}
+\NormalTok{(df_equivalencias <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}
+  \DataTypeTok{nombre_original =} \KeywordTok{colnames}\NormalTok{(mc_malvc),}
+  \KeywordTok{colnames}\NormalTok{(mi_fam)))}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{grupos_upgma_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_upgma_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_upgma_k2)}
+\NormalTok{grupos_ward_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_ward_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_ward_k2)}
+\CommentTok{#'Matriz de correlaciones y obtener vectores propios para el PCA.}
+\CommentTok{#' }
+\NormalTok{env_suelo <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\KeywordTok{matches}\NormalTok{(}\StringTok{'^[A-T,Z]|^pH$'}\NormalTok{, }\DataTypeTok{ignore.case =}\NormalTok{ F))}
+\NormalTok{env_suelo }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{env_suelo_pca <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(env_suelo, }\DataTypeTok{scale =} \OtherTok{TRUE}\NormalTok{)}
+\NormalTok{env_suelo_pca}
+\KeywordTok{summary}\NormalTok{(env_suelo_pca)}
+
+\CommentTok{#' }
+\KeywordTok{screeplot}\NormalTok{(env_suelo_pca, }\DataTypeTok{bstick =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Usando función `cleanplot.pca`}
+\CommentTok{#' }
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\KeywordTok{cleanplot.pca}\NormalTok{(env_suelo_pca, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{, }\DataTypeTok{mar.percent =} \FloatTok{0.08}\NormalTok{, }\DataTypeTok{cex.char1 =} \FloatTok{1.5}\NormalTok{)}
+\KeywordTok{cleanplot.pca}\NormalTok{(env_suelo_pca, }\DataTypeTok{scaling =} \DecValTok{2}\NormalTok{, }\DataTypeTok{mar.percent =} \FloatTok{0.04}\NormalTok{, }\DataTypeTok{cex.char1 =} \FloatTok{1.5}\NormalTok{)}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' Comparar distribución de los sitios en biplots con distribución real en el mapa:}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Generar mapa de cuadros sin simbología}
+\CommentTok{#' }
+\NormalTok{mapa_cuadros <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{col.regions =} \StringTok{'grey80'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.3}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ F, }\DataTypeTok{zoom =} \DecValTok{14}\NormalTok{,}
+  \DataTypeTok{zcol =} \StringTok{'id'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{addStaticLabels}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_cuadros}
+\CommentTok{#' }
+\CommentTok{#' Comparar con resultados de un análisis de agrupamiento del mismo conjunto de datos. Primero agrupo mis sitios basado en la misma matriz ambiental fuente del PCA (`env_suelo`), escalándola.}
+\CommentTok{#' }
+\NormalTok{(env_agrupamiento <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(}\KeywordTok{dist}\NormalTok{(}\KeywordTok{scale}\NormalTok{(env_suelo)), }\StringTok{'ward.D'}\NormalTok{))}
+\NormalTok{(env_grupos <-}\StringTok{ }\KeywordTok{cutree}\NormalTok{(env_agrupamiento, }\DataTypeTok{k =} \DecValTok{3}\NormalTok{))}
+\NormalTok{(mi_cluster <-}\StringTok{ }\KeywordTok{factor}\NormalTok{(env_grupos))}
+\NormalTok{(mi_cluster_l <-}\StringTok{ }\KeywordTok{levels}\NormalTok{(mi_cluster))}
+\NormalTok{(mi_cluster_l_seq <-}\StringTok{ }\DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(mi_cluster_l))}
+
+\CommentTok{#' }
+\NormalTok{(puntuaciones <-}\StringTok{ }\KeywordTok{scores}\NormalTok{(env_suelo_pca, }\DataTypeTok{display =} \StringTok{'wa'}\NormalTok{, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{))}
+\CommentTok{#'}
+\CommentTok{#' Luego creo el gráfico base, coloco los puntos sobre el gráfico usando las puntuaciones, les coloco rótulos y, finalmente, coloco leyenda:}
+\CommentTok{#'}
+\NormalTok{grafico_base <-}\StringTok{ }\KeywordTok{plot}\NormalTok{(}
+\NormalTok{  env_suelo_pca,}
+  \DataTypeTok{display =} \StringTok{"wa"}\NormalTok{,}
+  \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+  \DataTypeTok{type =} \StringTok{"n"}\NormalTok{,}
+  \DataTypeTok{main =} \StringTok{"PCA y grupos"}
+\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \StringTok{"dotted"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \StringTok{"dotted"}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ mi_cluster_l_seq) \{}
+  \KeywordTok{points}\NormalTok{(puntuaciones[mi_cluster }\OperatorTok{==}\StringTok{ }\NormalTok{i, ],}
+         \DataTypeTok{pch =}\NormalTok{ (}\DecValTok{14} \OperatorTok{+}\StringTok{ }\NormalTok{i),}
+         \DataTypeTok{cex =} \DecValTok{2}\NormalTok{,}
+         \DataTypeTok{col =}\NormalTok{ i }\OperatorTok{+}\StringTok{ }\DecValTok{1}\NormalTok{)}
+\NormalTok{\}}
+\KeywordTok{text}\NormalTok{(puntuaciones, }\KeywordTok{row.names}\NormalTok{(env_suelo), }\DataTypeTok{cex =} \DecValTok{1}\NormalTok{, }\DataTypeTok{pos =} \DecValTok{3}\NormalTok{)}
+\KeywordTok{legend}\NormalTok{(}
+  \StringTok{"topright"}\NormalTok{, }\CommentTok{# Otras alternativas: "bottomleft", "bottomright" y "topleft"}
+  \KeywordTok{paste}\NormalTok{(}\StringTok{"Grupo"}\NormalTok{, }\KeywordTok{c}\NormalTok{(mi_cluster_l_seq)),}
+  \DataTypeTok{pch =} \DecValTok{14} \OperatorTok{+}\StringTok{ }\KeywordTok{c}\NormalTok{(mi_cluster_l_seq),}
+  \DataTypeTok{col =} \DecValTok{1} \OperatorTok{+}\StringTok{ }\KeywordTok{c}\NormalTok{(mi_cluster_l_seq),}
+  \DataTypeTok{pt.cex =} \DecValTok{2}
+\NormalTok{)}
+
+\CommentTok{# (mi_cluster_anterior <- grupos_upgma_k2)}
+\NormalTok{(mi_cluster_anterior <-}\StringTok{ }\NormalTok{grupos_ward_k2)}
+\NormalTok{(mi_cluster_anterior_l <-}\StringTok{ }\KeywordTok{levels}\NormalTok{(mi_cluster_anterior))}
+\NormalTok{(mi_cluster_anterior_l_seq <-}\StringTok{ }\DecValTok{1}\OperatorTok{:}\KeywordTok{length}\NormalTok{(mi_cluster_anterior_l))}
+\NormalTok{grafico_base <-}\StringTok{ }\KeywordTok{plot}\NormalTok{(}
+\NormalTok{  env_suelo_pca,}
+  \DataTypeTok{display =} \StringTok{"wa"}\NormalTok{,}
+  \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+  \DataTypeTok{type =} \StringTok{"n"}\NormalTok{,}
+  \DataTypeTok{main =} \StringTok{"PCA y grupos"}
+\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \StringTok{"dotted"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \StringTok{"dotted"}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in}\NormalTok{ mi_cluster_anterior_l_seq) \{}
+  \KeywordTok{points}\NormalTok{(puntuaciones[mi_cluster_anterior }\OperatorTok{==}\StringTok{ }\NormalTok{i, ],}
+         \DataTypeTok{pch =}\NormalTok{ (}\DecValTok{14} \OperatorTok{+}\StringTok{ }\NormalTok{i),}
+         \DataTypeTok{cex =} \DecValTok{2}\NormalTok{,}
+         \DataTypeTok{col =}\NormalTok{ i }\OperatorTok{+}\StringTok{ }\DecValTok{1}\NormalTok{)}
+\NormalTok{\}}
+\KeywordTok{text}\NormalTok{(puntuaciones, }\KeywordTok{row.names}\NormalTok{(env_suelo), }\DataTypeTok{cex =} \DecValTok{1}\NormalTok{, }\DataTypeTok{pos =} \DecValTok{3}\NormalTok{)}
+\KeywordTok{legend}\NormalTok{(}
+  \StringTok{"topright"}\NormalTok{, }\CommentTok{# Otras alternativas: "bottomleft", "bottomright" y "topleft"}
+  \KeywordTok{paste}\NormalTok{(}\StringTok{"Grupo"}\NormalTok{, }\KeywordTok{c}\NormalTok{(mi_cluster_anterior_l_seq)),}
+  \DataTypeTok{pch =} \DecValTok{14} \OperatorTok{+}\StringTok{ }\KeywordTok{c}\NormalTok{(mi_cluster_anterior_l_seq),}
+  \DataTypeTok{col =} \DecValTok{1} \OperatorTok{+}\StringTok{ }\KeywordTok{c}\NormalTok{(mi_cluster_anterior_l_seq),}
+  \DataTypeTok{pt.cex =} \DecValTok{2}
+\NormalTok{)}
+ 
+\CommentTok{#' #### PCA aplicado a datos de comunidad transformados}
+\CommentTok{#' }
+\NormalTok{mi_fam_hel <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam, }\DataTypeTok{method =} \StringTok{'hellinger'}\NormalTok{)}
+\NormalTok{mi_fam_hel }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{mi_fam_hel_pca <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel)}
+\KeywordTok{summary}\NormalTok{(mi_fam_hel_pca)}
+\KeywordTok{screeplot}\NormalTok{(}
+\NormalTok{  mi_fam_hel_pca,}
+  \DataTypeTok{bstick =} \OtherTok{TRUE}\NormalTok{,}
+  \DataTypeTok{npcs =} \KeywordTok{length}\NormalTok{(mi_fam_hel_pca}\OperatorTok{$}\NormalTok{CA}\OperatorTok{$}\NormalTok{eig)}
+\NormalTok{)}
+\NormalTok{mi_fam_hel_pca_sc1 <-}\StringTok{ }\KeywordTok{scores}\NormalTok{(mi_fam_hel_pca,}
+                             \DataTypeTok{display =} \StringTok{"species"}\NormalTok{, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{)}
+\NormalTok{mi_fam_hel_pca_sc2 <-}\StringTok{ }\KeywordTok{scores}\NormalTok{(mi_fam_hel_pca,}
+                             \DataTypeTok{display =} \StringTok{"species"}\NormalTok{, }\DataTypeTok{scaling =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\KeywordTok{cleanplot.pca}\NormalTok{(mi_fam_hel_pca, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{, }\DataTypeTok{mar.percent =} \FloatTok{0.06}\NormalTok{, }\DataTypeTok{cex.char1 =} \FloatTok{0.7}\NormalTok{)}
+\KeywordTok{cleanplot.pca}\NormalTok{(mi_fam_hel_pca, }\DataTypeTok{scaling =} \DecValTok{2}\NormalTok{, }\DataTypeTok{mar.percent =} \FloatTok{0.06}\NormalTok{, }\DataTypeTok{cex.char1 =} \FloatTok{0.7}\NormalTok{)}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+
+\KeywordTok{biplot}\NormalTok{(}
+\NormalTok{  mi_fam_hel_pca,}
+  \DataTypeTok{main =} \StringTok{"PCA, escalamiento 2, ajuste a variables ambientales"}\NormalTok{)}
+\NormalTok{(mi_fam_hel_pca_envfit <-}\StringTok{ }\KeywordTok{envfit}\NormalTok{(mi_fam_hel_pca, env_suelo, }\DataTypeTok{scaling =} \DecValTok{2}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_pca_envfit, }\DataTypeTok{p.max =} \FloatTok{0.05}\NormalTok{ , }\DataTypeTok{col =} \DecValTok{3}\NormalTok{)}
+
+\NormalTok{env_num <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{st_drop_geometry}
+\NormalTok{(mi_fam_hel_pca_envfit_num <-}\StringTok{ }\KeywordTok{envfit}\NormalTok{(mi_fam_hel_pca, env_num, }\DataTypeTok{scaling =} \DecValTok{2}\NormalTok{))}
+\KeywordTok{biplot}\NormalTok{(}
+\NormalTok{  mi_fam_hel_pca,}
+  \DataTypeTok{main =} \StringTok{"PCA, escalamiento 2, ajuste a variables ambientales"}\NormalTok{)}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_pca_envfit_num, }\DataTypeTok{p.max =} \FloatTok{0.05}\NormalTok{ , }\DataTypeTok{col =} \DecValTok{3}\NormalTok{)}
+\KeywordTok{biplot}\NormalTok{(}
+\NormalTok{  mi_fam_hel_pca,}
+  \DataTypeTok{main =} \StringTok{"PCA, escalamiento 2, ajuste a variables ambientales"}\NormalTok{)}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_pca_envfit_num, }\DataTypeTok{p.max =} \FloatTok{0.1}\NormalTok{ , }\DataTypeTok{col =} \DecValTok{3}\NormalTok{)}
+ 
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Análisis de correspondencia (CA)}
+\CommentTok{#' }
+\NormalTok{mi_fam_ca <-}\StringTok{ }\KeywordTok{cca}\NormalTok{(mi_fam)}
+\KeywordTok{summary}\NormalTok{(mi_fam_ca)}
+\KeywordTok{summary}\NormalTok{(mi_fam_ca, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{)}
+\CommentTok{#'}
+\CommentTok{#' Screeplot}
+\CommentTok{#' }
+\KeywordTok{screeplot}\NormalTok{(mi_fam_ca, }\DataTypeTok{bstick =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{npcs =} \KeywordTok{length}\NormalTok{(mi_fam_ca}\OperatorTok{$}\NormalTok{CA}\OperatorTok{$}\NormalTok{eig))}
+\CommentTok{#'}
+\CommentTok{#' Biplots}
+\CommentTok{#' }
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(mi_fam_ca,}
+     \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"Análisis de correspondencia, escalamiento 1"}
+\NormalTok{)}
+\KeywordTok{plot}\NormalTok{(mi_fam_ca,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{, }\CommentTok{# Por defecto scaling=2, lo escribo sólo para fines didáticos}
+     \DataTypeTok{main =} \StringTok{"Análisis de correspondencia, escalamiento 2"}\NormalTok{)}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' Excluyendo especie *Thevetia ahouai*, abreviada como *Thevahou*.}
+\CommentTok{#' }
+\NormalTok{mi_fam_ca <-}\StringTok{ }\KeywordTok{cca}\NormalTok{(mi_fam[, }\OperatorTok{-}\KeywordTok{grep}\NormalTok{(}\StringTok{'Thevahou'}\NormalTok{, }\KeywordTok{colnames}\NormalTok{(mi_fam))])}
+\KeywordTok{summary}\NormalTok{(mi_fam_ca)}
+\KeywordTok{summary}\NormalTok{(mi_fam_ca, }\DataTypeTok{scaling =} \DecValTok{1}\NormalTok{)}
+\KeywordTok{screeplot}\NormalTok{(mi_fam_ca, }\DataTypeTok{bstick =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{npcs =} \KeywordTok{length}\NormalTok{(mi_fam_ca}\OperatorTok{$}\NormalTok{CA}\OperatorTok{$}\NormalTok{eig))}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(mi_fam_ca,}
+     \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"CA, escalamiento 1, sin Thevetia ahouai"}
+\NormalTok{)}
+\KeywordTok{plot}\NormalTok{(mi_fam_ca,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"CA, escalamiento 2, sin Thevetia ahouai"}\NormalTok{)}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{1}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' Análisis de coordenadas principales (PCoA)}
+
+\NormalTok{mi_fam_d_bray <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mi_fam, }\DataTypeTok{method =} \StringTok{'bray'}\NormalTok{) }\CommentTok{# En realidad, 'bray' es la opción por defecto}
+\NormalTok{mi_fam_d_bray_pcoa <-}\StringTok{ }\KeywordTok{cmdscale}\NormalTok{(}
+\NormalTok{  mi_fam_d_bray,}
+  \DataTypeTok{k =}\NormalTok{ (}\KeywordTok{nrow}\NormalTok{(mi_fam) }\OperatorTok{-}\StringTok{ }\DecValTok{1}\NormalTok{),}
+  \DataTypeTok{add =}\NormalTok{ T,}
+  \DataTypeTok{eig =} \OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{round}\NormalTok{(mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{eig, }\DecValTok{2}\NormalTok{)}
+\KeywordTok{round}\NormalTok{(}\KeywordTok{sum}\NormalTok{(mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{eig[mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{eig}\OperatorTok{<}\DecValTok{0}\NormalTok{]),}\DecValTok{2}\NormalTok{)}
+\KeywordTok{round}\NormalTok{(}\KeywordTok{sum}\NormalTok{(mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{eig[mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{eig}\OperatorTok{>=}\DecValTok{0}\NormalTok{]),}\DecValTok{2}\NormalTok{)}
+\KeywordTok{ordiplot}\NormalTok{(}\KeywordTok{scores}\NormalTok{(mi_fam_d_bray_pcoa, }\DataTypeTok{choices =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{)),}
+         \DataTypeTok{type =} \StringTok{"t"}\NormalTok{,}
+         \DataTypeTok{main =} \StringTok{"PCoA con promedios ponderados de especies"}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{h =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \DecValTok{3}\NormalTok{)}
+\KeywordTok{abline}\NormalTok{(}\DataTypeTok{v =} \DecValTok{0}\NormalTok{, }\DataTypeTok{lty =} \DecValTok{3}\NormalTok{)}
+\NormalTok{mi_fam_d_bray_pcoa_wa <-}\StringTok{ }\KeywordTok{wascores}\NormalTok{(mi_fam_d_bray_pcoa}\OperatorTok{$}\NormalTok{points[, }\DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{], mi_fam)}
+\KeywordTok{text}\NormalTok{(}
+\NormalTok{  mi_fam_d_bray_pcoa_wa,}
+  \KeywordTok{rownames}\NormalTok{(mi_fam_d_bray_pcoa_wa),}
+  \DataTypeTok{cex =} \FloatTok{0.7}\NormalTok{, }\DataTypeTok{col =} \StringTok{"red"}\NormalTok{)}
+\NormalTok{(mi_fam_d_bray_pcoa_env <-}\StringTok{ }\KeywordTok{envfit}\NormalTok{(mi_fam_d_bray_pcoa, env_num))}
+\KeywordTok{plot}\NormalTok{(mi_fam_d_bray_pcoa_env, }\DataTypeTok{p.max =} \FloatTok{0.05}\NormalTok{, }\DataTypeTok{col =} \DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Técnica de ordenación 2}
+
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam) <-}\StringTok{ }\KeywordTok{make.cepnames}\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam)))}
+\NormalTok{(df_equivalencias <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}
+  \DataTypeTok{nombre_original =} \KeywordTok{colnames}\NormalTok{(mc_malvc),}
+  \KeywordTok{colnames}\NormalTok{(mi_fam)))}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\CommentTok{#' }
+\CommentTok{#' ## Ordenación restringida}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Análisis de redundancia (RDA)}
+
+\CommentTok{#'Matriz ambiental de variables suelo:}
+\CommentTok{#' }
+\NormalTok{mi_fam_hel <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam, }\DataTypeTok{method =} \StringTok{'hellinger'}\NormalTok{)}
+\NormalTok{mi_fam_hel }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{env_suelo <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\KeywordTok{matches}\NormalTok{(}\StringTok{'^[A-T,Z]|^pH$'}\NormalTok{, }\DataTypeTok{ignore.case =}\NormalTok{ F))}
+\NormalTok{env_suelo }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{mi_fam_hel_rda_suelo <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel }\OperatorTok{~}\StringTok{ }\NormalTok{., env_suelo)}
+\KeywordTok{summary}\NormalTok{(mi_fam_hel_rda_suelo)}
+
+\KeywordTok{RsquareAdj}\NormalTok{(mi_fam_hel_rda_suelo)}\OperatorTok{$}\NormalTok{adj.r.squared}
+
+\KeywordTok{vif.cca}\NormalTok{(mi_fam_hel_rda_suelo)}
+ 
+\CommentTok{#'Representación del modelo se realiza en un *triplot*, que es un gráfico enriquecido, puesto que contiene tres elementos: sitios, variables de respuesta (especies) y variables explicativas (variables ambientales). Para los sitios se usan las puntuaciones restringidas de sitio.}
+\CommentTok{#' }
+\CommentTok{#' Escalamiento 1:}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_suelo,}
+     \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. suelo, escalamiento 1"}
+\NormalTok{)}
+\NormalTok{mi_fam_hel_rda_suelo_sc1 <-}
+\StringTok{  }\KeywordTok{scores}\NormalTok{(mi_fam_hel_rda_suelo,}
+         \DataTypeTok{choices =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{,}
+         \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+         \DataTypeTok{display =} \StringTok{"sp"}
+\NormalTok{  )}
+\KeywordTok{arrows}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_suelo_sc1[, }\DecValTok{1}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_suelo_sc1[, }\DecValTok{2}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+       \DataTypeTok{length =} \DecValTok{0}\NormalTok{,}
+       \DataTypeTok{lty =} \DecValTok{1}\NormalTok{,}
+       \DataTypeTok{col =} \StringTok{"red"}
+\NormalTok{)}
+
+\CommentTok{#' Escalamiento 2}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_suelo,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. suelo, escalamiento 2"}
+\NormalTok{)}
+\NormalTok{mi_fam_hel_rda_suelo_sc2 <-}
+\StringTok{  }\KeywordTok{scores}\NormalTok{(mi_fam_hel_rda_suelo,}
+         \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+         \DataTypeTok{choices =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{,}
+         \DataTypeTok{display =} \StringTok{"sp"}
+\NormalTok{  )}
+\KeywordTok{arrows}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_suelo_sc2[, }\DecValTok{1}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_suelo_sc2[, }\DecValTok{2}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+       \DataTypeTok{length =} \DecValTok{0}\NormalTok{,}
+       \DataTypeTok{lty =} \DecValTok{1}\NormalTok{,}
+       \DataTypeTok{col =} \StringTok{"red"}
+\NormalTok{)}
+\CommentTok{#'Matriz ambiental con las variables que resultaron significativas en el ajuste *post-hoc* (pasivo) durante la ordenación no restringida, para obtener un RDA comprensivo.}
+\NormalTok{env_selec <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}
+\NormalTok{    heterogeneidad_ambiental,}
+\NormalTok{    riqueza_global,}
+\NormalTok{    UTM.EW,}
+\NormalTok{    Al, B, Ca, Cu, Fe, K, Mg, Mn, P, Zn, N, N.min., pH) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry}
+\NormalTok{mi_fam_hel_rda_selec <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec)}
+\CommentTok{#' }
+\KeywordTok{vif.cca}\NormalTok{(mi_fam_hel_rda_selec)}
+\CommentTok{# Comprobación por gráfico de asociación entre variables sin las flechas de especies:}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec, escalamiento 2"}
+\NormalTok{)}
+
+\NormalTok{env_selec2 <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}
+\NormalTok{    heterogeneidad_ambiental,}
+\NormalTok{    riqueza_global,}
+\NormalTok{    UTM.EW,}
+\NormalTok{    Al, B, Cu, Fe, Mg, Mn, P, Zn, N, N.min., pH) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry}
+\NormalTok{mi_fam_hel_rda_selec2 <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec2)}
+\KeywordTok{vif.cca}\NormalTok{(mi_fam_hel_rda_selec2)}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec2,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec2, escalamiento 2"}
+\NormalTok{)}
+ 
+\NormalTok{env_selec3 <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}
+\NormalTok{    heterogeneidad_ambiental,}
+\NormalTok{    riqueza_global,}
+\NormalTok{    UTM.EW,}
+\NormalTok{    Al, Cu, Fe, Mn, P, Zn, N, N.min., pH) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry}
+\NormalTok{mi_fam_hel_rda_selec3 <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec3)}
+\KeywordTok{vif.cca}\NormalTok{(mi_fam_hel_rda_selec3)}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec3,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec3, escalamiento 2"}
+\NormalTok{)}
+\CommentTok{#'}
+\CommentTok{#' Exclusión de la coordenada `UTM.EW` para mejorar los VIF de las demás variables, como por ejemplo `Zn` y `N.min.`.}
+\CommentTok{#' }
+\NormalTok{env_selec4 <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}
+\NormalTok{    heterogeneidad_ambiental,}
+\NormalTok{    riqueza_global,}
+\NormalTok{    Al, Cu, Fe, Mn, P, Zn, N, N.min., pH) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry}
+\NormalTok{mi_fam_hel_rda_selec4 <-}\StringTok{ }\KeywordTok{rda}\NormalTok{(mi_fam_hel }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec4)}
+\KeywordTok{vif.cca}\NormalTok{(mi_fam_hel_rda_selec4)}
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec4,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec4, escalamiento 2"}
+\NormalTok{)}
+
+\KeywordTok{summary}\NormalTok{(mi_fam_hel_rda_selec4)}
+\KeywordTok{RsquareAdj}\NormalTok{(mi_fam_hel_rda_selec4)}\OperatorTok{$}\NormalTok{adj.r.squared}
+\CommentTok{#' }
+\CommentTok{#' Triplot, pero ahora con las flechas para las especies.}
+\CommentTok{#' }
+\CommentTok{#' Escalamiento 1:}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec4,}
+     \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec4, escalamiento 1"}
+\NormalTok{)}
+\NormalTok{mi_fam_hel_rda_selec4_sc1 <-}
+\StringTok{  }\KeywordTok{scores}\NormalTok{(mi_fam_hel_rda_selec4,}
+         \DataTypeTok{choices =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{,}
+         \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+         \DataTypeTok{display =} \StringTok{"sp"}
+\NormalTok{  )}
+\KeywordTok{arrows}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_selec4_sc1[, }\DecValTok{1}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_selec4_sc1[, }\DecValTok{2}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+       \DataTypeTok{length =} \DecValTok{0}\NormalTok{,}
+       \DataTypeTok{lty =} \DecValTok{1}\NormalTok{,}
+       \DataTypeTok{col =} \StringTok{"red"}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Escalamiento 2}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_hel_rda_selec4,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de RDA especies ~ var. selec4, escalamiento 2"}
+\NormalTok{)}
+\NormalTok{mi_fam_hel_rda_selec4_sc2 <-}
+\StringTok{  }\KeywordTok{scores}\NormalTok{(mi_fam_hel_rda_selec4,}
+         \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+         \DataTypeTok{choices =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{,}
+         \DataTypeTok{display =} \StringTok{"sp"}
+\NormalTok{  )}
+\KeywordTok{arrows}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_selec4_sc2[, }\DecValTok{1}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+\NormalTok{       mi_fam_hel_rda_selec4_sc2[, }\DecValTok{2}\NormalTok{] }\OperatorTok{*}\StringTok{ }\FloatTok{0.9}\NormalTok{,}
+       \DataTypeTok{length =} \DecValTok{0}\NormalTok{,}
+       \DataTypeTok{lty =} \DecValTok{1}\NormalTok{,}
+       \DataTypeTok{col =} \StringTok{"red"}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Análisis de correspondencia canónica (CCA)}
+\CommentTok{#' }
+\CommentTok{#' #### Ejemplo usando las matriz ambiental con variables seleccionadas:}
+\CommentTok{#' }
+\NormalTok{mi_fam_cca_selec4 <-}\StringTok{ }\KeywordTok{cca}\NormalTok{(mi_fam }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec4)}
+\KeywordTok{summary}\NormalTok{(mi_fam_cca_selec4)}
+\KeywordTok{RsquareAdj}\NormalTok{(mi_fam_cca_selec4)}
+\CommentTok{#' }
+\CommentTok{#' Escalamiento 1}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_cca_selec4,}
+     \DataTypeTok{scaling =} \DecValTok{1}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de CCA especies ~ var. selec4, escalamiento 1"}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Escalamiento 2}
+\CommentTok{#' }
+\KeywordTok{plot}\NormalTok{(mi_fam_cca_selec4,}
+     \DataTypeTok{scaling =} \DecValTok{2}\NormalTok{,}
+     \DataTypeTok{display =} \KeywordTok{c}\NormalTok{(}\StringTok{"sp"}\NormalTok{, }\StringTok{"lc"}\NormalTok{, }\StringTok{"cn"}\NormalTok{),}
+     \DataTypeTok{main =} \StringTok{"Triplot de CCA especies ~ var. selec4, escalamiento 2"}
+\NormalTok{)}
+\CommentTok{#'}
+\CommentTok{#' Excluyendo especies con abundancia menor a 100 individuos}
+\CommentTok{#' }
+\KeywordTok{colSums}\NormalTok{(mi_fam) }\OperatorTok{%>%}\StringTok{ }\NormalTok{sort}
+\NormalTok{mi_fam_no_raras <-}\StringTok{ }\NormalTok{mi_fam }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select_if}\NormalTok{(}\KeywordTok{colSums}\NormalTok{(.) }\OperatorTok{>}\StringTok{ }\DecValTok{100}\NormalTok{)}
+\KeywordTok{intersect}\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam), }\KeywordTok{colnames}\NormalTok{(mi_fam_no_raras))}
+\KeywordTok{setdiff}\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mi_fam), }\KeywordTok{colnames}\NormalTok{(mi_fam_no_raras))}
+\NormalTok{mi_fam_no_raras_cca_selec4 <-}\StringTok{ }\KeywordTok{cca}\NormalTok{(mi_fam_no_raras }\OperatorTok{~}\StringTok{ }\NormalTok{., env_selec4)}
+\KeywordTok{summary}\NormalTok{(mi_fam_no_raras_cca_selec4)}
+\KeywordTok{RsquareAdj}\NormalTok{(mi_fam_no_raras_cca_selec4)}
+\CommentTok{#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Variables ambientales}
+\KeywordTok{library}\NormalTok{(mapview)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(RColorBrewer)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Meliaceae.Rdata"}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Paletas}
+\NormalTok{azul <-}\StringTok{ }\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Blues"}\NormalTok{))}
+\NormalTok{rojo <-}\StringTok{ }\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Reds"}\NormalTok{))}
+\NormalTok{rojo_inv <-}\StringTok{ }\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{rev}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Reds"}\NormalTok{)))}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Mapa de cuadros, simbología por pendiente}
+\NormalTok{mapa_cuadros_pendiente <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{layer.name =} \StringTok{'pendiente'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.4}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ T, }\DataTypeTok{zoom =} \DecValTok{14}\NormalTok{,}
+  \DataTypeTok{col.regions =}\NormalTok{ rojo,}
+  \DataTypeTok{zcol =} \StringTok{'pendiente_media'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{addStaticLabels}\NormalTok{(}\DataTypeTok{label =} \KeywordTok{round}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{pendiente_media, }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_cuadros_pendiente}
+\NormalTok{mapa_cuadros_pendiente }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mapshot}\NormalTok{(}\DataTypeTok{file =} \StringTok{'mapa_cuadros_pendiente.png'}\NormalTok{) }\CommentTok{#Genera archivo}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Mapa de cuadros, simbología por Nitrógeno}
+\NormalTok{mapa_cuadros_nit <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{layer.name =} \StringTok{'N (mg/kg)'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.4}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ T, }\DataTypeTok{zoom =} \DecValTok{14}\NormalTok{,}
+  \DataTypeTok{col.regions =}\NormalTok{ rojo,}
+  \DataTypeTok{zcol =} \StringTok{'N'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{addStaticLabels}\NormalTok{(}\DataTypeTok{label =} \KeywordTok{round}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{N, }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_cuadros_nit}
+\NormalTok{mapa_cuadros_nit }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mapshot}\NormalTok{(}\DataTypeTok{file =} \StringTok{'mapa_cuadros_nit.png'}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Mapa de cuadros, simbología por pH}
+\NormalTok{mapa_cuadros_ph <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{layer.name =} \StringTok{'pH'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.4}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ T, }\DataTypeTok{zoom =} \DecValTok{14}\NormalTok{,}
+  \DataTypeTok{col.regions =}\NormalTok{ rojo_inv,}
+  \DataTypeTok{zcol =} \StringTok{'pH'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{addStaticLabels}\NormalTok{(}\DataTypeTok{label =} \KeywordTok{round}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{pH, }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_cuadros_ph}
+\NormalTok{mapa_cuadros_ph }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mapshot}\NormalTok{(}\DataTypeTok{file =} \StringTok{'mapa_cuadros_ph.png'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Variables ambientales por Lote}
+
+\KeywordTok{library}\NormalTok{(tmap)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(RColorBrewer)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' ## Convertir a KML}
+\CommentTok{#' }
+\KeywordTok{st_write}\NormalTok{(}
+\NormalTok{  bci_env_grid }\OperatorTok{%>%}\StringTok{ }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Name =}\NormalTok{ id),}
+  \DataTypeTok{driver =} \StringTok{'KML'}\NormalTok{,}
+  \DataTypeTok{dsn =} \StringTok{'matriz_ambiental.kml'}\NormalTok{)}
+\KeywordTok{st_write}\NormalTok{(}
+\NormalTok{  bci_env_grid }\OperatorTok{%>%}\StringTok{ }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Name =}\NormalTok{ id) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{st_centroid}\NormalTok{(),}
+  \DataTypeTok{driver =} \StringTok{'KML'}\NormalTok{,}
+  \DataTypeTok{dsn =} \StringTok{'matriz_ambiental_puntos.kml'}\NormalTok{)}
+
+\CommentTok{#' }
+\CommentTok{#' ## Generar mapas por lotes}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Variables ambientales numéricas con `ggplot2`}
+\CommentTok{#' }
+\NormalTok{mapas_var_amb_num_gg <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{gather}\NormalTok{(variable, valor, }\OperatorTok{-}\NormalTok{geometry) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(variable) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{valor =}\NormalTok{ scales}\OperatorTok{::}\KeywordTok{rescale}\NormalTok{(valor, }\DataTypeTok{to =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{)),}
+    \DataTypeTok{id =} \KeywordTok{rep}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{50}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{ggplot }\OperatorTok{+}
+\StringTok{  }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{geometry =}\NormalTok{ geometry, }\DataTypeTok{fill =}\NormalTok{ valor) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text =} \KeywordTok{element_blank}\NormalTok{()) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf}\NormalTok{(}\DataTypeTok{lwd =} \FloatTok{0.1}\NormalTok{, }\DataTypeTok{color =} \StringTok{'grey50'}\NormalTok{, }\DataTypeTok{alpha =} \FloatTok{0.8}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{coord_sf}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_fill_gradientn}\NormalTok{(}\DataTypeTok{colours =} \KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{11}\NormalTok{, }\StringTok{'BrBG'}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{geom_sf_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ id, }\DataTypeTok{color =} \KeywordTok{between}\NormalTok{(valor, }\FloatTok{0.3}\NormalTok{, }\FloatTok{0.7}\NormalTok{)), }\DataTypeTok{size =} \FloatTok{1.75}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{scale_color_manual}\NormalTok{(}\DataTypeTok{guide =} \OtherTok{FALSE}\NormalTok{, }\DataTypeTok{values =} \KeywordTok{c}\NormalTok{(}\StringTok{"white"}\NormalTok{, }\StringTok{"black"}\NormalTok{)) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\StringTok{ }\NormalTok{variable, }\DataTypeTok{ncol =} \DecValTok{6}\NormalTok{) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{'Cuadros de 1 Ha de BCI. Variables ambientales numéricas escaladas de 0 a 1'}\NormalTok{)}
+\NormalTok{mapas_var_amb_num_gg}
+\CommentTok{#'}
+\CommentTok{#' PNG}
+\CommentTok{#'}
+\KeywordTok{png}\NormalTok{(}
+  \DataTypeTok{filename =} \StringTok{'mapas_variables_ambientales_numericas.png'}\NormalTok{,}
+  \DataTypeTok{width =} \DecValTok{1700}\NormalTok{, }\DataTypeTok{height =} \DecValTok{1080}\NormalTok{, }\DataTypeTok{res =} \DecValTok{150}\NormalTok{)}
+\NormalTok{mapas_var_amb_num_gg}
+\KeywordTok{dev.off}\NormalTok{()}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Variables ambientales numéricas con `tmap`}
+\CommentTok{#' }
+\NormalTok{mapas_var_amb_num_tmap <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{gather}\NormalTok{(variable, valor, }\OperatorTok{-}\NormalTok{geometry) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(variable) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{valor =}\NormalTok{ scales}\OperatorTok{::}\KeywordTok{rescale}\NormalTok{(valor, }\DataTypeTok{to =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{)),}
+    \DataTypeTok{id =} \KeywordTok{rep}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{50}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{tm_shape}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_polygons}\NormalTok{(}\DataTypeTok{col =} \StringTok{'valor'}\NormalTok{,}
+              \DataTypeTok{palette =} \KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{11}\NormalTok{, }\StringTok{'BrBG'}\NormalTok{),}
+              \DataTypeTok{style =}\StringTok{'cont'}\NormalTok{,}
+              \DataTypeTok{legend.is.portrait =} \OtherTok{FALSE}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_facets}\NormalTok{(}\DataTypeTok{by =} \StringTok{'variable'}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{6}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{6}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_layout}\NormalTok{(}\DataTypeTok{main.title=}\StringTok{"Cuadros de 1 Ha de BCI. Variables ambientales numéricas escaladas de 0 a 1"}\NormalTok{,}
+            \DataTypeTok{main.title.size =} \FloatTok{0.7}\NormalTok{,}
+            \DataTypeTok{legend.outside.position=}\StringTok{"bottom"}\NormalTok{,}
+            \DataTypeTok{legend.outside=}\OtherTok{TRUE}\NormalTok{,}
+            \DataTypeTok{legend.width =} \FloatTok{0.2}\NormalTok{,}
+            \DataTypeTok{legend.text.size =} \FloatTok{0.5}\NormalTok{,}
+            \DataTypeTok{legend.stack=}\StringTok{"horizontal"}\NormalTok{, }
+            \DataTypeTok{outer.margins=}\DecValTok{0}\NormalTok{)}
+\NormalTok{mapas_var_amb_num_tmap}
+\CommentTok{#'}
+\CommentTok{#' PNG}
+\CommentTok{#' }
+\KeywordTok{png}\NormalTok{(}
+  \DataTypeTok{filename =} \StringTok{'mapas_variables_ambientales_numericas_tmap.png'}\NormalTok{,}
+  \DataTypeTok{width =} \DecValTok{1800}\NormalTok{, }\DataTypeTok{height =} \DecValTok{1400}\NormalTok{, }\DataTypeTok{res =} \DecValTok{350}\NormalTok{, }\DataTypeTok{pointsize =} \DecValTok{12}\NormalTok{)}
+\NormalTok{mapas_var_amb_num_tmap}
+\KeywordTok{dev.off}\NormalTok{()}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Variables ambientales nominales con `tmap`}
+\CommentTok{#' }
+\NormalTok{mapas_var_amb_nom_tmap <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(}\KeywordTok{negate}\NormalTok{(is.numeric)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{gather}\NormalTok{(variable, valor, }\OperatorTok{-}\NormalTok{geometry) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{tm_shape}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_polygons}\NormalTok{(}\DataTypeTok{col =} \StringTok{'valor'}\NormalTok{,}
+              \DataTypeTok{palette =} \KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{'Set1'}\NormalTok{),}
+              \DataTypeTok{legend.show =}\NormalTok{ T) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_facets}\NormalTok{(}\DataTypeTok{by =} \StringTok{'variable'}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{2}\NormalTok{, }\DataTypeTok{free.scales =}\NormalTok{ T, }\DataTypeTok{free.coords =}\NormalTok{ T) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{tm_layout}\NormalTok{(}\DataTypeTok{main.title=}\StringTok{"Cuadros de 1 Ha de BCI. Variables ambientales nominales"}\NormalTok{,}
+            \DataTypeTok{main.title.size =} \FloatTok{0.7}\NormalTok{,}
+            \DataTypeTok{asp =} \FloatTok{3.5}\NormalTok{,}
+            \DataTypeTok{legend.text.size =} \FloatTok{0.7}\NormalTok{)}
+\NormalTok{mapas_var_amb_nom_tmap}
+\CommentTok{#'}
+\CommentTok{#' PNG}
+\CommentTok{#' }
+\KeywordTok{png}\NormalTok{(}
+  \DataTypeTok{filename =} \StringTok{'mapas_variables_ambientales_nominales_tmap.png'}\NormalTok{,}
+  \DataTypeTok{width =} \DecValTok{2000}\NormalTok{, }\DataTypeTok{height =} \DecValTok{1200}\NormalTok{, }\DataTypeTok{res =} \DecValTok{350}\NormalTok{, }\DataTypeTok{pointsize =} \DecValTok{12}\NormalTok{)}
+\NormalTok{mapas_var_amb_nom_tmap}
+\KeywordTok{dev.off}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Correlación ambiental}
+
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(ez)}
+\KeywordTok{library}\NormalTok{(psych)}
+\KeywordTok{library}\NormalTok{(vegan)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Una correlación simple}
+\KeywordTok{cor}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{pendiente_media, bci_env_grid}\OperatorTok{$}\NormalTok{geomorf_vertiente_pct)}
+\KeywordTok{plot}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{pendiente_media, bci_env_grid}\OperatorTok{$}\NormalTok{geomorf_vertiente_pct)}
+\KeywordTok{cor.test}\NormalTok{(bci_env_grid}\OperatorTok{$}\NormalTok{pendiente_media, bci_env_grid}\OperatorTok{$}\NormalTok{geomorf_vertiente_pct)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Generar objeto de columnas numéricas}
+
+\NormalTok{env_num <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id, }\OperatorTok{-}\KeywordTok{matches}\NormalTok{(}\StringTok{'^U.*'}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{riqueza_mifam =} \KeywordTok{specnumber}\NormalTok{(mc_malvc),}
+    \DataTypeTok{abundancia_mifam =} \KeywordTok{rowSums}\NormalTok{(mc_malvc)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_pct$'}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{''}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_| '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{)}
+\NormalTok{env_num }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Panel de correlaciones con herramientas del paquete `graphics` y `psych`}
+\KeywordTok{cor}\NormalTok{(env_num)}
+\KeywordTok{ncol}\NormalTok{(env_num)}
+\KeywordTok{pairs}\NormalTok{(env_num[,}\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{33}\NormalTok{, }\DecValTok{15}\NormalTok{)]) }\CommentTok{# paquete graphics}
+\NormalTok{env_num[,}\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{33}\NormalTok{, }\DecValTok{15}\NormalTok{)] }\OperatorTok{%>%}\StringTok{ }\NormalTok{pairs.panels }\CommentTok{#paquete psych}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Panel de correlaciones con `ez`}
+
+\CommentTok{#' #### Sólo suelo (elementos y pH), abundancia/riqueza}
+\NormalTok{p_cor_suelo_ar <-}\StringTok{ }\NormalTok{env_num }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\KeywordTok{matches}\NormalTok{(}\StringTok{'^[A-T,Z]|abundancia|riqueza|^pH$'}\NormalTok{, }\DataTypeTok{ignore.case =}\NormalTok{ F)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ezCor}\NormalTok{(}\DataTypeTok{r_size_lims =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{,}\DecValTok{8}\NormalTok{), }\DataTypeTok{label_size =} \DecValTok{3}\NormalTok{)}
+\NormalTok{p_cor_suelo_ar}
+
+\CommentTok{#' #### Sólo heterogeneidad, geomorfologia, abundancia/riqueza}
+\NormalTok{p_cor_geomorf_ar <-}\StringTok{ }\NormalTok{env_num }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{dplyr}\OperatorTok{::}\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\KeywordTok{matches}\NormalTok{(}\StringTok{'^[A-T,Z]|pH'}\NormalTok{, }\DataTypeTok{ignore.case =}\NormalTok{ F)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ezCor}\NormalTok{(}\DataTypeTok{r_size_lims =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{,}\DecValTok{8}\NormalTok{), }\DataTypeTok{label_size =} \DecValTok{3}\NormalTok{)}
+\NormalTok{p_cor_geomorf_ar}
+
+\CommentTok{#' #### Matriz de comunidad}
+\NormalTok{p_cor_mc <-}\StringTok{ }\NormalTok{mc_malvc}\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{rename_all}\NormalTok{(gsub, }\DataTypeTok{pattern =} \StringTok{'_| '}\NormalTok{, }\DataTypeTok{replacement =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{ezCor}\NormalTok{(}\DataTypeTok{r_size_lims =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{,}\DecValTok{8}\NormalTok{), }\DataTypeTok{label_size =} \DecValTok{3}\NormalTok{)}
+\NormalTok{p_cor_mc}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de agrupamiento 1}
+
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(magrittr)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\CommentTok{#'}
+\CommentTok{#' ## Características de las técnicas de agrupamiento}
+
+\CommentTok{#' ## Agrupamiento jerárquico}
+
+\CommentTok{#'Método de normalización y distancia euclidea (distancia de cuerdas o *chord*).}
+\CommentTok{#' }
+\NormalTok{mi_fam_norm <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam, }\StringTok{"normalize"}\NormalTok{)}
+\NormalTok{mi_fam_norm_d <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mi_fam_norm, }\StringTok{"euc"}\NormalTok{)}
+\NormalTok{mi_fam_norm_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\CommentTok{#'}
+\CommentTok{#' Es importante, para garantizar consistencia a lo largo del agrupamiento, asignar los nombres de sitios al atributo `labels` del objeto de distancias.}
+\CommentTok{#' }
+\KeywordTok{attr}\NormalTok{(mi_fam_norm_d, }\StringTok{"labels"}\NormalTok{) <-}\StringTok{ }\KeywordTok{rownames}\NormalTok{(mi_fam)}
+\CommentTok{#' }
+\CommentTok{#' Posteriormente, el agrupamiento jerárquico lo realizaré con la función `hclust` del paquete `stats` (se carga por defecto al abrir R), especificando el argumento `method = 'single'`:}
+\CommentTok{#' }
+\NormalTok{(cl_single <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'single'}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' Dendrograma:}
+\KeywordTok{plot}\NormalTok{(cl_single, }\DataTypeTok{labels =} \KeywordTok{rownames}\NormalTok{(mi_fam), }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"Sitios de BCI según composición de especies de Malvaceae}\CharTok{\textbackslash{}n}\StringTok{Enlace simple a partir de matriz de distancia de cuerdas"}\NormalTok{,}
+     \DataTypeTok{xlab =} \StringTok{'Sitios'}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{'Altura'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Agrupamiento "aglomerativo" por enlace completo}
+
+\NormalTok{(cl_complete <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'complete'}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(cl_complete, }\DataTypeTok{labels =} \KeywordTok{rownames}\NormalTok{(mi_fam), }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"Sitios de BCI según composición de especies de Malvaceae}\CharTok{\textbackslash{}n}\StringTok{Enlace completo a partir de matriz de distancia de cuerdas"}\NormalTok{,}
+     \DataTypeTok{xlab =} \StringTok{'Sitios'}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{'Altura'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Agrupamiento "aglomerativo" por enlace promedio}
+ 
+\CommentTok{#'Dendrograma del método UPGMA.}
+\CommentTok{#' }
+\NormalTok{(cl_upgma <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'average'}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(cl_upgma, }\DataTypeTok{labels =} \KeywordTok{rownames}\NormalTok{(mi_fam), }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"Sitios de BCI según composición de especies de Malvaceae}\CharTok{\textbackslash{}n}\StringTok{UPGMA a partir de matriz de distancia de cuerdas"}\NormalTok{,}
+     \DataTypeTok{xlab =} \StringTok{'Sitios'}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{'Altura'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Agrupamiento por el método de Ward de varianza mínima}
+ 
+\NormalTok{(cl_ward <-}\StringTok{ }\KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'ward.D2'}\NormalTok{))}
+\KeywordTok{plot}\NormalTok{(cl_ward, }\DataTypeTok{labels =} \KeywordTok{rownames}\NormalTok{(mi_fam), }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{,}
+     \DataTypeTok{main =} \StringTok{"Sitios de BCI según composición de especies de Malvaceae}\CharTok{\textbackslash{}n}\StringTok{Método de Ward a partir de matriz de distancia de cuerdas"}\NormalTok{,}
+     \DataTypeTok{xlab =} \StringTok{'Sitios'}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{'Altura'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de agrupamiento 2 }
+     
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(broom)}
+\KeywordTok{library}\NormalTok{(cluster)}
+\KeywordTok{library}\NormalTok{(gclus)}
+\KeywordTok{library}\NormalTok{(pvclust)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Generar matriz de distancias de cuerdas}
+\CommentTok{#' }
+\NormalTok{mi_fam_norm <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{(mi_fam, }\StringTok{"normalize"}\NormalTok{)}
+\NormalTok{mi_fam_norm_d <-}\StringTok{ }\KeywordTok{vegdist}\NormalTok{(mi_fam_norm, }\StringTok{"euc"}\NormalTok{)}
+\NormalTok{mi_fam_norm_d }\OperatorTok{%>%}\StringTok{ }\NormalTok{tidy}
+\CommentTok{#' }
+\CommentTok{#' ## Interpretación visual de dendrogramas}
+
+\CommentTok{#' Para la exploración visual, objetos de cluster dentro de una lista:}
+\CommentTok{#' }
+\NormalTok{lista_cl <-}\StringTok{ }\KeywordTok{list}\NormalTok{(}
+  \DataTypeTok{cl_single =} \KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'single'}\NormalTok{),}
+  \DataTypeTok{cl_complete =} \KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'complete'}\NormalTok{),}
+  \DataTypeTok{cl_upgma =} \KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'average'}\NormalTok{),}
+  \DataTypeTok{cl_ward =} \KeywordTok{hclust}\NormalTok{(mi_fam_norm_d, }\DataTypeTok{method =} \StringTok{'ward.D2'}\NormalTok{)}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Un plot en panel 2x2 ayuda a visualizarlos todos de manera conjunta. En tu caso, observa y compara todos los dendrogramas:}
+\CommentTok{#' }
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\KeywordTok{invisible}\NormalTok{(}\KeywordTok{map}\NormalTok{(}\KeywordTok{names}\NormalTok{(lista_cl), }\ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{plot}\NormalTok{(lista_cl[[x]], }\DataTypeTok{main =}\NormalTok{ x, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)))}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =} \KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+
+\CommentTok{#' Usando la lista de objetos de clústers, cálculo de correlación cofenética dentro de un `map` (una función del paquete `purrr`, perteneciente a la colección `tidyverse`)}
+\CommentTok{#'}
+\KeywordTok{map_df}\NormalTok{(lista_cl, }\ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  coph_d <-}\StringTok{ }\KeywordTok{cophenetic}\NormalTok{(x)}
+\NormalTok{  corr <-}\StringTok{ }\KeywordTok{cor}\NormalTok{(mi_fam_norm_d, coph_d)}
+  \KeywordTok{return}\NormalTok{(corr)}
+\NormalTok{\})}
+
+\CommentTok{#'cálculos para UPGMA y Ward.}
+\CommentTok{#' }
+\CommentTok{#' Para UPGMA:}
+\CommentTok{#' }
+\NormalTok{anch_sil_upgma <-}\StringTok{ }\KeywordTok{calcular_anchuras_siluetas}\NormalTok{(}
+  \DataTypeTok{mc_orig =}\NormalTok{ mi_fam, }
+  \DataTypeTok{distancias =}\NormalTok{ mi_fam_norm_d, }
+  \DataTypeTok{cluster =}\NormalTok{ lista_cl}\OperatorTok{$}\NormalTok{cl_upgma)}
+\NormalTok{anch_sil_upgma}
+
+\NormalTok{u_dend_reord <-}\StringTok{ }\KeywordTok{reorder.hclust}\NormalTok{(lista_cl}\OperatorTok{$}\NormalTok{cl_upgma, mi_fam_norm_d)}
+\KeywordTok{plot}\NormalTok{(u_dend_reord, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)}
+\KeywordTok{rect.hclust}\NormalTok{(}
+  \DataTypeTok{tree =}\NormalTok{ u_dend_reord,}
+  \DataTypeTok{k =}\NormalTok{ anch_sil_upgma}\OperatorTok{$}\NormalTok{n_grupos_optimo)}
+\CommentTok{#' }
+\CommentTok{#' Ahora compararé el dendrograma con el mapa de calor en un mismo gráfico, colocando los dendrogramas en los márgenes del gráfico. }
+\CommentTok{#' }
+\KeywordTok{heatmap}\NormalTok{(}
+  \KeywordTok{as.matrix}\NormalTok{(mi_fam_norm_d),}
+  \DataTypeTok{Rowv =} \KeywordTok{as.dendrogram}\NormalTok{(u_dend_reord),}
+  \DataTypeTok{symm =} \OtherTok{TRUE}\NormalTok{,}
+  \DataTypeTok{margin =} \KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{),}
+  \DataTypeTok{col =} \KeywordTok{rev}\NormalTok{(}\KeywordTok{cm.colors}\NormalTok{(}\DecValTok{4}\NormalTok{))}
+\NormalTok{)}
+ 
+\CommentTok{#' Mostraré el resultado para Ward:}
+\CommentTok{#' }
+\NormalTok{anch_sil_ward <-}\StringTok{ }\KeywordTok{calcular_anchuras_siluetas}\NormalTok{(}
+  \DataTypeTok{mc_orig =}\NormalTok{ mi_fam, }
+  \DataTypeTok{distancias =}\NormalTok{ mi_fam_norm_d, }
+  \DataTypeTok{cluster =}\NormalTok{ lista_cl}\OperatorTok{$}\NormalTok{cl_ward)}
+\NormalTok{anch_sil_ward}
+\CommentTok{#' }
+\NormalTok{w_dend_reord <-}\StringTok{ }\KeywordTok{reorder.hclust}\NormalTok{(lista_cl}\OperatorTok{$}\NormalTok{cl_ward, mi_fam_norm_d)}
+\KeywordTok{plot}\NormalTok{(w_dend_reord, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)}
+\KeywordTok{rect.hclust}\NormalTok{(}
+  \DataTypeTok{tree =}\NormalTok{ w_dend_reord,}
+  \DataTypeTok{k =}\NormalTok{ anch_sil_ward}\OperatorTok{$}\NormalTok{n_grupos_optimo)}
+\KeywordTok{plot}\NormalTok{(w_dend_reord, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)}
+\KeywordTok{rect.hclust}\NormalTok{(}
+  \DataTypeTok{tree =}\NormalTok{ w_dend_reord,}
+  \DataTypeTok{k =}\NormalTok{ anch_sil_ward}\OperatorTok{$}\NormalTok{n_grupos_optimo }\OperatorTok{+}\StringTok{ }\DecValTok{1}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Comparando el dendrograma con el mapa de calor. Verificar si el número de grupos hace sentido.}
+\CommentTok{#' }
+\KeywordTok{heatmap}\NormalTok{(}
+  \KeywordTok{as.matrix}\NormalTok{(mi_fam_norm_d),}
+  \DataTypeTok{Rowv =} \KeywordTok{as.dendrogram}\NormalTok{(w_dend_reord),}
+  \DataTypeTok{symm =} \OtherTok{TRUE}\NormalTok{,}
+  \DataTypeTok{margin =} \KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{3}\NormalTok{),}
+  \DataTypeTok{col =} \KeywordTok{rev}\NormalTok{(}\KeywordTok{cm.colors}\NormalTok{(}\DecValTok{4}\NormalTok{))}
+\NormalTok{)}
+
+\CommentTok{#' #### UPGMA}
+\CommentTok{#' }
+\NormalTok{cl_pvclust_upgma <-}
+\StringTok{  }\KeywordTok{pvclust}\NormalTok{(}\KeywordTok{t}\NormalTok{(mi_fam_norm),}
+          \DataTypeTok{method.hclust =} \StringTok{"average"}\NormalTok{,}
+          \DataTypeTok{method.dist =} \StringTok{"euc"}\NormalTok{,}
+          \DataTypeTok{iseed =} \DecValTok{91}\NormalTok{, }\CommentTok{# Resultado reproducible}
+          \DataTypeTok{parallel =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{# Añadir los valores de p}
+\KeywordTok{plot}\NormalTok{(cl_pvclust_upgma, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)}
+\CommentTok{# Añadir rectángulos a los grupos significativos}
+\KeywordTok{lines}\NormalTok{(cl_pvclust_upgma)}
+\KeywordTok{pvrect}\NormalTok{(cl_pvclust_upgma, }\DataTypeTok{alpha =} \FloatTok{0.91}\NormalTok{, }\DataTypeTok{border =} \DecValTok{4}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' #### Ward}
+\CommentTok{#' }
+\NormalTok{cl_pvclust_ward <-}
+\StringTok{  }\KeywordTok{pvclust}\NormalTok{(}\KeywordTok{t}\NormalTok{(mi_fam_norm),}
+          \DataTypeTok{method.hclust =} \StringTok{"ward.D2"}\NormalTok{,}
+          \DataTypeTok{method.dist =} \StringTok{"euc"}\NormalTok{,}
+          \DataTypeTok{iseed =} \DecValTok{191}\NormalTok{, }\CommentTok{# Resultado reproducible}
+          \DataTypeTok{parallel =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{# Añadir los valores de p}
+\KeywordTok{plot}\NormalTok{(cl_pvclust_ward, }\DataTypeTok{hang =} \OperatorTok{-}\DecValTok{1}\NormalTok{)}
+\CommentTok{# Añadir rectángulos a los grupos significativos}
+\KeywordTok{lines}\NormalTok{(cl_pvclust_ward)}
+\KeywordTok{pvrect}\NormalTok{(cl_pvclust_ward, }\DataTypeTok{alpha =} \FloatTok{0.91}\NormalTok{, }\DataTypeTok{border =} \DecValTok{4}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Recapitulando los grupos de sitios.}
+\CommentTok{#' }
+\CommentTok{#' #### Patrones comunes y dispares}
+
+\CommentTok{#' UPGMA:}
+\NormalTok{(grupos_upgma_k2 <-}\StringTok{ }\KeywordTok{as.factor}\NormalTok{(}\KeywordTok{cutree}\NormalTok{(lista_cl}\OperatorTok{$}\NormalTok{cl_upgma, }\DataTypeTok{k =} \DecValTok{2}\NormalTok{)))}
+
+\KeywordTok{table}\NormalTok{(grupos_upgma_k2)}
+
+\CommentTok{#' Ward:}
+\CommentTok{#' }
+\NormalTok{(grupos_ward_k2 <-}\StringTok{ }\KeywordTok{as.factor}\NormalTok{(}\KeywordTok{cutree}\NormalTok{(lista_cl}\OperatorTok{$}\NormalTok{cl_ward, }\DataTypeTok{k =} \DecValTok{2}\NormalTok{)))}
+\KeywordTok{table}\NormalTok{(grupos_ward_k2)}
+\CommentTok{#'}
+\CommentTok{#' Guardaré estos vectores en archivos para reutilizarlos en *scripts* posteriores:}
+\CommentTok{#' }
+\KeywordTok{saveRDS}\NormalTok{(grupos_upgma_k2, }\StringTok{'grupos_upgma_k2.RDS'}\NormalTok{)}
+\KeywordTok{saveRDS}\NormalTok{(grupos_ward_k2, }\StringTok{'grupos_ward_k2.RDS'}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de agrupamiento 3}
+
+\KeywordTok{library}\NormalTok{(mapview)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(RColorBrewer)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{grupos_ward_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_ward_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_ward_k2)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Paletas}
+\CommentTok{#' }
+\NormalTok{rojo <-}\StringTok{ }\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Reds"}\NormalTok{))}
+\NormalTok{rojo_inv <-}\StringTok{ }\KeywordTok{colorRampPalette}\NormalTok{(}\KeywordTok{rev}\NormalTok{(}\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Reds"}\NormalTok{)))}
+\NormalTok{colores_grupos <-}\StringTok{ }\KeywordTok{brewer.pal}\NormalTok{(}\DecValTok{8}\NormalTok{, }\StringTok{"Accent"}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' ## Explorar efectos}
+
+\CommentTok{#'Creación de un objeto que permita realizar tanto las pruebas como los diagramas de cajas.}
+\CommentTok{#' }
+\NormalTok{(m_amb_ward_k2 <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(grupos_ward_k2) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{st_drop_geometry}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{pivot_longer}\NormalTok{(}\OperatorTok{-}\NormalTok{grupos_ward_k2, }\DataTypeTok{names_to =} \StringTok{"variable"}\NormalTok{, }\DataTypeTok{values_to =} \StringTok{"valor"}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' A continuación, las pruebas:}
+\CommentTok{#' }
+\NormalTok{m_amb_ward_k2 }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(variable) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{summarise}\NormalTok{(}
+    \DataTypeTok{p_valor_t =} \KeywordTok{t.test}\NormalTok{(valor }\OperatorTok{~}\StringTok{ }\NormalTok{grupos_ward_k2)}\OperatorTok{$}\NormalTok{p.value,}
+    \DataTypeTok{p_valor_w =} \KeywordTok{wilcox.test}\NormalTok{(valor }\OperatorTok{~}\StringTok{ }\NormalTok{grupos_ward_k2, }\DataTypeTok{exact =}\NormalTok{ F)}\OperatorTok{$}\NormalTok{p.value) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{arrange}\NormalTok{(p_valor_t) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{print}\NormalTok{(}\DataTypeTok{n=}\OtherTok{Inf}\NormalTok{)}
+
+\CommentTok{#' Los gráficos:}
+\CommentTok{#' }
+\NormalTok{m_amb_ward_k2 }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(variable) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{ggplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{aes}\NormalTok{(}\DataTypeTok{x =}\NormalTok{ grupos_ward_k2, }\DataTypeTok{y =}\NormalTok{ valor, }\DataTypeTok{fill =}\NormalTok{ grupos_ward_k2) }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{geom_boxplot}\NormalTok{() }\OperatorTok{+}\StringTok{ }
+\StringTok{  }\KeywordTok{scale_fill_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{'Accent'}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme_bw}\NormalTok{() }\OperatorTok{+}
+\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position=}\StringTok{"none"}\NormalTok{) }\OperatorTok{+}
+\StringTok{  }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\StringTok{ }\NormalTok{variable, }\DataTypeTok{scales =} \StringTok{'free_y'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Mapas:}
+\CommentTok{#' }
+\NormalTok{mapa_ward_k2 <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(grupos_ward_k2),}
+  \DataTypeTok{layer.name =} \StringTok{'Grupos (2) ward_k2'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.6}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ T,}
+  \DataTypeTok{col.regions =}\NormalTok{ colores_grupos[}\DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{],}
+  \DataTypeTok{zcol =} \StringTok{'grupos_ward_k2'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{addStaticLabels}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ bci_env_grid}\OperatorTok{$}\NormalTok{id) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_ward_k2}
+\NormalTok{mapa_ward_k2 }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mapshot}\NormalTok{(}
+  \DataTypeTok{file =} \StringTok{'mapa_ward_k2.png'}\NormalTok{, }
+  \DataTypeTok{remove_controls =} \KeywordTok{c}\NormalTok{(}\StringTok{"zoomControl"}\NormalTok{, }\StringTok{"layersControl"}\NormalTok{, }\StringTok{"homeButton"}\NormalTok{)}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' Mapa de una de las variables donde se presentó efecto de su promedio (p<0.01), en este caso, Zinc (`Zn`)}
+\CommentTok{#' }
+\NormalTok{mapa_zn <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{layer.name =} \StringTok{'Zinc'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.6}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ T,}
+  \DataTypeTok{col.regions =}\NormalTok{ rojo,}
+  \DataTypeTok{zcol =} \StringTok{'Zn'}\NormalTok{) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{addStaticLabels}\NormalTok{(}\DataTypeTok{label =}\NormalTok{ bci_env_grid}\OperatorTok{$}\NormalTok{id) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+\NormalTok{mapa_zn}
+\NormalTok{mapa_zn }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mapshot}\NormalTok{(}
+  \DataTypeTok{file =} \StringTok{'mapa_zinc.png'}\NormalTok{, }
+  \DataTypeTok{remove_controls =} \KeywordTok{c}\NormalTok{(}\StringTok{"zoomControl"}\NormalTok{, }\StringTok{"layersControl"}\NormalTok{, }\StringTok{"homeButton"}\NormalTok{)}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Pruebas de igualdad de promedios de las variables entre 3 grupos o más}
+\CommentTok{#' }
+\CommentTok{#' Objeto común:}
+\CommentTok{#' }
+\NormalTok{(m_amb_ward_k2 <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(grupos_ward_k2) }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{st_drop_geometry}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{pivot_longer}\NormalTok{(}\OperatorTok{-}\NormalTok{grupos_ward_k2 }\DataTypeTok{names_to =} \StringTok{"variable"}\NormalTok{, }\DataTypeTok{values_to =} \StringTok{"valor"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de agrupamiento 4}
+
+\KeywordTok{library}\NormalTok{(indicspecies)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{grupos_upgma_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_upgma_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_upgma_k2)}
+\NormalTok{grupos_ward_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_ward_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_ward_k2)}
+\CommentTok{#' }
+\CommentTok{#' ## Análisis de especies indicadoras mediante IndVal}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ UPGMA}
+\CommentTok{#' }
+\NormalTok{iva_upgma_k2 <-}\StringTok{ }\KeywordTok{multipatt}\NormalTok{(}
+  \DataTypeTok{x =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_upgma_k2,}
+  \DataTypeTok{func =} \StringTok{'IndVal.g'}\NormalTok{,}
+  \DataTypeTok{max.order =} \DecValTok{1}\NormalTok{,}
+  \DataTypeTok{control =} \KeywordTok{how}\NormalTok{(}\DataTypeTok{nperm =} \DecValTok{999}\NormalTok{))}
+\KeywordTok{summary}\NormalTok{(iva_upgma_k2, }\DataTypeTok{indvalcomp =} \OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{colSums}\NormalTok{(mi_fam)}
+\NormalTok{(p_upgma_adj <-}\StringTok{ }\KeywordTok{p.adjust}\NormalTok{(iva_upgma_k2}\OperatorTok{$}\NormalTok{sign}\OperatorTok{$}\NormalTok{p.value))}
+\NormalTok{(iva_upgma_boot <-}\StringTok{ }\KeywordTok{strassoc}\NormalTok{(}
+  \DataTypeTok{X =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_upgma_k2,}
+  \DataTypeTok{func =} \StringTok{"IndVal.g"}\NormalTok{,}
+  \DataTypeTok{nboot =} \DecValTok{1000}\NormalTok{))}
+\CommentTok{#' }
+\CommentTok{#' Ward}
+\CommentTok{#' }
+\NormalTok{iva_ward_k2 <-}\StringTok{ }\KeywordTok{multipatt}\NormalTok{(}
+  \DataTypeTok{x =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_ward_k2,}
+  \DataTypeTok{func =} \StringTok{'IndVal.g'}\NormalTok{,}
+  \DataTypeTok{max.order =} \DecValTok{2}\NormalTok{,}
+  \DataTypeTok{control =} \KeywordTok{how}\NormalTok{(}\DataTypeTok{nperm =} \DecValTok{999}\NormalTok{))}
+\KeywordTok{summary}\NormalTok{(iva_ward_k2, }\DataTypeTok{indvalcomp =} \OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{colSums}\NormalTok{(mi_fam)}
+\NormalTok{(p_ward_adj <-}\StringTok{ }\KeywordTok{p.adjust}\NormalTok{(iva_ward_k2}\OperatorTok{$}\NormalTok{sign}\OperatorTok{$}\NormalTok{p.value))}
+\NormalTok{(iva_ward_boot <-}\StringTok{ }\KeywordTok{strassoc}\NormalTok{(}
+  \DataTypeTok{X =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_ward_k2,}
+  \DataTypeTok{func =} \StringTok{"IndVal.g"}\NormalTok{,}
+  \DataTypeTok{nboot =} \DecValTok{1000}\NormalTok{))}
+\CommentTok{#'}
+\CommentTok{#' ## Análisis de especies con preferencia por hábitat mediante el coeficiente de correlación biserial puntual}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ UPGMA}
+\CommentTok{#' }
+\NormalTok{phi_upgma_k2 <-}\StringTok{ }\KeywordTok{multipatt}\NormalTok{(}
+\NormalTok{  mi_fam,}
+\NormalTok{  grupos_upgma_k2,}
+  \DataTypeTok{func =} \StringTok{"r.g"}\NormalTok{,}
+  \DataTypeTok{max.order =} \DecValTok{1}\NormalTok{,}
+  \DataTypeTok{control =} \KeywordTok{how}\NormalTok{(}\DataTypeTok{nperm =} \DecValTok{999}\NormalTok{))}
+\KeywordTok{summary}\NormalTok{(phi_upgma_k2)}
+\KeywordTok{colSums}\NormalTok{(mi_fam)}
+\NormalTok{(phi_upgma_boot <-}\StringTok{ }\KeywordTok{strassoc}\NormalTok{(}
+  \DataTypeTok{X =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_upgma_k2,}
+  \DataTypeTok{func =} \StringTok{"r.g"}\NormalTok{,}
+  \DataTypeTok{nboot =} \DecValTok{1000}\NormalTok{))}
+\CommentTok{#'}
+\CommentTok{#' Ward}
+\CommentTok{#' }
+\NormalTok{phi_ward_k2 <-}\StringTok{ }\KeywordTok{multipatt}\NormalTok{(}
+\NormalTok{  mi_fam,}
+\NormalTok{  grupos_ward_k2,}
+  \DataTypeTok{func =} \StringTok{"r.g"}\NormalTok{,}
+  \DataTypeTok{max.order =} \DecValTok{2}\NormalTok{,}
+  \DataTypeTok{control =} \KeywordTok{how}\NormalTok{(}\DataTypeTok{nperm =} \DecValTok{999}\NormalTok{))}
+\KeywordTok{summary}\NormalTok{(phi_ward_k2)}
+\KeywordTok{colSums}\NormalTok{(mi_fam)}
+\NormalTok{(phi_ward_boot <-}\StringTok{ }\KeywordTok{strassoc}\NormalTok{(}
+  \DataTypeTok{X =}\NormalTok{ mi_fam,}
+  \DataTypeTok{cluster =}\NormalTok{ grupos_ward_k2,}
+  \DataTypeTok{func =} \StringTok{"r.g"}\NormalTok{,}
+  \DataTypeTok{nboot =} \DecValTok{1000}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de la diversidad de especie alpha}
+
+\CommentTok{#' }
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(plyr)}
+\KeywordTok{library}\NormalTok{(RColorBrewer)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(SpadeR)}
+\KeywordTok{library}\NormalTok{(iNEXT)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{grupos_upgma_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_upgma_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_upgma_k2)}
+\NormalTok{grupos_ward_k2 <-}\StringTok{ }\KeywordTok{readRDS}\NormalTok{(}\StringTok{'grupos_ward_k2.RDS'}\NormalTok{)}
+\KeywordTok{table}\NormalTok{(grupos_ward_k2)}
+\CommentTok{#' }
+\CommentTok{#' ## Diversidad alpha}
+
+\CommentTok{#' - Cinco especies, 55 individuos, abundancias desiguales:}
+\CommentTok{#' }
+\NormalTok{foo1 <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{25}\NormalTok{, }\DecValTok{16}\NormalTok{, }\DecValTok{9}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+\KeywordTok{diversity}\NormalTok{(foo1)}
+\CommentTok{#' }
+\CommentTok{#' - Cinco especies, 55 individuos, abundancias homogéneas}
+\CommentTok{#' }
+\NormalTok{foo2 <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{11}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{11}\NormalTok{)}
+\KeywordTok{diversity}\NormalTok{(foo2)}
+\KeywordTok{log}\NormalTok{(}\DecValTok{5}\NormalTok{)}
+
+\CommentTok{#' **Índices, entropías, equidades, ratios**}
+\CommentTok{#' }
+\NormalTok{(indices <-}\StringTok{ }\KeywordTok{alpha_div}\NormalTok{(mi_fam))}
+\KeywordTok{pairs}\NormalTok{(indices,}
+      \DataTypeTok{lower.panel =}\NormalTok{ panel.smooth,}
+      \DataTypeTok{upper.panel =}\NormalTok{ panel.cor,}
+      \DataTypeTok{diag.panel =}\NormalTok{ panel.hist,}
+      \DataTypeTok{main =} \StringTok{"Pearson Correlation Matrix"}\NormalTok{)}
+\NormalTok{indices_env <-}\StringTok{ }\KeywordTok{bind_cols}\NormalTok{(}
+\NormalTok{  indices,}
+\NormalTok{  bci_env_grid }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}
+\StringTok{    }\NormalTok{st_drop_geometry }\OperatorTok{%>%}
+\StringTok{    }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\KeywordTok{matches}\NormalTok{(}\StringTok{'^geom.*pct$'}\NormalTok{)))}
+\NormalTok{indices_env }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\KeywordTok{ezCorM}\NormalTok{(indices_env, }\DataTypeTok{r_size_lims =} \KeywordTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{5}\NormalTok{), }\DataTypeTok{label_size =} \DecValTok{4}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' **Modelos de abundancia de especies**}
+\CommentTok{#' }
+\NormalTok{mi_fam_mae <-}\StringTok{ }\KeywordTok{radfit}\NormalTok{(mi_fam)}
+\KeywordTok{plot}\NormalTok{(mi_fam_mae)}
+\CommentTok{#' }
+\CommentTok{#' **Rarefacción**}
+\CommentTok{#' }
+\CommentTok{#' Riqueza por sitios}
+\CommentTok{#' }
+\NormalTok{riqueza <-}\StringTok{ }\KeywordTok{specnumber}\NormalTok{(mi_fam)}
+\NormalTok{riqueza }\OperatorTok{%>%}\StringTok{ }\NormalTok{sort}
+\CommentTok{#' }
+\CommentTok{#' Sitios con riqueza mínima y máxima}
+\CommentTok{#' }
+\NormalTok{riqueza[riqueza }\OperatorTok{==}\StringTok{ }\KeywordTok{min}\NormalTok{(riqueza)]}
+\NormalTok{riqueza[riqueza }\OperatorTok{==}\StringTok{ }\KeywordTok{max}\NormalTok{(riqueza)]}
+\KeywordTok{range}\NormalTok{(riqueza)}
+\CommentTok{#' }
+\CommentTok{#' Abundancia por sitios}
+\CommentTok{#' }
+\NormalTok{abundancia <-}\StringTok{ }\KeywordTok{rowSums}\NormalTok{(mi_fam)}
+\NormalTok{abundancia }\OperatorTok{%>%}\StringTok{ }\NormalTok{sort}
+\CommentTok{#' }
+\CommentTok{#' Sitios con abundancias mínima y máxima}
+\CommentTok{#' }
+\NormalTok{abundancia[abundancia }\OperatorTok{==}\StringTok{ }\KeywordTok{min}\NormalTok{(abundancia)]}
+\NormalTok{abundancia[abundancia }\OperatorTok{==}\StringTok{ }\KeywordTok{max}\NormalTok{(abundancia)]}
+\NormalTok{(rango_abun <-}\StringTok{ }\KeywordTok{range}\NormalTok{(abundancia))}
+\CommentTok{#'}
+\CommentTok{#' Abundancia en el sitio más pobre}
+\CommentTok{#' }
+\NormalTok{abundancia[riqueza }\OperatorTok{==}\StringTok{ }\KeywordTok{min}\NormalTok{(riqueza)]}
+\CommentTok{#' }
+\CommentTok{#' Abundancia en el sitio más rico}
+\CommentTok{#' }
+\NormalTok{abundancia[riqueza }\OperatorTok{==}\StringTok{ }\KeywordTok{max}\NormalTok{(riqueza)]}
+\CommentTok{#' }
+\CommentTok{#' Riqueza en el sitio con menor abundancia}
+\CommentTok{#' }
+\NormalTok{riqueza[abundancia }\OperatorTok{==}\StringTok{ }\KeywordTok{min}\NormalTok{(abundancia)]}
+\CommentTok{#' }
+\CommentTok{#' Riqueza en el sitio con mayor abundancia}
+\CommentTok{#' }
+\NormalTok{riqueza[abundancia }\OperatorTok{==}\StringTok{ }\KeywordTok{max}\NormalTok{(abundancia)]}
+\CommentTok{#' }
+\CommentTok{#' Rarefacción a la abundancia más pequeña encontrada}
+\CommentTok{#' }
+\NormalTok{riqueza_menor_abun <-}\StringTok{ }\KeywordTok{rarefy}\NormalTok{(mi_fam, }\DataTypeTok{sample =}\NormalTok{ rango_abun[}\DecValTok{1}\NormalTok{])}
+\KeywordTok{sort}\NormalTok{(riqueza)}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{round}\NormalTok{(riqueza_menor_abun))}
+\KeywordTok{rarecurve}\NormalTok{(}
+\NormalTok{  mi_fam,}
+  \DataTypeTok{step =} \DecValTok{1}\NormalTok{,}
+  \DataTypeTok{sample =}\NormalTok{ rango_abun[}\DecValTok{1}\NormalTok{],}
+  \DataTypeTok{xlab =} \StringTok{"Número de individuos (tamaño de muestra)"}\NormalTok{,}
+  \DataTypeTok{ylab =} \StringTok{"Especies"}\NormalTok{,}
+  \DataTypeTok{label =} \OtherTok{TRUE}\NormalTok{,}
+  \DataTypeTok{col =} \StringTok{"blue"}
+\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Riqueza de especies, estimación y comparación, "completitud de muestra" (existe en el diccionario) (Chao y Chiu, 2016)}
+\CommentTok{#' }
+\CommentTok{#' Aproximación básica:}
+\CommentTok{#' }
+\KeywordTok{specpool}\NormalTok{(mi_fam)}
+\KeywordTok{specpool}\NormalTok{(mi_fam)[[}\DecValTok{1}\NormalTok{]]}\OperatorTok{/}\KeywordTok{specpool}\NormalTok{(mi_fam)}\OperatorTok{*}\DecValTok{100}
+
+\CommentTok{#' Generar la matriz de comunidad combinada, en la que todos los sitios forman uno.}
+\CommentTok{#' }
+\NormalTok{mi_fam_combinada <-}\StringTok{ }\KeywordTok{colSums}\NormalTok{(mi_fam)}
+\NormalTok{mi_fam_combinada }\OperatorTok{%>%}\StringTok{ }\NormalTok{sort}
+\NormalTok{mi_fam_combinada_chao <-}\StringTok{ }\KeywordTok{estimacion_riqueza_chao}\NormalTok{(}
+  \DataTypeTok{mc =}\NormalTok{ mi_fam_combinada,}
+  \DataTypeTok{n_raras =} \DecValTok{10}\NormalTok{)}
+\NormalTok{mi_fam_combinada_chao}\OperatorTok{$}\NormalTok{asintoticos_estimacion}
+\NormalTok{mi_fam_combinada_chao}\OperatorTok{$}\NormalTok{no_asintoticos_rarefaccion_extrapolacion}
+\NormalTok{mi_fam_combinada_chao}\OperatorTok{$}\NormalTok{no_asintoticos_rarefaccion_extrapolacion_grafico}
+ 
+\CommentTok{#' #' Generar matriz de comunidad agrupada según el método de Ward (tres grupos), procedente de pasos previos (ver scripts de análisis de agrupamiento).}
+\CommentTok{#' }
+\NormalTok{mi_fam_k3 <-}\StringTok{ }\NormalTok{mi_fam }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{g=}\NormalTok{grupos_ward_k2) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(g) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{summarise_all}\NormalTok{(sum) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{g) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{data.frame}
+\NormalTok{mi_fam_k3 }\OperatorTok{%>%}\StringTok{ }\NormalTok{rowSums }\OperatorTok{%>%}\StringTok{ }\NormalTok{sort}
+\NormalTok{mi_fam_k3_chao <-}\StringTok{ }\KeywordTok{estimacion_riqueza_chao}\NormalTok{(}
+  \DataTypeTok{mc =}\NormalTok{ mi_fam_k3,}
+  \DataTypeTok{n_raras =} \DecValTok{10}\NormalTok{)}
+\NormalTok{mi_fam_k3_chao}\OperatorTok{$}\NormalTok{asintoticos_estimacion}
+\NormalTok{mi_fam_k3_chao}\OperatorTok{$}\NormalTok{no_asintoticos_rarefaccion_extrapolacion}
+\NormalTok{mi_fam_k3_chao}\OperatorTok{$}\NormalTok{no_asintoticos_rarefaccion_extrapolacion_grafico}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de diversidad beta}
+
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(plyr)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(vegetarian)}
+\KeywordTok{library}\NormalTok{(mapview)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Diversidad beta con un único número}
+\CommentTok{#' }
+\NormalTok{beta_multiplicativa <-}\StringTok{ }\KeywordTok{calcular_beta_multiplicativa}\NormalTok{(}
+  \DataTypeTok{mc =}\NormalTok{ mi_fam,}
+  \DataTypeTok{orden =} \DecValTok{0}\OperatorTok{:}\DecValTok{20}\NormalTok{)}
+\NormalTok{beta_multiplicativa}
+
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Contribución de especies a la diversidad beta (SCBD, *species contribution to beta diversity*) y contribución local a la diversidad beta (LCBD *local contribution to beta diversity*)}
+\CommentTok{#' }
+\KeywordTok{determinar_contrib_local_y_especie}\NormalTok{(}
+  \DataTypeTok{mc =}\NormalTok{ mi_fam,}
+  \DataTypeTok{alpha =} \FloatTok{0.05}\NormalTok{,}
+  \DataTypeTok{nperm =} \DecValTok{9999}\NormalTok{,}
+  \DataTypeTok{metodo =} \StringTok{'hellinger'}\NormalTok{)}
+\CommentTok{#' }
+\NormalTok{mapa_cuadros <-}\StringTok{ }\KeywordTok{mapView}\NormalTok{(}
+\NormalTok{  bci_env_grid,}
+  \DataTypeTok{col.regions =} \StringTok{'grey80'}\NormalTok{,}
+  \DataTypeTok{alpha.regions =} \FloatTok{0.3}\NormalTok{,}
+  \DataTypeTok{map.types =} \StringTok{'OpenTopoMap'}\NormalTok{,}
+  \DataTypeTok{legend =}\NormalTok{ F, }\DataTypeTok{zoom =} \DecValTok{14}\NormalTok{,}
+  \DataTypeTok{zcol =} \StringTok{'id'}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{addStaticLabels}\NormalTok{() }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{leaflet}\OperatorTok{::}\KeywordTok{setView}\NormalTok{(}
+    \DataTypeTok{lng =} \OperatorTok{-}\FloatTok{79.85136}\NormalTok{,}
+    \DataTypeTok{lat =} \FloatTok{9.15097}\NormalTok{,}
+    \DataTypeTok{zoom =} \DecValTok{15}\NormalTok{)}
+
+\NormalTok{contrib_local_especie_guardado <-}\StringTok{ }\KeywordTok{determinar_contrib_local_y_especie}\NormalTok{(}
+  \DataTypeTok{mc =}\NormalTok{ mi_fam,}
+  \DataTypeTok{alpha =} \FloatTok{0.05}\NormalTok{,}
+  \DataTypeTok{nperm =} \DecValTok{9999}\NormalTok{,}
+  \DataTypeTok{metodo =} \StringTok{'hellinger'}\NormalTok{)}
+\NormalTok{contrib_local_especie_guardado}\OperatorTok{$}\NormalTok{especies_contribuyen_betadiv }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{bind_rows }\OperatorTok{%>%}\StringTok{ }\KeywordTok{gather}\NormalTok{(especie, valor) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{valor =} \KeywordTok{round}\NormalTok{(valor, }\DecValTok{2}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{()}
+
+\CommentTok{#' }
+\CommentTok{#' Utilizar el mapa de cuadros para identificar aquellos que contribuyen más a la diversidad beta. Explorar mapas de variables ambientales (aec_6).}
+\CommentTok{#' }
+\NormalTok{mapa_cuadros }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#'Análisis de ecología espacial}
+
+\KeywordTok{library}\NormalTok{(ape)}
+\KeywordTok{library}\NormalTok{(spdep)}
+\KeywordTok{library}\NormalTok{(ade4)}
+\KeywordTok{library}\NormalTok{(adegraphics)}
+\KeywordTok{library}\NormalTok{(adespatial)}
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{library}\NormalTok{(gridExtra)}
+\KeywordTok{library}\NormalTok{(grid)}
+\KeywordTok{library}\NormalTok{(gtable)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'https://raw.githubusercontent.com/maestria-geotel-master/unidad-3-asignacion-1-vecindad-autocorrelacion-espacial/master/lisaclusters.R'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Cargar datos}
+\CommentTok{#' }
+\KeywordTok{load}\NormalTok{(}\StringTok{"~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata"}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{)}
+\NormalTok{mi_fam <-}\StringTok{ }\NormalTok{mc_malvc}
+\NormalTok{mi_fam }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Generar matriz Hellinger}
+\CommentTok{#' }
+\NormalTok{mi_fam_hel <-}\StringTok{ }\KeywordTok{decostand}\NormalTok{ (mi_fam, }\StringTok{"hellinger"}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Transformar matriz ambiental en objeto `sp`, generar vecindad}
+\CommentTok{#' }
+\NormalTok{bci_env_grid_sp <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{as_Spatial}
+\NormalTok{centroides <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{st_centroid}
+\NormalTok{bci_xy <-}\StringTok{ }\NormalTok{centroides }\OperatorTok{%>%}\StringTok{ }\NormalTok{st_coordinates }\OperatorTok{%>%}\StringTok{ }\NormalTok{as.data.frame}
+\NormalTok{(vecindad <-}\StringTok{ }\NormalTok{bci_env_grid_sp }\OperatorTok{%>%}\StringTok{ }\NormalTok{poly2nb)}
+\NormalTok{(pesos_b <-}\StringTok{ }\KeywordTok{nb2listw}\NormalTok{(vecindad, }\DataTypeTok{style =} \StringTok{'B'}\NormalTok{))}
+\CommentTok{#+ fig.width=12, fig.height=6}
+\KeywordTok{plot}\NormalTok{(bci_env_grid_sp)}
+\KeywordTok{plot}\NormalTok{(vecindad, }\DataTypeTok{coords =}\NormalTok{ bci_xy, }\DataTypeTok{add=}\NormalTok{T, }\DataTypeTok{col =} \StringTok{'red'}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' ## Autocorrelación espacial mediante correlograma}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Una y solo una variable ambiental}
+\CommentTok{#' }
+\NormalTok{var_ph <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{st_drop_geometry }\OperatorTok{%>%}\StringTok{ }\KeywordTok{pull}\NormalTok{(pH)}
+\NormalTok{ph_correl <-}\StringTok{ }\KeywordTok{sp.correlogram}\NormalTok{(vecindad,}
+\NormalTok{                            var_ph,}
+                            \DataTypeTok{order =} \DecValTok{9}\NormalTok{,}
+                            \DataTypeTok{method =} \StringTok{"I"}\NormalTok{,}
+                            \DataTypeTok{zero.policy =} \OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{print}\NormalTok{(ph_correl, }\DataTypeTok{digits =} \DecValTok{2}\NormalTok{, }\DataTypeTok{p.adj.method =} \StringTok{'holm'}\NormalTok{)}
+\CommentTok{#+ fig.width=12, fig.height=6}
+\KeywordTok{plot}\NormalTok{(ph_correl)}
+\CommentTok{#'}
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Múltiples variables}
+\CommentTok{#' }
+\CommentTok{#' #### Abundancias de especies (matriz de comunidad transformada)}
+\CommentTok{#' }
+\KeywordTok{suppressWarnings}\NormalTok{(auto_spp_hel <-}\StringTok{ }\KeywordTok{calcular_autocorrelacion}\NormalTok{(}
+  \DataTypeTok{df_fuente =}\NormalTok{ mi_fam_hel,}
+  \DataTypeTok{orden =} \DecValTok{9}\NormalTok{,}
+  \DataTypeTok{obj_vecindad =}\NormalTok{ vecindad,}
+  \DataTypeTok{pos_var =} \StringTok{'(matriz Hellinger)'}\NormalTok{))}
+\KeywordTok{print}\NormalTok{(auto_spp_hel, }\DataTypeTok{digits =} \DecValTok{2}\NormalTok{, }\DataTypeTok{p.adj.method =} \StringTok{'holm'}\NormalTok{)}
+\NormalTok{dim_panel <-}\StringTok{ }\KeywordTok{rev}\NormalTok{(}\KeywordTok{n2mfrow}\NormalTok{(}\KeywordTok{ncol}\NormalTok{(mi_fam_hel)))}
+\CommentTok{#+ fig.width=12, fig.height=10}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =}\NormalTok{ dim_panel)}
+\KeywordTok{suppressWarnings}\NormalTok{(}\KeywordTok{invisible}\NormalTok{(}\KeywordTok{lapply}\NormalTok{(auto_spp_hel, }\ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{plot}\NormalTok{(x, }\DataTypeTok{main =}\NormalTok{ x}\OperatorTok{$}\NormalTok{var))))}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Variables ambientales (matriz ambiental)}
+\CommentTok{#' }
+\NormalTok{bci_env_grid_num <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\NormalTok{st_drop_geometry }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id, }\OperatorTok{-}\NormalTok{UTM.EW, }\OperatorTok{-}\NormalTok{UTM.NS)}
+\KeywordTok{suppressWarnings}\NormalTok{(auto_amb <-}\StringTok{ }\KeywordTok{calcular_autocorrelacion}\NormalTok{(}
+  \DataTypeTok{df_fuente =}\NormalTok{ bci_env_grid_num,}
+  \DataTypeTok{orden =} \DecValTok{9}\NormalTok{,}
+  \DataTypeTok{obj_vecindad =}\NormalTok{ vecindad))}
+\KeywordTok{print}\NormalTok{(auto_amb, }\DataTypeTok{digits =} \DecValTok{2}\NormalTok{, }\DataTypeTok{p.adj.method =} \StringTok{'holm'}\NormalTok{)}
+\NormalTok{dim_panel <-}\StringTok{ }\KeywordTok{rev}\NormalTok{(}\KeywordTok{n2mfrow}\NormalTok{(}\KeywordTok{ncol}\NormalTok{(bci_env_grid_num)))}
+\CommentTok{#+ fig.width=12, fig.height=14}
+\KeywordTok{par}\NormalTok{(}\DataTypeTok{mfrow =}\NormalTok{ dim_panel)}
+\KeywordTok{suppressWarnings}\NormalTok{(}\KeywordTok{invisible}\NormalTok{(}\KeywordTok{lapply}\NormalTok{(auto_amb, }\ControlFlowTok{function}\NormalTok{(x) }\KeywordTok{plot}\NormalTok{(x, }\DataTypeTok{main =}\NormalTok{ x}\OperatorTok{$}\NormalTok{var))))}
+\CommentTok{#' }
+\CommentTok{#' ## Autocorrelación espacial mediante prueba Mantel (matrices de distancia)}
+ 
+\NormalTok{mi_fam_sin_tendencia <-}\StringTok{ }\KeywordTok{resid}\NormalTok{(}
+  \KeywordTok{lm}\NormalTok{(}\KeywordTok{as.matrix}\NormalTok{(mi_fam_hel) }\OperatorTok{~}\StringTok{ }\NormalTok{.,}
+     \DataTypeTok{data =}\NormalTok{ bci_xy))}
+\NormalTok{mi_fam_sin_tendencia_d <-}\StringTok{ }\KeywordTok{dist}\NormalTok{(mi_fam_sin_tendencia)}
+\NormalTok{(mi_fam_correlograma <-}\StringTok{ }\KeywordTok{mantel.correlog}\NormalTok{(}
+\NormalTok{  mi_fam_sin_tendencia_d,}
+  \DataTypeTok{XY =}\NormalTok{ bci_xy,}
+  \DataTypeTok{nperm =} \DecValTok{999}\NormalTok{))}
+\CommentTok{#+ fig.width=12, fig.height=6}
+\KeywordTok{plot}\NormalTok{(mi_fam_correlograma)}
+\CommentTok{#' }
+\CommentTok{#' ## Autocorrelación espacial por medio de pruebas de permutación para el I de Moran}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ I de Moran global aplicado a abundancia de especies transformadas sin tendencia}
+\CommentTok{#' }
+\NormalTok{(autocor_global_residuos <-}\StringTok{ }\KeywordTok{sapply}\NormalTok{(}
+  \KeywordTok{dimnames}\NormalTok{(mi_fam_sin_tendencia)[[}\DecValTok{2}\NormalTok{]],}
+  \ControlFlowTok{function}\NormalTok{(x)}
+    \KeywordTok{moran.mc}\NormalTok{(}
+      \DataTypeTok{x =}\NormalTok{ mi_fam_sin_tendencia[,x],}
+      \DataTypeTok{listw =}\NormalTok{ pesos_b,}
+      \DataTypeTok{zero.policy =}\NormalTok{ T,}
+      \DataTypeTok{nsim =} \DecValTok{9999}\NormalTok{),}
+  \DataTypeTok{simplify =}\NormalTok{ F))}
+\CommentTok{#' }
+\CommentTok{#' }\AlertTok{###}\CommentTok{ I de Moran local}
+\CommentTok{#' }
+\CommentTok{#' #### Aplicado a variables ambientales}
+\CommentTok{#' }
+\NormalTok{bci_env_grid_num_sf <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{select_if}\NormalTok{(is.numeric) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{id, }\OperatorTok{-}\NormalTok{UTM.EW, }\OperatorTok{-}\NormalTok{UTM.NS)}
+\NormalTok{bci_env_grid_num_sf }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{lisamaps_amb <-}\StringTok{ }\KeywordTok{sapply}\NormalTok{(}\KeywordTok{grep}\NormalTok{(}\StringTok{'geometry'}\NormalTok{, }\KeywordTok{names}\NormalTok{(bci_env_grid_num_sf), }\DataTypeTok{invert =}\NormalTok{ T, }\DataTypeTok{value =}\NormalTok{ T),}
+                       \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{                         m <-}\StringTok{ }\KeywordTok{lisamap}\NormalTok{(}\DataTypeTok{objesp =}\NormalTok{ bci_env_grid_num_sf[x],}
+                                      \DataTypeTok{var =}\NormalTok{ x,}
+                                      \DataTypeTok{pesos =}\NormalTok{ pesos_b,}
+                                      \DataTypeTok{tituloleyenda =} \StringTok{'Significancia ("x-y", léase como "x" rodeado de "y")'}\NormalTok{,}
+                                      \DataTypeTok{leyenda =}\NormalTok{ F,}
+                                      \DataTypeTok{anchuratitulo =} \DecValTok{50}\NormalTok{,}
+                                      \DataTypeTok{tamanotitulo =} \DecValTok{10}\NormalTok{,}
+                                      \DataTypeTok{fuentedatos =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{http://ctfs.si.edu/webatlas/datasets/bci/'}\NormalTok{,}
+                                      \DataTypeTok{titulomapa =} \KeywordTok{paste0}\NormalTok{(}\StringTok{'Clusters LISA de "'}\NormalTok{, x, }\StringTok{'"'}\NormalTok{))}
+                         \KeywordTok{return}\NormalTok{(m}\OperatorTok{$}\NormalTok{grafico)}
+\NormalTok{                       \}, }\DataTypeTok{simplify =}\NormalTok{ F}
+\NormalTok{)}
+\NormalTok{lisamaps_amb}\OperatorTok{$}\NormalTok{leyenda <-}\StringTok{ }\KeywordTok{gtable_filter}\NormalTok{(}\KeywordTok{ggplot_gtable}\NormalTok{(}\KeywordTok{ggplot_build}\NormalTok{(lisamaps_amb[[}\DecValTok{1}\NormalTok{]] }\OperatorTok{+}\StringTok{ }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position=}\StringTok{"bottom"}\NormalTok{))), }\StringTok{"guide-box"}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_amb[}\DecValTok{1}\OperatorTok{:}\DecValTok{12}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_amb}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_amb[}\DecValTok{13}\OperatorTok{:}\DecValTok{22}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_amb}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_amb[}\DecValTok{23}\OperatorTok{:}\DecValTok{31}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_amb}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' #### Aplicado a abundancias de especies transformadas}
+\CommentTok{#' }
+\NormalTok{mi_fam_hel_sf <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{select }\OperatorTok{%>%}\StringTok{ }\KeywordTok{bind_cols}\NormalTok{(mi_fam_hel)}
+\NormalTok{lisamaps_mifam <-}\StringTok{ }\KeywordTok{sapply}\NormalTok{(}
+  \KeywordTok{grep}\NormalTok{(}\StringTok{'geometry'}\NormalTok{, }\KeywordTok{names}\NormalTok{(mi_fam_hel_sf), }\DataTypeTok{invert =}\NormalTok{ T, }\DataTypeTok{value =}\NormalTok{ T),}
+  \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{    m <-}\StringTok{ }\KeywordTok{lisamap}\NormalTok{(}\DataTypeTok{objesp =}\NormalTok{ mi_fam_hel_sf[x],}
+                 \DataTypeTok{var =}\NormalTok{ x,}
+                 \DataTypeTok{pesos =}\NormalTok{ pesos_b,}
+                 \DataTypeTok{tituloleyenda =} \StringTok{'Significancia ("x-y", léase como "x" rodeado de "y")'}\NormalTok{,}
+                 \DataTypeTok{leyenda =}\NormalTok{ F,}
+                 \DataTypeTok{anchuratitulo =} \DecValTok{50}\NormalTok{,}
+                 \DataTypeTok{tamanotitulo =} \DecValTok{10}\NormalTok{,}
+                 \DataTypeTok{fuentedatos =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{http://ctfs.si.edu/webatlas/datasets/bci/'}\NormalTok{,}
+                 \DataTypeTok{titulomapa =} \KeywordTok{paste0}\NormalTok{(}\StringTok{'Clusters LISA de "'}\NormalTok{, x, }\StringTok{'"'}\NormalTok{))}
+    \CommentTok{# dev.new();print(m$grafico)}
+    \KeywordTok{return}\NormalTok{(m}\OperatorTok{$}\NormalTok{grafico)}
+\NormalTok{  \}, }\DataTypeTok{simplify =}\NormalTok{ F}
+\NormalTok{)}
+\NormalTok{lisamaps_mifam}\OperatorTok{$}\NormalTok{leyenda <-}\StringTok{ }\KeywordTok{gtable_filter}\NormalTok{(}\KeywordTok{ggplot_gtable}\NormalTok{(}\KeywordTok{ggplot_build}\NormalTok{(lisamaps_mifam[[}\DecValTok{1}\NormalTok{]] }\OperatorTok{+}\StringTok{ }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position=}\StringTok{"bottom"}\NormalTok{))), }\StringTok{"guide-box"}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_mifam[}\DecValTok{1}\OperatorTok{:}\DecValTok{8}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_mifam}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_mifam[}\DecValTok{9}\OperatorTok{:}\DecValTok{16}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_mifam}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\CommentTok{#' }
+\CommentTok{#' #### Aplicado a abundancias de especies transformadas sin tendencia}
+\CommentTok{#' }
+\NormalTok{mi_fam_sintendencia_sf <-}\StringTok{ }\NormalTok{bci_env_grid }\OperatorTok{%>%}\StringTok{ }\NormalTok{select }\OperatorTok{%>%}\StringTok{ }\KeywordTok{bind_cols}\NormalTok{(mi_fam_sin_tendencia }\OperatorTok{%>%}\StringTok{ }\NormalTok{as.data.frame)}
+\NormalTok{lisamaps_mifam_sintendencia <-}\StringTok{ }\KeywordTok{sapply}\NormalTok{(}
+  \KeywordTok{grep}\NormalTok{(}\StringTok{'geometry'}\NormalTok{, }\KeywordTok{names}\NormalTok{(mi_fam_sintendencia_sf), }\DataTypeTok{invert =}\NormalTok{ T, }\DataTypeTok{value =}\NormalTok{ T),}
+  \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{    m <-}\StringTok{ }\KeywordTok{lisamap}\NormalTok{(}\DataTypeTok{objesp =}\NormalTok{ mi_fam_sintendencia_sf[x],}
+                 \DataTypeTok{var =}\NormalTok{ x,}
+                 \DataTypeTok{pesos =}\NormalTok{ pesos_b,}
+                 \DataTypeTok{tituloleyenda =} \StringTok{'Significancia ("x-y", léase como "x" rodeado de "y")'}\NormalTok{,}
+                 \DataTypeTok{leyenda =}\NormalTok{ F,}
+                 \DataTypeTok{anchuratitulo =} \DecValTok{50}\NormalTok{,}
+                 \DataTypeTok{tamanotitulo =} \DecValTok{10}\NormalTok{,}
+                 \DataTypeTok{fuentedatos =} \StringTok{'}\CharTok{\textbackslash{}n}\StringTok{http://ctfs.si.edu/webatlas/datasets/bci/'}\NormalTok{,}
+                 \DataTypeTok{titulomapa =} \KeywordTok{paste0}\NormalTok{(}\StringTok{'Clusters LISA de "'}\NormalTok{, x, }\StringTok{'"'}\NormalTok{))}
+    \CommentTok{# dev.new();print(m$grafico)}
+    \KeywordTok{return}\NormalTok{(m}\OperatorTok{$}\NormalTok{grafico)}
+\NormalTok{  \}, }\DataTypeTok{simplify =}\NormalTok{ F}
+\NormalTok{)}
+\NormalTok{lisamaps_mifam_sintendencia}\OperatorTok{$}\NormalTok{leyenda <-}\StringTok{ }\KeywordTok{gtable_filter}\NormalTok{(}\KeywordTok{ggplot_gtable}\NormalTok{(}\KeywordTok{ggplot_build}\NormalTok{(lisamaps_mifam_sintendencia[[}\DecValTok{1}\NormalTok{]] }\OperatorTok{+}\StringTok{ }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{legend.position=}\StringTok{"bottom"}\NormalTok{))), }\StringTok{"guide-box"}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_mifam_sintendencia[}\DecValTok{1}\OperatorTok{:}\DecValTok{8}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_mifam_sintendencia}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+\KeywordTok{grid.arrange}\NormalTok{(}\KeywordTok{do.call}\NormalTok{(}\StringTok{'arrangeGrob'}\NormalTok{, }\KeywordTok{c}\NormalTok{(lisamaps_mifam_sintendencia[}\DecValTok{9}\OperatorTok{:}\DecValTok{16}\NormalTok{], }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)), lisamaps_mifam_sintendencia}\OperatorTok{$}\NormalTok{leyenda, }\DataTypeTok{heights=}\KeywordTok{c}\NormalTok{(}\FloatTok{1.1}\NormalTok{, }\FloatTok{0.1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{)}
+
+\NormalTok{\textbackslash{}ldots}
+\end{Highlighting}
+\end{Shaded}
 
 \section*{Referencias}\label{referencias}
 \addcontentsline{toc}{section}{Referencias}
