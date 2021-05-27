@@ -160,7 +160,9 @@ Panamá.},
 \makeatother
 
 \usepackage{pdflscape} \newcommand{\blandscape}{\begin{landscape}}
-\newcommand{\elandscape}{\end{landscape}}
+\newcommand{\elandscape}{\end{landscape}} \usepackage{float}
+\floatplacement{figure}{H}
+\newcommand{\beginsupplement}{ \setcounter{table}{0} \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}} }
 
 
 % add tightlist ----------
@@ -202,18 +204,31 @@ Panamá.},
 
     \vskip 8.5pt % \small 
 
-\noindent Las especies de la familia \emph{Malvaceae} se agrupan de manera
-discontinua dentro de la parcela permanente de 50 hectárea de la BCI,
-mayormente se concentran en sitios húmedos en presencia de los elementos
-\emph{zinc} (Zn), \emph{Boro} (B), potasio (K) y donde el nivel del pH
-sea idóneo y la llanura, la vaguada, la vertiente y el espolón las zonas
-aptas para su crecimiento y desarrollo. Las especies reconocidas como
-indicadoras fueron la \emph{Quararibea asterolepis} y la \emph{Sterculia
-apetala} por tener los índices más altos 0.98\% y 0.91\%
-respectivamente. Asimismo, existe una distribución equitativa entre las
-especies con un rango de riqueza de 5 a 13 y de abundancia de 31 a 127
-grupos por sitios, siendo la \emph{Quararibea asterolepis} la principal
-contribuidora a la diversidad beta según el correlograma con 0.18\%.
+\noindent La familia \emph{Malvaceae} son plantas generalemente de tipo herbáceas,
+leñosas o de arbustos donde su distribución en el espacio estará
+condicinado principalmente por el factor clima. Este estudio fue
+realizado por la aplicación de la ecología numérica y tuvo como objetivo
+conocer la asociación de las diferentes especies y las variables
+ambientales que influyen en ello. Además, del análisis de la forma en
+que se agrupan y el patrón de distribución que presentan, al igual, la
+identificación de los indicadores ambientales que interfieren. Asimismo,
+examinar en qué volumen se encuentran representadas cada una y distiguir
+los sitios con especies alpha y beta. Los datos obtenidos fueron por
+medio de los censos realizados en varios años en la BCI y sometidos a
+distintas métricas de funciones ecológicas para la satisfacción de los
+resultados esperados. Existen 16 grupos de dicha familia y se agrupan de
+manera discontinua dentro de la parcela permanente de 50 hectárea en la
+isla, mayormente se concentran en sitios húmedos en presencia de los
+elementos \emph{zinc} (Zn), \emph{Boro} (B), potasio (K), donde el nivel
+del pH sea idóneo y en la zonas de la llanura, la vaguada, la vertiente
+y el espolón que pueden ser aptas para su crecimiento y desarrollo. Las
+especies reconocidas como indicadoras fueron la \emph{Quararibea
+asterolepis} y la \emph{Sterculia apetala} por tener los índices más
+altos 0.98\% y 0.91\% respectivamente. Asimismo, existe una distribución
+equitativa entre las especies con un rango de riqueza de 5 a 13 y de
+abundancia de 31 a 127 grupos por sitios, siendo la \emph{Quararibea
+asterolepis} la principal contribuidora a la diversidad beta según el
+correlograma con 0.18\%.
 
 
 \vskip 8.5pt \noindent \emph{Keywords}: Género, Planta \par
@@ -265,17 +280,17 @@ aquellos organismos que pueden ser cálculable junto con otros que son
 reproductivos y de manera general con toda la vegetación.
 
 En tal sentido, este estudio por medio de la ecología numérica busca
-conocer cómo estan asociados los diferentes géneros y especies de la
-familia \emph{Malvaceae} y si las variables ambientales existente en la
-zona influyen en dicha asociación. También, analizar como estan
-organizados los grupos y qué patrón presenta en su distribución,
-asimismo, establecer los indicadores ambientales que interfieren. De
-igual manera, examinar en qué volumen se encuentran representadas cada
-una y distiguir los sitios con especies alpha y beta. Por consiguiente,
-este estudio contribuirá al conocimiento de la dinámica ecológica
-espacial que envuelven las plantas pertenecientes a esta familia en la
-isla de Barro Colorado que en lo adelante será llamado BCI y con la
-misma gestionar estrategias para el cuidado y conservación de ésta.
+conocer cómo estan asociadas las diferentes especies de la familia
+\emph{Malvaceae} y si las variables ambientales existente en la zona
+influyen en dicha asociación. También, analizar como estan organizados
+los grupos y qué patrón presenta en su distribución, asimismo,
+establecer los indicadores ambientales que interfieren. De igual manera,
+examinar en qué volumen se encuentran representadas cada una y distiguir
+los sitios con especies alpha y beta. Por consiguiente, este estudio
+contribuirá al conocimiento de la dinámica ecológica espacial que
+envuelven las plantas pertenecientes a esta familia en la isla de Barro
+Colorado que en lo adelante será llamado BCI y con la misma gestionar
+estrategias para el cuidado y conservación de ésta.
 
 \section{Metodología}\label{metodologuxeda}
 
@@ -298,16 +313,27 @@ consiguiente para una variedad de especie vegetal, convirtiendola en un
 espacio de investigación de mucha importancia. Es por ello, la
 escogencia como lugar de estudio la parcela permanente de 50 hectárea de
 BCI, en la cual se identificó como estan asociadas y distribuidas la
-familia \emph{Malvaceae} a través del censo realizado por (Hubbell,
-Condit, \& Foster, 2021) durante varios años (1981-1983 y 2010-2015,
-entre otros) donde se marcaron y cartografiaron todos los tallos leñosos
-independientes de al menos 10 mm de diámetro de altura.
+familia \emph{Malvaceae} a través de los numerosos censos realizados con
+anterioridad.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.80000\textwidth]{MA_BARRO_COLORADO.png}
 \caption{Ubicación de la isla Barro Colorado\label{mapa}}
 \end{figure}
+
+Las informaciones obtenidas datan de los censos registrados durante los
+años (1981-1983 y 2010-2015, entre otros) donde se marcaron y
+cartografiaron todos los tallos leñosos independientes de al menos 10 mm
+de diámetro de altura (Hubbell, Condit, \& Foster, 2021). En los mismos,
+se observó que en el año 1981 y para el 2015 de las 253 especie
+identificadas y medidas la \emph{Quararibea asterolpis}, \emph{Ceiba
+pentandra}, \emph{Apeiba membranacea} y \emph{Luehea seemannii}
+estuvieron entre las plantas de tallos reducidos aunque para el último
+año esta dimensión cambió relativamente, al contrario de la
+\emph{Cavanillesia platanifolia} que en el primer censo fueron poco
+visibles en comparación con los posteriores que tuvieron mayor
+visibilidad.
 
 \subsubsection{Materiales y Técnicas de
 investigación}\label{materiales-y-tuxe9cnicas-de-investigaciuxf3n}
@@ -326,13 +352,12 @@ permitió el estudio de la relación de cada una de las variables con las
 unidades geomorfológicas y los elementos químicos del área, esto ayudó a
 generar mapas de cuadros para ubicar las zonas más y menos densa en
 cuanto a la cantidad de grupos. Por otra parte, los de medición de
-asociación contribuyeron a conocer la relación de grado existente entre
-cada especie utilizando una matriz de transpuesto para la comparación
-por medio de la transformación \emph{Chi}. Se aplicaron distintas
-métricas en modo Q y R, tales como: el índice de correlación de Pearson,
-el \emph{rho} de Spearman o \textbf{tau} de Kendall con las que se
-exploró, de manera preliminar, el grado de asociación entre
-descriptores.
+asociación contribuyeron a conocer la relación existente entre cada
+especie utilizando una matriz de transpuesto para la comparación por
+medio de la transformación \emph{Chi}. Se aplicaron distintas métricas
+en modo Q y R, tales como: el índice de correlación de Pearson, el
+\emph{rho} de Spearman o \textbf{tau} de Kendall con las que se exploró,
+de manera preliminar, el grado de asociación entre descriptores.
 
 El análisis de agrupamiento de los sitios de BCI basados en su
 composición usando una matriz de comunidad transformada por el método de
@@ -359,8 +384,7 @@ alcanzara mayor conveniencia cofenética; si tras cortar su árbol en el
 número de grupos sugerido por las anchuras de siluetas, se obtenía al
 menos un grupo representado por tres o menos sitios sería descartado y
 se prefería el siguiente con mayor idoneidad, hasta obtener el de máxima
-adecuación cofenética y que no produjese grupos compuestos por tres o
-menos sitios.
+adecuación y que no produjese grupos compuestos por tres o menos sitios.
 
 Adicionalmente, como criterio complementario, se evaluaron los grupos
 obtenidos mediante remuestreo por bootstrap multiescalar (Borcard,
@@ -389,14 +413,14 @@ medición se utilizó el índice de \textbf{equidad de Pielou} donde se
 midió la homogeneidad de abundancia de especie, el \textbf{índice de
 concentración de Simpson} para calcular el nivel de concentración de
 cada especie en el área y la ratio de \emph{Hill} para hacer prueba con
-un mismo número de elemento. Este tiene una baja sensibilidad de quedar
-influenciada las zonas por la cantidad de riquezas que pueden tener, al
-realiazar una matriz de comunidad con fuerte dominancia (Borcard, 2018).
-Además, de la aplicación de dos enfoques a dicha matriz: asintóticos y
-no asintóticos que permitió la comparación y estimación de la riqueza de
-cada sitio. Con el asintótico se realizó un estimado de abundancia y con
-el no asintótico se hizo una rarefacción y extrapolación basado en el
-tamaño y cobertura de la muestra.
+un mismo número de elemento. Razón, de que tiene baja sensibilidad de
+quedar influenciada las zonas por la cantidad de riquezas que pueden
+tener, al realiazar una matriz de comunidad con fuerte dominancia
+(Borcard, 2018). Además, de la aplicación de dos enfoques a dicha
+matriz: asintóticos y no asintóticos que permitió la comparación y
+estimación de la riqueza de cada espacio. Con el asintótico se realizó
+un estimado de abundancia y con el no asintótico se hizo una rarefacción
+y extrapolación basado en el tamaño y cobertura de la muestra.
 
 Los análisis de ecología espacial abordaron la autocorrelación de las
 especies en el espacio por medio de una matriz de comunidad transformada
@@ -405,27 +429,28 @@ Mantel (matrices de distancia), pruebas de permutación para el I de
 Moran local y global. Con la primera se conoció la abundancia
 transformada de especie como variables de respuesta, con la segunda la
 abundancia por posición geográfica, la tercera la riqueza por zonas en
-comparación con las demás y con la cuarta métrica la demasía de especie
-a nivel general. Es decir, se identificó la abundancia de cada especie
+comparación con las demás y con la cuarta métrica la cantidad de grupos
+a nivel general. Es decir, se identificó la riqueza de cada especie
 según su ubicación y el nivel de dependencia de las mismas ya sea en un
 sitio o en toda la parcela.
 
-En la parte programática, para la realización de los análisis descritos,
-el software de (R Core Team, 2019) donde se cargaron varios paquetes de
-ecología numérica como el \emph{tidyverse} que ayudó a formar matriz de
-comunidad que permitió identificar las diferentes especies que abundan,
-en qué cantidad y orden de acuerdo a su pH. También, el \emph{Simple
-Features} (sf) para crear área de hábitat por cuadros y obtener la
-densidad de cada especie por metro cuadrado y así conocer la abundancia
-y riqueza global. De igual manera, el \emph{Vegan} para caracterizar y
-analizar el orden y disimilaridades entre cada especie y \emph{ez} para
-examinar las unidades o variables repetitivas. Asimismo, el
-\emph{graphics}, \emph{psych} y \emph{mapvie} para la representación
-gráfica de cada datos y (Kindt \& Coe, 2005) para señalar las especies
-alpha y beta. Por último, cada \emph{script} utilizados fueron
-suministrado a partir del repositorio de (Batlle, 2020) como fuente y el
-programa de información geográfica Qgis (QGIS Development Team, 2009)
-para actualizar el mapa de localización de la BCI.
+En la parte programática, para la realización de los análisis descritos
+anteriormente, se utilizó el software de (R Core Team, 2019) donde se
+cargaron varios paquetes de ecología numérica como el \emph{tidyverse}
+que ayudó a formar matriz de comunidad que permitió identificar las
+diferentes especies que abundan, en qué cantidad y orden de acuerdo a su
+pH. También, el \emph{Simple Features} (sf) para crear área de hábitat
+por cuadros y obtener la densidad de cada especie por metro cuadrado y
+así conocer la abundancia y riqueza global. De igual manera, el
+\emph{Vegan} para caracterizar y analizar el orden y disimilaridades
+entre cada especie y \emph{ez} para examinar las unidades o variables
+repetitivas. Asimismo, el \emph{graphics}, \emph{psych} y \emph{mapvie}
+para la representación gráfica de cada datos y (Kindt \& Coe, 2005) para
+señalar las especies alpha y beta. Por último, cada \emph{script}
+utilizados fueron suministrado a partir del repositorio de (Batlle,
+2020) como fuente y el programa de información geográfica Qgis (QGIS
+Development Team, 2009) para actualizar el mapa de localización de la
+BCI.
 
 \section{Resultados}\label{resultados}
 
@@ -456,10 +481,10 @@ Se evaluaron homogeneidades de promedios de las variables ambientales
 entre los dos grupos establecidos por el método Ward. Las variables que
 presentaron inhomogeneidades significativas fueron N, pH, Cu, B, Mn, y
 el porcentaje de relieve de piedemonte en el cuadro (ver figura
-\ref{homogeneidades} y tabla T1). De manera particular, los sitios
-agrupados en el grupo 1, presentan valores significativamente elevados
-de las variables N, B, pH (entre los ácidos, los menos ácidos del
-conjunto), Cu y Mn. Asimismo, mediante el IndVal y el coeficiente de
+\ref{homogeneidades} y tabla \label{promedio}). De manera particular,
+los sitios agrupados en el grupo 1, presentan valores significativamente
+elevados de las variables N, B, pH (entre los ácidos, los menos ácidos
+del conjunto), Cu y Mn. Asimismo, mediante el IndVal y el coeficiente de
 correlación biserial puntual, se detectaron varias especies asociadas
 con los hábitats representados por cada uno de los grupos.
 Concretamente, se detectó a \emph{Quararibea asterolepis} como especie
@@ -469,23 +494,43 @@ tibourbou}.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.10000\textwidth]{agrupamiento_metodos.png}
+\includegraphics[width=1.00000\textwidth]{agrupamiento_metodos.png}
 \caption{matriz de comunidad normalizada\label{agrupado}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{abndancia_especie.png}
+\includegraphics[width=1.10000\textwidth]{abndancia_especie.png}
 \caption{Representación de especies por abundancia de
 sitio\label{abundancia}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{diagrama_caja_especies.png}
+\includegraphics[width=1.10000\textwidth]{diagrama_caja_especies.png}
 \caption{Representación de especies por abundancia de
 sitio\label{homogeneidades}}
 \end{figure}
+
+Tabla de homogeneidad de promedios de variables
+ambientales\label{promedio}
+
+\begin{longtable}[]{@{}lrr@{}}
+\toprule
+variable & Valor de p, prueba t & Valor de p, prueba
+Wilcoxon\tabularnewline
+\midrule
+\endhead
+N & 0.00 & 0.02\tabularnewline
+pH & 0.00 & 0.00\tabularnewline
+Cu & 0.01 & 0.03\tabularnewline
+B & 0.02 & 0.02\tabularnewline
+geomorf\_piedemonte\_pct & 0.02 & 0.43\tabularnewline
+Mn & 0.04 & 0.03\tabularnewline
+riqueza\_global & 0.05 & 0.04\tabularnewline
+Al & 0.11 & 0.05\tabularnewline
+\bottomrule
+\end{longtable}
 
 Al aplicar las diferentes métricas como la equidad de \emph{Shannon}, la
 antropía \emph{simpson} y la ratio de \emph{Hill} para conocer la
@@ -496,7 +541,7 @@ conformidad con las variables ambientales la abundancia de la familia
 fue mayor en presencia del zinc (Zn), nitrogeno (N) y el pH con valores
 de 0.45\%, 0.47\% y 0.66\% respectivamente. En tanto, que la riqueza
 global predominó en la zona donde el pH fue más idóneo con estimado de
--0.48\% (ver tabla \ref{ambiente}). Por otro lado, en los modelos de
+-0.48\% (ver figura\ref{ambiente}). Por otro lado, en los modelos de
 abundancia de especies los sitios alpha con mayor y menor riqueza son el
 30 y 45 con 13 y 5 especies sucesivamente, los de máxima y mínima
 abundancia fue el 6 y 37 con un rango entre 31 y 127. Siendo el lugar
@@ -640,12 +685,7 @@ y puesto a la disposición mediante censos.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{figure}
-\centering
-\includegraphics{mapa_zinc.png}
-\caption{\label{fig:soporte1} Mapa de asociación de especie con el
-elemento Zinc}
-\end{figure}
+\includegraphics{mapa_zinc.png} \{width=110\%\}
 
 \begin{figure}
 \centering
@@ -1813,7 +1853,8 @@ reproducible}{Script reproducible}}\label{script-reproducible}
     \DataTypeTok{p_valor_t =} \KeywordTok{t.test}\NormalTok{(valor }\OperatorTok{~}\StringTok{ }\NormalTok{grupos_ward_k2)}\OperatorTok{$}\NormalTok{p.value,}
     \DataTypeTok{p_valor_w =} \KeywordTok{wilcox.test}\NormalTok{(valor }\OperatorTok{~}\StringTok{ }\NormalTok{grupos_ward_k2, }\DataTypeTok{exact =}\NormalTok{ F)}\OperatorTok{$}\NormalTok{p.value) }\OperatorTok{%>%}
 \StringTok{  }\KeywordTok{arrange}\NormalTok{(p_valor_t) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{print}\NormalTok{(}\DataTypeTok{n=}\OtherTok{Inf}\NormalTok{)}
+\StringTok{  }\KeywordTok{rename}\NormalTok{(}\StringTok{`}\DataTypeTok{Valor de p, prueba t}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{p_valor_t, }\StringTok{`}\DataTypeTok{Valor de p, prueba Wilcoxon}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{p_valor_w) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{slice}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{8}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\DataTypeTok{digits =} \DecValTok{2}\NormalTok{)}
 
 \CommentTok{#' Los gráficos:}
 \CommentTok{#' }

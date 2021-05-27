@@ -52,7 +52,9 @@ m_amb_ward_k2 %>%
     p_valor_t = t.test(valor ~ grupos_ward_k2)$p.value,
     p_valor_w = wilcox.test(valor ~ grupos_ward_k2, exact = F)$p.value) %>%
   arrange(p_valor_t) %>%
-  print(n=Inf)
+  rename(`Valor de p, prueba t` = p_valor_t, `Valor de p, prueba Wilcoxon` = p_valor_w) %>%
+  ungroup() %>% slice(1:8) %>% knitr::kable(digits = 2)
+
 #' 
 #' Interesa observar las variables que obtuvieron valores de p<0.01. Reitero que, en mi caso, mis grupos resultaron muy desiguales, recordando: el grupo 1 tiene 43 sitios (43) y el grupo 2 tiene 7. Este desigual número de sitios por grupo, hace que la prueba estadística pierda potencia, porque se viola la recomendación de evitar tamaños de los tratamientos muy desiguales.
 #' 
@@ -120,3 +122,5 @@ mapa_zn %>% mapshot(
     mutate(grupos_ward_k2) %>%
     st_drop_geometry() %>% 
     pivot_longer(-grupos_ward_k2, names_to = "variable", values_to = "valor"))
+
+
