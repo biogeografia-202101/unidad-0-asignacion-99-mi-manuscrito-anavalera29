@@ -90,9 +90,8 @@
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 
-\title{Distribución espacial de los géneros y especies de la familia
-\emph{Malvaceae} en una parcela de 50 ,ha. Caso: Isla Barro Colorado,
-Panamá.  }
+\title{Distribución espacial de las especies de la familia \emph{Malvaceae} en
+una parcela de 50 ,ha. Caso: Isla Barro Colorado, Panamá.  }
 
 
 
@@ -144,9 +143,8 @@ Panamá.  }
             bookmarks=true,
             pdfauthor={Ana Hilda Valera Arias (Estudiante, Universidad Autónoma de Santo Domingo (UASD))},
              pdfkeywords = {Género, Planta},  
-            pdftitle={Distribución espacial de los géneros y especies de la familia
-\emph{Malvaceae} en una parcela de 50 ,ha. Caso: Isla Barro Colorado,
-Panamá.},
+            pdftitle={Distribución espacial de las especies de la familia \emph{Malvaceae} en
+una parcela de 50 ,ha. Caso: Isla Barro Colorado, Panamá.},
             colorlinks=true,
             citecolor=blue,
             urlcolor=blue,
@@ -494,28 +492,32 @@ tibourbou}.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{agrupamiento_metodos.png}
+\includegraphics[width=1.00000\textwidth]{enlace_agrpados_metodos.png}
 \caption{matriz de comunidad normalizada\label{agrupado}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.10000\textwidth]{abndancia_especie.png}
+\includegraphics{especies.png}
 \caption{Representación de especies por abundancia de
 sitio\label{abundancia}}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=1.10000\textwidth]{diagrama_caja_especies.png}
+\includegraphics[width=1.10000\textwidth]{Rplot01_diagrama_caja_agrpados.png}
 \caption{Representación de especies por abundancia de
 sitio\label{homogeneidades}}
 \end{figure}
 
-Tabla de homogeneidad de promedios de variables
-ambientales\label{promedio}
-
 \begin{longtable}[]{@{}lrr@{}}
+\caption{Homogeneidad de promedios de variables
+ambientales\label{promedio}}\tabularnewline
+\toprule
+variable & Valor de p, prueba t & Valor de p, prueba
+Wilcoxon\tabularnewline
+\midrule
+\endfirsthead
 \toprule
 variable & Valor de p, prueba t & Valor de p, prueba
 Wilcoxon\tabularnewline
@@ -568,9 +570,13 @@ agrupar la comunidad según el método de Ward se visualizó una cantidad
 de 3,393 sujeto, 13 clase, con 13 individuo y 3 grupos inusuales, con
 una estimación de 0.92\% de especies.
 
-Especie contribuidora a la diversidad beta\label{beta}
-
 \begin{longtable}[]{@{}lr@{}}
+\caption{Especie contribuidora a la diversidad
+beta\label{beta}}\tabularnewline
+\toprule
+Especie & Valor\tabularnewline
+\midrule
+\endfirsthead
 \toprule
 Especie & Valor\tabularnewline
 \midrule
@@ -643,7 +649,7 @@ desarrollo dispersandola en todo el terreno (Alvarado-Hernández, 2011).
 El nivel de representación de la diversidad de especies dado por cada
 1,h, fue como resultado de las condisiones climáticas y a la
 disponibilidad del agua existente en la zona (Stevenson \& Rodríguez,
-2008), razón de que en los sitios más húmedo en nivel de abundancia y
+2008), razón de que en los sitios más húmedo el nivel de abundancia y
 riqueza fue mayor. Además, de la presencia de otras clases que
 contribuyeron a la variación espacial de la diversidad entre los lugares
 como fue la \emph{Apeiba membranacea}, \emph{Hampea appendiculata}.
@@ -658,14 +664,29 @@ volumen de materia orgánica y gran disponibilidad de agua. Aunque, el
 exceso de ciertos elementos pueden afectar la distribución y crecimiento
 de ciertas plantas (Clark, 2002), así, como el origen de formación del
 suelo los cuales ofrecen ciertas propiedades que definirían el tipo de
-colocación (Flores, Suvires, \& Dalmasso, 2015) lo que posiblemente
-sucedio en los lugares del piedemonte, el valle, la sima y ante el
+colocación (Flores, Suvires, \& Dalmasso, 2015). Esto posiblemente
+sucedió en los lugares del piedemonte, el valle, la sima y ante el
 conjunto de compuesto como el \emph{fósforo} (P), \emph{cobre} (Cu) y el
 \emph{aluminio} (Al) donde la correlación fue menor. También, es posible
 que el modelo presentado sea el resuldato por los periodos de sequía que
 pudo padecer la parcela en el momento de algunos de la censos, razón de
 que este fenómeno en caso de prolongarse podría causar la extinción
 local de especies arbóreas (Springer, 1998).
+
+El patrón presentado por las especies de la familia \emph{Malvaceae}
+dentro de la parcela permanente de la BCI puede variar al pasar el
+tiempo por causa del cambio en el clima. Razón, de que algunos grupos
+tienen alta dependencia a desarrollarse en zonas húmeda la cuales pueden
+ser afectadas por una temporada de sequía que enfrente ese espacio,
+dejando como posibles consecuencias la alteración de las caracteristicas
+físicas y la extinción de algunas especies. Posiblemente fue el caso de
+la \emph{Apeiba hybrid} quién para los censos de 1981 y 1985 mostró un
+área basal de 0.005 y 0.003 respectivamente, mientras que para los
+restantes no presentó valor de medición (Hubbell et al., 2021). En tal
+sentido, se espera la desaparición de algunas de la clase que componen
+dicha familia si el ser humano no diseña estrategias oportunas para
+contrarestar las variaciones climáticas y la conservación de las plantas
+originarias del bosque.
 
 \section{Agradecimientos}\label{agradecimientos}
 
@@ -1532,6 +1553,71 @@ reproducible}{Script reproducible}}\label{script-reproducible}
   \DataTypeTok{width =} \DecValTok{2000}\NormalTok{, }\DataTypeTok{height =} \DecValTok{1200}\NormalTok{, }\DataTypeTok{res =} \DecValTok{350}\NormalTok{, }\DataTypeTok{pointsize =} \DecValTok{12}\NormalTok{)}
 \NormalTok{mapas_var_amb_nom_tmap}
 \KeywordTok{dev.off}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Área de cargar paquetes}
+\KeywordTok{library}\NormalTok{(vegan)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\KeywordTok{library}\NormalTok{(sf)}
+\KeywordTok{source}\NormalTok{(}\StringTok{'biodata/funciones.R'}\NormalTok{)}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Área de cargar datos}
+\CommentTok{#' Censo (el objeto se carga con prefijo "censo") y matriz de comunidad (prefijo "mc")}
+\KeywordTok{load}\NormalTok{(}\StringTok{'~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata'}\NormalTok{)}
+\KeywordTok{load}\NormalTok{(}\StringTok{'biodata/matriz_ambiental.Rdata'}\NormalTok{) }\CommentTok{#Matriz ambiental, se carga como "bci_env_grid"}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Imprimir datos en pantalla (impresiones parciales con head)}
+\KeywordTok{head}\NormalTok{(censo_malvc)}
+\KeywordTok{head}\NormalTok{(mc_malvc)}
+\NormalTok{bci_env_grid }\CommentTok{# No necesita imprimirse parcialmente}
+
+\CommentTok{#' Requiere que se haya cargado ya la colección tidyverse}
+\NormalTok{censo_malvc }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+\NormalTok{mc_malvc }\OperatorTok{%>%}\StringTok{ }\NormalTok{tibble}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Lista de especies}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{colnames}\NormalTok{(mc_malvc))}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Número de sitios, tanto en matriz de comunidad como en ambiental}
+\CommentTok{#' Verifica que coinciden}
+\KeywordTok{nrow}\NormalTok{(mc_malvc) }\CommentTok{#En la matriz de comunidad}
+\KeywordTok{nrow}\NormalTok{(bci_env_grid) }\CommentTok{#En la matriz ambiental}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Riqueza numérica de especies (usando matriz de comunidad) por quadrat}
+\CommentTok{#' Nota: cargar paquete vegan arriba, en el área de paquetes}
+\KeywordTok{specnumber}\NormalTok{(mc_malvc)}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{specnumber}\NormalTok{(mc_malvc)) }\CommentTok{# Ordenados ascendentemente}
+\KeywordTok{summary}\NormalTok{(}\KeywordTok{specnumber}\NormalTok{(mc_malvc)) }\CommentTok{# Resumen estadístico}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Abundancia de especies por quadrat}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{rowSums}\NormalTok{(mc_malvc))}
+\KeywordTok{summary}\NormalTok{(}\KeywordTok{rowSums}\NormalTok{(mc_malvc)) }\CommentTok{# Resumen estadístico}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Abundancia por especie}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{colSums}\NormalTok{(mc_malvc))}
+\KeywordTok{summary}\NormalTok{(}\KeywordTok{colSums}\NormalTok{(mc_malvc)) }\CommentTok{# Resumen estadístico}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Riqueza numérica de toda la "comunidad"}
+\KeywordTok{specnumber}\NormalTok{(}\KeywordTok{colSums}\NormalTok{(mc_malvc))}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Abundancia de toda la comunidad}
+\KeywordTok{sum}\NormalTok{(}\KeywordTok{colSums}\NormalTok{(mc_malvc))}
+
+\CommentTok{#' }\AlertTok{###}\CommentTok{ Una tabla }
+\CommentTok{#' Para esto, usaré la colección "tidyverse"}
+\NormalTok{abun_sp <-}\StringTok{ }\NormalTok{censo_malvc }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(Latin) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{count}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{arrange}\NormalTok{(}\KeywordTok{desc}\NormalTok{(n))}
+\NormalTok{abun_sp}
+
+
+\CommentTok{#' Gráfico de mosaicos de la abundancia por especie por cuadros}
+\NormalTok{abun_sp_q <-}\StringTok{ }\KeywordTok{crear_grafico_mosaico_de_mc}\NormalTok{(mc_malvc, }\DataTypeTok{tam_rotulo =} \DecValTok{6}\NormalTok{)}
+\NormalTok{abun_sp_q}
 \end{Highlighting}
 \end{Shaded}
 

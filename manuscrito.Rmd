@@ -8,7 +8,7 @@ output:
     template: svm-latex-ms.tex
     number_sections: true
 title: | 
-      Distribución espacial de los géneros y especies de la familia *Malvaceae* en una parcela de 50 \,ha. Caso: Isla Barro Colorado, Panamá.
+      Distribución espacial de las especies de la familia *Malvaceae* en una parcela de 50 \,ha. Caso: Isla Barro Colorado, Panamá.
 author:
 - name: Ana Hilda Valera Arias
   affiliation: "Estudiante, Universidad Autónoma de Santo Domingo (UASD)"
@@ -85,16 +85,14 @@ Los árboles generados por los métodos de enlaces simple y completo, UPGMA y Wa
 
 Se evaluaron homogeneidades de promedios de las variables ambientales entre los dos grupos establecidos por el método Ward. Las variables que presentaron inhomogeneidades significativas fueron N, pH, Cu, B, Mn, y el porcentaje de relieve de piedemonte en el cuadro (ver figura \ref{homogeneidades} y tabla \label{promedio}). De manera particular, los sitios agrupados en el grupo 1, presentan valores significativamente elevados de las variables N, B, pH (entre los ácidos, los menos ácidos del conjunto), Cu y Mn. Asimismo, mediante el IndVal y el coeficiente de correlación biserial puntual, se detectaron varias especies asociadas con los hábitats representados por cada uno de los grupos. Concretamente, se detectó a *Quararibea asterolepis* como especie asociada al grupo 1, mientras que asociadas al grupo 2, se detectaron *Luehea seemannii*, *Sterculia apetala* y *Apeiba tibourbou*.
 
-![matriz de comunidad normalizada\label{agrupado}](agrupamiento_metodos.png){width=100%}
+![matriz de comunidad normalizada\label{agrupado}](enlace_agrpados_metodos.png){width=100%}
 
+![Representación de especies por abundancia de sitio\label{abundancia}](especies.png){heinth=210%}
 
-![Representación de especies por abundancia de sitio\label{abundancia}](abndancia_especie.png){width=110%}
-
-
-![Representación de especies por abundancia de sitio\label{homogeneidades}](diagrama_caja_especies.png){width=110%}
+![Representación de especies por abundancia de sitio\label{homogeneidades}](Rplot01_diagrama_caja_agrpados.png){width=110%}
 
  
- Tabla de homogeneidad de promedios de variables ambientales\label{promedio}
+Table: Homogeneidad de promedios de variables ambientales\label{promedio}
 
 |variable               | Valor de p, prueba t| Valor de p, prueba Wilcoxon|
 |:----------------------|--------------------:|---------------------------:|
@@ -115,7 +113,7 @@ En tanto, que la rarefacción a la abundancia más pequeña encontrada fue en la
 
 
 
-Especie contribuidora a la diversidad beta\label{beta}
+Table: Especie contribuidora a la diversidad beta\label{beta}
 
 |Especie                | Valor|
 |:----------------------|-----:|
@@ -143,10 +141,11 @@ En cuanto, a la matriz de distancia con la prueba Mantel se observó leve depend
 
 Los agrupamientos integrados producidos por varias especies en los dos grupos generados por los diferentes métodos de enlace y donde se identificó a las plantas *Quararibea asterolepis* y *Sterculia apetala* como las que más se asocian de manera combinada dentro de la familia y de manera desigual en el espacio se debe a que algunas sirven de alimento o de refugio para otros grupos, haciendo que esta se reunan en un sitio en específico el cual le favorezca en su crecimiento y desarrollo dispersandola en todo el terreno [@alvarado2011caracterizacion]. 
 
-El nivel de representación de la diversidad de especies dado por cada 1\,h, fue como resultado de las condisiones climáticas y a la disponibilidad del agua existente en la zona [@stevenson2008determinantes], razón de que en los sitios más húmedo en nivel de abundancia y riqueza fue mayor. Además, de la presencia de otras clases que contribuyeron a la variación espacial de la diversidad entre los lugares como fue la *Apeiba membranacea*, *Hampea appendiculata*.
+El nivel de representación de la diversidad de especies dado por cada 1\,h, fue como resultado de las condisiones climáticas y a la disponibilidad del agua existente en la zona [@stevenson2008determinantes], razón de que en los sitios más húmedo el nivel de abundancia y riqueza fue mayor. Además, de la presencia de otras clases que contribuyeron a la variación espacial de la diversidad entre los lugares como fue la *Apeiba membranacea*, *Hampea appendiculata*.
 
-En cuanto a la ecología espacial, la formación de patrones discontinuo por aglomeración en presencia de los elementos químico como el *zinc* (Zn), el *boro* (B) y el *potasio* (K) especialmente en la zona de la Vaguada, la llanura, el espolón y la vertiente indica que ciertas especies de la familia de la *Malvaceae* son propensas a desarrollarse en sitios con alto volumen de materia orgánica y gran disponibilidad de agua. Aunque, el exceso de ciertos elementos pueden afectar la distribución y crecimiento de ciertas plantas [@clark2002factores], así, como el origen de formación del suelo los cuales ofrecen ciertas propiedades que definirían el tipo de colocación [@flores2015distribucion] lo que posiblemente sucedio en los lugares del piedemonte, el valle, la sima y ante el conjunto de compuesto como el *fósforo* (P), *cobre* (Cu) y el *aluminio* (Al) donde la correlación fue menor. También, es posible que el modelo presentado sea el resuldato por los periodos de sequía que pudo padecer la parcela en el momento de algunos de la censos, razón de que este fenómeno en caso de prolongarse podría causar la extinción local de especies arbóreas [@condit1998ecological].
+En cuanto a la ecología espacial, la formación de patrones discontinuo por aglomeración en presencia de los elementos químico como el *zinc* (Zn), el *boro* (B) y el *potasio* (K) especialmente en la zona de la Vaguada, la llanura, el espolón y la vertiente indica que ciertas especies de la familia de la *Malvaceae* son propensas a desarrollarse en sitios con alto volumen de materia orgánica y gran disponibilidad de agua. Aunque, el exceso de ciertos elementos pueden afectar la distribución y crecimiento de ciertas plantas [@clark2002factores], así, como el origen de formación del suelo los cuales ofrecen ciertas propiedades que definirían el tipo de colocación [@flores2015distribucion]. Esto posiblemente sucedió en los lugares del piedemonte, el valle, la sima y ante el conjunto de compuesto como el *fósforo* (P), *cobre* (Cu) y el *aluminio* (Al) donde la correlación fue menor. También, es posible que el modelo presentado sea el resuldato por los periodos de sequía que pudo padecer la parcela en el momento de algunos de la censos, razón de que este fenómeno en caso de prolongarse podría causar la extinción local de especies arbóreas [@condit1998ecological].
  
+El patrón presentado por las especies de la familia *Malvaceae* dentro de la parcela permanente de la BCI puede variar al pasar el tiempo por causa del cambio en el clima. Razón, de que algunos grupos tienen alta dependencia a desarrollarse en zonas húmeda la cuales pueden ser afectadas por una temporada de sequía que enfrente ese espacio, dejando como posibles consecuencias la alteración de las caracteristicas físicas y la extinción de algunas especies. Posiblemente fue el caso de la *Apeiba hybrid* quién para los censos de 1981 y 1985 mostró un área basal de 0.005 y 0.003 respectivamente, mientras que para los restantes no presentó valor de medición [@webcenso]. En tal sentido, se espera la desaparición de algunas de la clase que componen dicha familia si el ser humano no diseña estrategias oportunas para contrarestar las variaciones climáticas y la conservación de las plantas originarias del bosque.
 
 
 # Agradecimientos
@@ -990,6 +989,71 @@ png(
 mapas_var_amb_nom_tmap
 dev.off()
 ```
+
+```{r, eval=FALSE}
+#' ### Área de cargar paquetes
+library(vegan)
+library(tidyverse)
+library(sf)
+source('biodata/funciones.R')
+
+#' ### Área de cargar datos
+#' Censo (el objeto se carga con prefijo "censo") y matriz de comunidad (prefijo "mc")
+load('~/unidad-0-asignacion-99-mi-manuscrito-anavalera29/biodata/Malvaceae.Rdata')
+load('biodata/matriz_ambiental.Rdata') #Matriz ambiental, se carga como "bci_env_grid"
+
+#' ### Imprimir datos en pantalla (impresiones parciales con head)
+head(censo_malvc)
+head(mc_malvc)
+bci_env_grid # No necesita imprimirse parcialmente
+
+#' Requiere que se haya cargado ya la colección tidyverse
+censo_malvc %>% tibble
+mc_malvc %>% tibble
+
+#' ### Lista de especies
+sort(colnames(mc_malvc))
+
+#' ### Número de sitios, tanto en matriz de comunidad como en ambiental
+#' Verifica que coinciden
+nrow(mc_malvc) #En la matriz de comunidad
+nrow(bci_env_grid) #En la matriz ambiental
+
+#' ### Riqueza numérica de especies (usando matriz de comunidad) por quadrat
+#' Nota: cargar paquete vegan arriba, en el área de paquetes
+specnumber(mc_malvc)
+sort(specnumber(mc_malvc)) # Ordenados ascendentemente
+summary(specnumber(mc_malvc)) # Resumen estadístico
+
+#' ### Abundancia de especies por quadrat
+sort(rowSums(mc_malvc))
+summary(rowSums(mc_malvc)) # Resumen estadístico
+
+#' ### Abundancia por especie
+sort(colSums(mc_malvc))
+summary(colSums(mc_malvc)) # Resumen estadístico
+
+#' ### Riqueza numérica de toda la "comunidad"
+specnumber(colSums(mc_malvc))
+
+#' ### Abundancia de toda la comunidad
+sum(colSums(mc_malvc))
+
+#' ### Una tabla 
+#' Para esto, usaré la colección "tidyverse"
+abun_sp <- censo_malvc %>%
+  group_by(Latin) %>% 
+  count() %>% 
+  arrange(desc(n))
+abun_sp
+
+
+#' Gráfico de mosaicos de la abundancia por especie por cuadros
+abun_sp_q <- crear_grafico_mosaico_de_mc(mc_malvc, tam_rotulo = 6)
+abun_sp_q
+
+```
+
 
 ```{r, eval=FALSE}
 #'Correlación ambiental
