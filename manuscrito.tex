@@ -142,7 +142,7 @@ una parcela de 50 ,ha. Caso: Isla Barro Colorado, Panamá.  }
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={Ana Hilda Valera Arias (Estudiante, Universidad Autónoma de Santo Domingo (UASD))},
-             pdfkeywords = {Género, Planta},  
+             pdfkeywords = {ecología numérica, zinc, boro, Quararibea asterolepis},  
             pdftitle={Distribución espacial de las especies de la familia \emph{Malvaceae} en
 una parcela de 50 ,ha. Caso: Isla Barro Colorado, Panamá.},
             colorlinks=true,
@@ -157,7 +157,8 @@ una parcela de 50 ,ha. Caso: Isla Barro Colorado, Panamá.},
 \def\fps@figure{htbp}
 \makeatother
 
-\usepackage{pdflscape} \newcommand{\blandscape}{\begin{landscape}}
+\usepackage{pdflscape} \widowpenalty10000 \clubpenalty10000
+\newcommand{\blandscape}{\begin{landscape}}
 \newcommand{\elandscape}{\end{landscape}} \usepackage{float}
 \floatplacement{figure}{H}
 \newcommand{\beginsupplement}{ \setcounter{table}{0} \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}} }
@@ -229,7 +230,7 @@ asterolepis} la principal contribuidora a la diversidad beta según el
 correlograma con 0.18\%.
 
 
-\vskip 8.5pt \noindent \emph{Keywords}: Género, Planta \par
+\vskip 8.5pt \noindent \emph{Keywords}: ecología numérica, zinc, boro, Quararibea asterolepis \par
 
     \hbox{\vrule height .2pt width 39.14pc}
 
@@ -244,37 +245,37 @@ correlograma con 0.18\%.
 \noindent  \section{Introducción}\label{introducciuxf3n}
 
 La vegetación terrestre está constituida por un conjunto de plantas
-pertenecientes a una familia en específico y esta a su vez se subdividen
-en géneros y especies para identificarse dentro de su clase. Por
-consiguiente, no sería la excepción de la \emph{Malvaceae} la cual posee
-243 genéros y más de 4,300 especies, sus flores son hermafroditas, pocas
-veces unisexuales, solitarias o fasciculadas en las axilas de las hojas
-o agrupadas en inflorescencia tal como la describen los siguientes
-autores (Marín, Hilario, \& Andino, n.d.) y (Bayer, 2003).
+conocidas que alcanza cientos de miles de especies conocidas, cada una
+perteneciente a una familia en específico. Las familias se subdividen a
+su vez en géneros y especies para nombrarlas apropiadamente. En el caso
+de \emph{Malvaceae} hay registrados 243 genéros y más de 4,300 especies;
+son plantas con flores son hermafroditas, pocas veces unisexuales,
+solitarias o fasciculadas en las axilas de las hojas o agrupadas en
+inflorescencia (Bayer, 2003; Marín, Hilario, \& Andino, n.d.).
 
-Dentro de los géneros a encontrar en la familia \emph{Malvaceae} están
+Dentro de los géneros más comunes en la familia \emph{Malvaceae} están
 el \emph{Abutilon} constituido por arbustos, subarbustos y hierbas
 bienales con pelo estrellados y tallos velloso, son carente del epicáliz
 conjunto de apéndices que por lo regular tienen otros grupos de dicha
 familia, así como de tener alrededor de 150 especie nativa en los
-trópicos y subtrópicos de América, África, Asia y Australia,
+trópicos y subtrópicos de América, África, Asia y Australia
 (Lorenzo-Cáceres, 2007). También, está el \emph{Hibiscus} donde los
 segmentos del epicáliz estan libres o unidos en la base, con estigmas
-alargados, semillas reniformes y numerosas, (ORTIZ, 2010). Del mismo
+alargados, semillas reniformes y numerosas (ORTIZ, 2010). Del mismo
 modo, se encuentra la \emph{Althaea}, \emph{Lavatera} y la \emph{Malva}
-cada una contienen sus respectivas especies las cuales pueden
-encontrarse en mayor o menor proporción en un espacio determinado el
-cual dependerá de factores abioticos incidentes entre ellos, lo que
-implicaría la necesidad de utilizar tecnicas y análisis numerológicos
-para conocer su asocianción y distribución.
+cada una contienen sus respectivas especies, las cuales pueden
+encontrarse en mayor o menor proporción en un espacio determinad, en
+función de factores abioticos incidentes entre ellos, lo que implicaría
+la necesidad de utilizar tecnicas y análisis cuantitativos para conocer
+su asociación y distribución.
 
 La implementación de análisis numéricos en las investigaciones
-ecológicas permiten dar a conocer en terminos cuantificables la forma en
-que se encuentran asociadas y el tipo de patrón que presenta algunas
+ecológicas permiten conocer, en terminos cuantificables, la forma en que
+se encuentran asociadas y el tipo de patrón que presenta algunas
 especies, es por ello la importancia de la estratificación y
-zonificación del objeto de estudio en cuestión. De acuerdo con
-(González, 2006) esto permite conjugar en un mismo grupo información de
-aquellos organismos que pueden ser cálculable junto con otros que son
+zonificación del objeto de estudio en cuestión. De acuerdo con González
+(2006), esto permite conjugar en un mismo grupo información de aquellos
+organismos que pueden ser cálculable junto con otros que son
 reproductivos y de manera general con toda la vegetación.
 
 En tal sentido, este estudio por medio de la ecología numérica busca
@@ -295,30 +296,25 @@ estrategias para el cuidado y conservación de ésta.
 \subsection{Área de estudio y datos
 fuente}\label{uxe1rea-de-estudio-y-datos-fuente}
 
-La BCI se encuentra ubicada en el canal de Pánama en las proximidades
-del lago Gatún, de acuerdo con (Pérez et al., 2005) esta se formó cuando
-se construyó dicho canal embalsando las aguas del río Chagres, se
-localiza entre las coordenadas geográficas (latitud 9\(^\circ\)~9'N,
-longitud 79\(^\circ\)~ 50') y cubre una extensión de tierra de 1,500
-hectáreas (ver figura \ref{mapa}). El clima se caracteriza por ser de
-bosque tropical, la temperatura promedio es de 27 grados centígrados,
-con temporadas lluviosas durante los meses mayo a diciembre y secas
-desde mediados de diciembre hasta abril, las tormentas convectivas son
-prevenidas por los vientos alisios dictando así las estaciones del año,
-(Sugasti, Eng, \& Pinzón, 2018). Esta isla por sus caracteristicas
-físicas sirve de hábitat para muchos animales e insectos y por
-consiguiente para una variedad de especie vegetal, convirtiendola en un
-espacio de investigación de mucha importancia. Es por ello, la
-escogencia como lugar de estudio la parcela permanente de 50 hectárea de
-BCI, en la cual se identificó como estan asociadas y distribuidas la
-familia \emph{Malvaceae} a través de los numerosos censos realizados con
-anterioridad.
+La isla de Barro Colorado se encuentra ubicada en el canal de Pánama en
+las proximidades del lago Gatún. Según Pérez et al. (2005) esta se formó
+cuando se construyó dicho canal embalsando las aguas del río Chagres.
+Las isla se localiza entre las coordenadas geográficas (latitud
+9\(^\circ\)~9'N, longitud 79\(^\circ\)~ 50') y cubre una extensión de
+tierra de 1,500 hectáreas (ver figura \ref{mapa}). El clima se
+caracteriza por ser de bosque tropical, la temperatura promedio es de 27
+grados centígrados, con temporadas lluviosas durante los meses mayo a
+diciembre y secas desde mediados de diciembre hasta abril, las tormentas
+convectivas son prevenidas por los vientos alisios dictando así las
+estaciones del año (Sugasti, Eng, \& Pinzón, 2018).
 
-\begin{figure}
-\centering
-\includegraphics[width=0.80000\textwidth]{MA_BARRO_COLORADO.png}
-\caption{Ubicación de la isla Barro Colorado\label{mapa}}
-\end{figure}
+Esta isla, por sus caracteristicas físicas sirve de hábitat para muchos
+animales e insectos y por consiguiente para una variedad de especies
+vegetales, y es a la vez un espacio con una tradición de investigación
+de mucha importancia. Dentro de ella se encuentra la parcela permanente
+de 50 hectáreas de BCI (en los adelante, BCI), dentro de la cual es
+posible caracterizar la distribución de la familia \emph{Malvaceae} a
+través de los numerosos censos realizados con anterioridad.
 
 Las informaciones obtenidas datan de los censos registrados durante los
 años (1981-1983 y 2010-2015, entre otros) donde se marcaron y
@@ -333,29 +329,34 @@ año esta dimensión cambió relativamente, al contrario de la
 visibles en comparación con los posteriores que tuvieron mayor
 visibilidad.
 
+\begin{figure}
+\centering
+\includegraphics[width=0.80000\textwidth]{MA_BARRO_COLORADO.png}
+\caption{Ubicación de la isla Barro Colorado\label{mapa}}
+\end{figure}
+
 \subsubsection{Materiales y Técnicas de
 investigación}\label{materiales-y-tuxe9cnicas-de-investigaciuxf3n}
 
-Para alcanzar los objetivos de investigación planteados, se efectuaron
-análisis aplicados a la base de datos censales de BCI. Específicamente,
-se realizaron estudios preliminares (tanto espaciales como no
-espaciales) de información, sobre medición de asociación, de diversidad
-y de ecología espacial.
+Para alcanzar los objetivos planteados, se efectuaron análisis aplicados
+a la base de datos censales de BCI. Específicamente, se realizaron
+análisis exploratorios sobre medición de asociación, de diversidad y de
+ecología espacial.
 
 Los análisis exploratorios incluyeron la transformación de la matriz
 ambiental en columna de hábitat y el agrupamiento de las plantas por
-quadrat de 1 ,ha, donde ofrecieron resultados preliminares para conocer
-la riqueza global y abundancia de especie por cada sitio. Asimimo,
-permitió el estudio de la relación de cada una de las variables con las
-unidades geomorfológicas y los elementos químicos del área, esto ayudó a
-generar mapas de cuadros para ubicar las zonas más y menos densa en
-cuanto a la cantidad de grupos. Por otra parte, los de medición de
-asociación contribuyeron a conocer la relación existente entre cada
-especie utilizando una matriz de transpuesto para la comparación por
-medio de la transformación \emph{Chi}. Se aplicaron distintas métricas
-en modo Q y R, tales como: el índice de correlación de Pearson, el
-\emph{rho} de Spearman o \textbf{tau} de Kendall con las que se exploró,
-de manera preliminar, el grado de asociación entre descriptores.
+quadrat de 1,ha, para obtener resúmenes sobre la riqueza global y
+abundancia de especie por cada sitio. Asimimo, exploró la relación de
+cada una de las variables con las unidades geomorfológicas y los
+elementos químicos del suelo, para generar mapas de cuadros para
+representar patrones espaciales, así como para evaluar relación con
+grupos de plantas. Por otra parte, los de medición de asociación
+contribuyeron a conocer la relación existente entre cada especie
+utilizando una matriz de transpuesta para la comparación por medio de la
+transformación \emph{Chi}. Se aplicaron distintas métricas en modo Q y
+R, tales como: el índice de correlación de Pearson, el \emph{rho} de
+Spearman o \textbf{tau} de Kendall con las que se exploró, de manera
+preliminar, el grado de asociación entre descriptores.
 
 El análisis de agrupamiento de los sitios de BCI basados en su
 composición usando una matriz de comunidad transformada por el método de
@@ -404,69 +405,76 @@ correlación biserial puntual (Borcard, 2018).
 
 Los análisis de diversidad contribuyeron al conocimiento de la
 abundancia de especies por cada sitio a través de dos componentes:
-riqueza y equidad. Permitiendo la construcción de una matriz de
-comunidad combinada para la identificación de las especies alpha y las
-plantas que contribuyen a la pluralidad beta. En tal sentido, para la
-medición se utilizó el índice de \textbf{equidad de Pielou} donde se
-midió la homogeneidad de abundancia de especie, el \textbf{índice de
-concentración de Simpson} para calcular el nivel de concentración de
-cada especie en el área y la ratio de \emph{Hill} para hacer prueba con
-un mismo número de elemento. Razón, de que tiene baja sensibilidad de
-quedar influenciada las zonas por la cantidad de riquezas que pueden
-tener, al realiazar una matriz de comunidad con fuerte dominancia
-(Borcard, 2018). Además, de la aplicación de dos enfoques a dicha
-matriz: asintóticos y no asintóticos que permitió la comparación y
-estimación de la riqueza de cada espacio. Con el asintótico se realizó
-un estimado de abundancia y con el no asintótico se hizo una rarefacción
-y extrapolación basado en el tamaño y cobertura de la muestra.
+riqueza y equidad. Se generó una matriz de comunidad combinada para la
+identificación de la diversidad alpha y las plantas que contribuyen a la
+diversidad beta. En tal sentido, para la medición se utilizó el índice
+de \textbf{equidad de Pielou} donde se midió la homogeneidad de
+abundancia de especie, el \textbf{índice de concentración de Simpson}
+para calcular el nivel de concentración de cada especie en el área.
+También se utilizaron las ratios de \emph{Hill} para realizar
+comparaciones, dado que dichos índices tienen baja probabilidad de
+quedar influenciados en los casos de una matriz de comunidad con fuerte
+dominancia (Borcard, 2018). Además, se aplicaron dos enfoques de
+estimación de riqueza: asintóticos y no asintóticos, que permitieron
+comparar la estimación de la riqueza de cada espacio. Con el asintótico
+se realizó un estimado de abundancia y con el no asintótico se hizo una
+rarefacción y extrapolación basado en el tamaño y cobertura de la
+muestra.
 
-Los análisis de ecología espacial abordaron la autocorrelación de las
-especies en el espacio por medio de una matriz de comunidad transformada
-desde cuatro métricas distintas: mediante correlograma, por prueba
-Mantel (matrices de distancia), pruebas de permutación para el I de
-Moran local y global. Con la primera se conoció la abundancia
-transformada de especie como variables de respuesta, con la segunda la
-abundancia por posición geográfica, la tercera la riqueza por zonas en
-comparación con las demás y con la cuarta métrica la cantidad de grupos
-a nivel general. Es decir, se identificó la riqueza de cada especie
-según su ubicación y el nivel de dependencia de las mismas ya sea en un
-sitio o en toda la parcela.
+Finalmente, los análisis de ecología espacial abordaron la
+autocorrelación de las especies en el espacio por medio de una matriz de
+comunidad transformada desde cuatro métricas distintas: mediante
+correlograma, por prueba Mantel (matrices de distancia), pruebas de
+permutación para el I de Moran local y global. Con la primera se conoció
+el grado de autocorrelación de la abundancia transformada de especie
+como variables de respuesta, con la segunda la abundancia por posición
+geográfica, la tercera la riqueza por zonas en comparación con las
+circundantes, y con la cuarta métrica se identificaron grupos de celdas
+que presentan parecido (autocorrelación) de su abundancia de especies.
+Es decir, en general, se identificó la riqueza de cada especie según su
+ubicación y el nivel de dependencia espacial de las mismas, ya fuese
+localmente como para toda la parcela.
 
 En la parte programática, para la realización de los análisis descritos
-anteriormente, se utilizó el software de (R Core Team, 2019) donde se
-cargaron varios paquetes de ecología numérica como el \emph{tidyverse}
-que ayudó a formar matriz de comunidad que permitió identificar las
-diferentes especies que abundan, en qué cantidad y orden de acuerdo a su
-pH. También, el \emph{Simple Features} (sf) para crear área de hábitat
-por cuadros y obtener la densidad de cada especie por metro cuadrado y
-así conocer la abundancia y riqueza global. De igual manera, el
-\emph{Vegan} para caracterizar y analizar el orden y disimilaridades
-entre cada especie y \emph{ez} para examinar las unidades o variables
-repetitivas. Asimismo, el \emph{graphics}, \emph{psych} y \emph{mapvie}
-para la representación gráfica de cada datos y (Kindt \& Coe, 2005) para
-señalar las especies alpha y beta. Por último, cada \emph{script}
-utilizados fueron suministrado a partir del repositorio de (Batlle,
-2020) como fuente y el programa de información geográfica Qgis (QGIS
-Development Team, 2009) para actualizar el mapa de localización de la
-BCI.
+anteriormente, se utilizó el software de \texttt{R} (R Core Team, 2019),
+y se emplearon varios paquetes de ecología numérica y de análisis de
+datos. De estos últimos, destacan \emph{dplyr} y \emph{tidyr}, que
+ayudaron a reorganizar los datos para formar las matrices de comunidad y
+ambiental, y que permitió identificar las diferentes especies que
+abundan, en qué cantidad y orden de acuerdo a su pH. También, se utilizó
+el paquete \emph{simple Features} (sf) para crear área de hábitat por
+cuadros y obtener la densidad de cada especie por metro cuadrado y así
+conocer la abundancia y riqueza global. De los paquetes de ecología
+numérica, \emph{vegan} y \emph{BiodiversityR} fueron los más empleados,
+y se utilizaron para caracterizar y analizar el orden y disimilaridades
+entre cada especie, diversidad alpha y beta, entre otras métricas (Kindt
+\& Coe, 2005). De manera general, también se usaron los paquetes
+\emph{ez} para examinar correlación entre variables. Asimismo, los
+paquetes \emph{ggplot2}, \emph{graphics}, \emph{psych} y \emph{mapview}
+para la representación gráfica de cada datos. Por último, cada
+\emph{script} utilizado fue adaptado a partir del repositorio de Batlle
+(2020), el cual sirvió como fuente. Adicionalmente, se empleó el
+programa de información geográfica Qgis (QGIS Development Team, 2009)
+para actualizar el mapa de localización de la BCI.
 
 \section{Resultados}\label{resultados}
 
 Los árboles generados por los métodos de enlaces simple y completo,
-UPGMA y Ward, aplicados a la matriz de comunidad normalizada, muestran
+UPGMA y Ward, aplicados a la matriz de comunidad normalizada, mostraron
 las típicas organizaciones de los sitios en función de su altura (ver
 figura \ref{agrupado}). A excepción del árbol producido por el método
-Ward, los generados por otros sistemas, contienen singularidades que los
+Ward, los generados por otros sistemas, mostraron singularidades que los
 hacen difíciles de interpretar y de reutilizar en posteriores análisis.
 En general, el principal problema de los árboles generados por enlaces
 simple, completo, y por UPGMA, fue que produjeron agrupamientos
 integrados por un único sitio o por un puñado de éstos. Por ejemplo,
-estos ordenes aislaron a los sitios 31 y 37 en una rama singular, o
-igualmente al espacio 13 como integrante de un único grupo. Si bien,
+varios árboles aislaron a los sitios 31 y 37 en una rama singular, o
+igualmente al sitio 13 como integrante único de un ``grupo''. Si bien,
 este último lugar es singular por la abundancia de \emph{Luehea
 seemannii} y la rareza de \emph{Quararibea asterolepis}, no menos cierto
 es que dicha zona guarda similaridad con el resto si se analiza la
 representación de otras especies (ver figura \ref{abundancia}).
+
 Asimismo, el remuestreo por bootstrap multiescalar utilizando como base
 el agrupamiento Ward, no destacó singularidad alguna para el sitio 13.
 Por estas razones, se prefirió utilizar el agrupamiento realizado con
@@ -492,7 +500,7 @@ tibourbou}.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.00000\textwidth]{enlace_agrpados_metodos.png}
+\includegraphics[width=1.00000\textwidth]{enlaces_metodos_diferentes.png}
 \caption{matriz de comunidad normalizada\label{agrupado}}
 \end{figure}
 
@@ -638,16 +646,16 @@ la \emph{Apeiba membranacea} con 0.36\% (ver figura \ref{distancia} \&
 \section{Discusión}\label{discusiuxf3n}
 
 Los agrupamientos integrados producidos por varias especies en los dos
-grupos generados por los diferentes métodos de enlace y donde se
-identificó a las plantas \emph{Quararibea asterolepis} y \emph{Sterculia
-apetala} como las que más se asocian de manera combinada dentro de la
-familia y de manera desigual en el espacio se debe a que algunas sirven
-de alimento o de refugio para otros grupos, haciendo que esta se reunan
-en un sitio en específico el cual le favorezca en su crecimiento y
-desarrollo dispersandola en todo el terreno (Alvarado-Hernández, 2011).
+grupos generados por los diferentes métodos de enlace, donde se
+identificaron las plantas \emph{Quararibea asterolepis} y
+\emph{Sterculia apetala} como las que más se asocian de manera combinada
+dentro de la familia, sugieren que alguna de estas especies sirve de
+refugio para otros grupos, provocando concentraciones de individuos que
+favorecen el crecimiento y desarrollo de otras especies
+(Alvarado-Hernández, 2011).
 
-El nivel de representación de la diversidad de especies dado por cada
-1,h, fue como resultado de las condisiones climáticas y a la
+El nivel de representación de la diversidad de especies dado por
+hectárea, fue como resultado de las condisiones climáticas y a la
 disponibilidad del agua existente en la zona (Stevenson \& Rodríguez,
 2008), razón de que en los sitios más húmedo el nivel de abundancia y
 riqueza fue mayor. Además, de la presencia de otras clases que
