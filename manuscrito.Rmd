@@ -57,7 +57,7 @@ Esta isla, por sus caracteristicas físicas sirve de hábitat para muchos animal
 
 Las informaciones obtenidas datan de los censos registrados durante los años (1981-1983 y 2010-2015, entre otros) donde se marcaron y cartografiaron todos los tallos leñosos independientes de al menos 10 mm de diámetro de altura [@webcenso]. En los mismos, se observó que en el año 1981 y para el 2015 de las 253 especie identificadas y medidas la *Quararibea asterolpis*, *Ceiba pentandra*, *Apeiba membranacea* y *Luehea seemannii* estuvieron entre las plantas de tallos reducidos aunque para el último año esta dimensión cambió relativamente, al contrario de la *Cavanillesia platanifolia* que en el primer censo fueron poco visibles en comparación con los posteriores que tuvieron mayor visibilidad. 
 
-![Ubicación de la isla Barro Colorado\label{mapa}](MA_BARRO_COLORADO.png){width=80%}
+![Ubicación de la isla Barro Colorado\label{mapa}](MA_BARRO_COLORADO.png){width=99%}
 
 ### Materiales y Técnicas de investigación
 
@@ -83,13 +83,12 @@ Asimismo, el remuestreo por bootstrap multiescalar utilizando como base el agrup
 
 Se evaluaron homogeneidades de promedios de las variables ambientales entre los dos grupos establecidos por el método Ward. Las variables que presentaron inhomogeneidades significativas fueron N, pH, Cu, B, Mn, y el porcentaje de relieve de piedemonte en el cuadro (ver figura \ref{homogeneidades} y tabla \label{promedio}). De manera particular, los sitios agrupados en el grupo 1, presentan valores significativamente elevados de las variables N, B, pH (entre los ácidos, los menos ácidos del conjunto), Cu y Mn. Asimismo, mediante el IndVal y el coeficiente de correlación biserial puntual, se detectaron varias especies asociadas con los hábitats representados por cada uno de los grupos. Concretamente, se detectó a *Quararibea asterolepis* como especie asociada al grupo 1, mientras que asociadas al grupo 2, se detectaron *Luehea seemannii*, *Sterculia apetala* y *Apeiba tibourbou*.
 
-![matriz de comunidad normalizada\label{agrupado}](enlaces_metodos_diferentes.png){width=100%}
+![Matriz de Comunidad Normalizada\label{agrupado}](Rplot_diferentes_metodos.png){width=110%}
 
-![Representación de especies por abundancia de sitio\label{abundancia}](especies.png){heinth=210%}
+![Representación de especies por abundancia de sitio\label{abundancia}](Rplot_sitios_especies.png){width=110%}
 
-![Representación de especies por abundancia de sitio\label{homogeneidades}](Rplot01_diagrama_caja_agrpados.png){width=110%}
+![Representación de especies por abundancia de sitio\label{homogeneidades}](Rplot01_diagrama_caja_agrpados.png){width=100%}
 
- 
 Table: Homogeneidad de promedios de variables ambientales\label{promedio}
 
 |variable               | Valor de p, prueba t| Valor de p, prueba Wilcoxon|
@@ -103,13 +102,13 @@ Table: Homogeneidad de promedios de variables ambientales\label{promedio}
 |riqueza_global         |                 0.05|                        0.04|
 |Al                     |                 0.11|                        0.05|
 
-
 Al aplicar las diferentes métricas como la equidad de *Shannon*, la antropía *simpson* y la ratio de *Hill* para conocer la abundancia y riqueza de especies por cada sitio, se observó una alta correlación entre cada una a través del método de *Pearson* a excepción de la ratio de *Hill* donde fue menor. También, en conformidad con las variables ambientales la abundancia de la familia fue mayor en presencia del zinc (Zn), nitrogeno (N) y el pH con valores de 0.45%, 0.47% y 0.66% respectivamente. En tanto, que la riqueza global predominó en la zona donde el pH fue más idóneo con estimado de -0.48% (ver figura\ref{ambiente}). Por otro lado, en los modelos de abundancia de especies los sitios alpha con mayor y menor riqueza son el 30 y 45 con 13 y 5 especies sucesivamente, los de máxima y mínima abundancia fue el 6 y 37 con un rango entre 31 y 127. Siendo el lugar más rico el 30 donde abundan 110 grupos y el más pobre el 45 con 123. Mientras, que los sitios que contribuyen a la diversidad beta al implementar el modelo de un único número con la matriz de comunidad con el método de *Helliger* fueron el 13 con 0.12% y 46 con 0.82%. En tanto, que las especies contribuidoras son la *Quararibea asterolepis*, *Hampea appendiculata* y *Herrania purpurea* con 0.18%, 0.14% y 0.11%, respectivamente (ver tabla \ref{beta}).
-
 
 En tanto, que la rarefacción a la abundancia más pequeña encontrada fue en la zona 45 con 5 y la estimación de individuo por abundancia de grupo de 3,393. Asimismo, al combinar los grupos y ubicarlo en un solo lugar por medio del enfoque asintótico, se observó que exceden un total de 3,789 individuos y 14 especie. Dentro de las mismas se encuentran 4 sujeto y 2 clases raras con un estimado de cobertura muestral de 0.67% para plantas extrañas, con grado de 16% de homogéneidad, con un nivel bajo de 16% y superior 17.72%. En Cuanto, a la matriz con el enfoque no asintótico se registró un espacio con 3,792 individuo y 16 grupos, al relacionarla con la antropía de *Shannon* se estimó un 4.68% y con la equidad de *Simpson* un 2.77% de diversidad. Por otro lado, al agrupar la comunidad según el método de Ward se visualizó una cantidad de 3,393 sujeto, 13 clase, con 13 individuo y 3 grupos inusuales, con una estimación de 0.92% de especies.  
 
+De acuerdo los datos obtenidos en el análisis de la ecología espacial por medio de las pruebas de permutación para el *I de Moran* local se observó una alta correlación de algunas especies en varias zonas geomorfológicas de la BCI en el orden uno. Donde se estima un 0.42% en la llanura, 0.31% en el espolón, 0.29% en la vertiente y 0.38% en la vaguada, siendo el área del espolón el de más conveniencia. Mientras, que ante la presencia de ciertos elementos químicos algunas plantas presentaron una adecuación como fue con el zinc (Zn) con 0.85%, el potasio (K) 0.74%, el calsio (Ca) 0.69 y el pH con 0.72%. Mientras, que con el *I de Moran* global aplicado a la abundancia de las especies de la familia *Malvaceae* las de mayor grado de autocorrelación fue la *Pachira quinata* con valor de 1%, *Pachira sessilis* con 0.71%, *Guazuma ulmifolia* 0.62% y la *Ochroma pyramidale* 0.53%.
 
+En cuanto, a la matriz de distancia con la prueba Mantel se observó leve dependencia espacial de algunas especies inducida por variables ambientales, a medida en que aumenta ésta la autocorrelación es de forma negativa, siendo el orden 1 y 2 los de más conexión con 4.62% y -4.95% respectivamente. También, mediante el correlograma con una sola variable los grupos tuvieron una fuerte relación en los siete ordenes primero con estimaciones entre 0.21% y 0.72% en los tres iniciales y desde -0.36% a -0.66% en los cuatro siguientes. Por último, la clase que más abunda es *Herrania purpurea* con un valor estimado de 0.41%, seguido por la *Apeiba membranacea* con 0.36% (ver figura \ref{distancia} & \ref{diversidad}).
 
 Table: Especie contribuidora a la diversidad beta\label{beta}
 
@@ -122,18 +121,11 @@ Table: Especie contribuidora a la diversidad beta\label{beta}
 |Luehea seemannii       |  0.09|
 |Quararibea asterolepis |  0.18|
 
- 
-De acuerdo los datos obtenidos en el análisis de la ecología espacial por medio de las pruebas de permutación para el *I de Moran* local se observó una alta correlación de algunas especies en varias zonas geomorfológicas de la BCI en el orden uno. Donde se estima un 0.42% en la llanura, 0.31% en el espolón, 0.29% en la vertiente y 0.38% en la vaguada, siendo el área del espolón el de más conveniencia. Mientras, que ante la presencia de ciertos elementos químicos algunas plantas presentaron una adecuación como fue con el zinc (Zn) con 0.85%, el potasio (K) 0.74%, el calsio (Ca) 0.69 y el pH con 0.72%. Mientras, que con el *I de Moran* global aplicado a la abundancia de las especies de la familia *Malvaceae* las de mayor grado de autocorrelación fue la *Pachira quinata* con valor de 1%, *Pachira sessilis* con 0.71%, *Guazuma ulmifolia* 0.62% y la *Ochroma pyramidale* 0.53%.
-
-En cuanto, a la matriz de distancia con la prueba Mantel se observó leve dependencia espacial de algunas especies inducida por variables ambientales, a medida en que aumenta ésta la autocorrelación es de forma negativa, siendo el orden 1 y 2 los de más conexión con 4.62% y -4.95% respectivamente. También, mediante el correlograma con una sola variable los grupos tuvieron una fuerte relación en los siete ordenes primero con estimaciones entre 0.21% y 0.72% en los tres iniciales y desde -0.36% a -0.66% en los cuatro siguientes. Por último, la clase que más abunda es *Herrania purpurea* con un valor estimado de 0.41%, seguido por la *Apeiba membranacea* con 0.36% (ver figura \ref{distancia} & \ref{diversidad}).
-
 ![Distancia con prueba Mantel\label{distancia}](ecologia_espacial_files/figure-markdown_github/unnamed-chunk-14-1.png){width=100%}
 
+![Correlación de las diferentes especies\label{diversidad}](ecologia_espacial_files/figure-markdown_github/unnamed-chunk-10-1.png){heinth=120%}
 
-![Correlación de las diferentes especies\label{diversidad}](ecologia_espacial_files/figure-markdown_github/unnamed-chunk-10-1.png){width=110%}
-
-![Distribución de especies por ambiente\label{ambiente}](matriz_correlacion_suelo_abun_riq_spearman.png){width=110%}
-
+![Distribución de especies por ambiente\label{ambiente}](matriz_correlacion_suelo_abun_riq_spearman.png){heinth=120%}
 
 # Discusión
 
@@ -144,7 +136,6 @@ El nivel de representación de la diversidad de especies dado por hectárea, fue
 En cuanto a la ecología espacial, la formación de patrones discontinuo por aglomeración en presencia de los elementos químico como el *zinc* (Zn), el *boro* (B) y el *potasio* (K) especialmente en la zona de la Vaguada, la llanura, el espolón y la vertiente indica que ciertas especies de la familia de la *Malvaceae* son propensas a desarrollarse en sitios con alto volumen de materia orgánica y gran disponibilidad de agua. Aunque, el exceso de ciertos elementos pueden afectar la distribución y crecimiento de ciertas plantas [@clark2002factores], así, como el origen de formación del suelo los cuales ofrecen ciertas propiedades que definirían el tipo de colocación [@flores2015distribucion]. Esto posiblemente sucedió en los lugares del piedemonte, el valle, la sima y ante el conjunto de compuesto como el *fósforo* (P), *cobre* (Cu) y el *aluminio* (Al) donde la correlación fue menor. También, es posible que el modelo presentado sea el resuldato por los periodos de sequía que pudo padecer la parcela en el momento de algunos de la censos, razón de que este fenómeno en caso de prolongarse podría causar la extinción local de especies arbóreas [@condit1998ecological].
  
 El patrón presentado por las especies de la familia *Malvaceae* dentro de la parcela permanente de la BCI puede variar al pasar el tiempo por causa del cambio en el clima. Razón, de que algunos grupos tienen alta dependencia a desarrollarse en zonas húmeda la cuales pueden ser afectadas por una temporada de sequía que enfrente ese espacio, dejando como posibles consecuencias la alteración de las caracteristicas físicas y la extinción de algunas especies. Posiblemente fue el caso de la *Apeiba hybrid* quién para los censos de 1981 y 1985 mostró un área basal de 0.005 y 0.003 respectivamente, mientras que para los restantes no presentó valor de medición [@webcenso]. En tal sentido, se espera la desaparición de algunas de la clase que componen dicha familia si el ser humano no diseña estrategias oportunas para contrarestar las variaciones climáticas y la conservación de las plantas originarias del bosque.
-
 
 # Agradecimientos
 
@@ -158,14 +149,15 @@ Este estudio fue realizado gracias al Dr. José Ramón Martínez Batlle maestro 
 
 ```
 
-![\label{fig:soporte1} Mapa de asociación de especie con el elemento Zinc](mapa_zinc.png) {width=110%}
+![\label{fig:soporte1} Mapa de asociación de especie con el elemento Zinc](mapa_zinc.png)
 
-![\label{fig:soporte1} Variables ambientales numéricas](mapas_variables_ambientales_numericas.png){width=110%}
+![\label{fig:soporte1} Dendograma de la distancia por sitios con el método Ward_2](Dendrograma_analisis_agrpado_2.png){width=105%}
 
+![\label{fig:soporte1} Variables ambientales numéricas](mapas_variables_ambientales_numericas.png){heinth=130%}
 
-![\label{fig:soporte1} Variables ambientales nominales](mapas_variables_ambientales_nominales_tmap.png){width=110%}
+![\label{fig:soporte1} Variables ambientales nominales](mapas_variables_ambientales_nominales_tmap.png){width=120%}
 
-
+![\label{fig:soporte1} Mapa de riqueza por sitios de la familia *Malvaceae*](mapa_cuadros_riq_mi_familia.png)
 
 # *Script* reproducible
 
